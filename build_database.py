@@ -59,7 +59,11 @@ import duckdb
 # Configuration
 # ---------------------------------------------------------------------------
 
-BASE_URL = "https://nces.ed.gov/ipeds/datacenter/data/"
+# NCES moved the complete data files in 2026: new files (2024-25 winter/spring
+# components onward, and the 2025-26 fall provisional release) are served from
+# /ipeds/complete-data-files/; older files still resolve at both paths.
+BASE_URL = "https://nces.ed.gov/ipeds/complete-data-files/"
+LEGACY_BASE_URL = "https://nces.ed.gov/ipeds/datacenter/data/"
 DATA_DIR = Path("data/raw")
 DB_PATH = Path("ipeds.duckdb")
 
@@ -80,43 +84,47 @@ def build_manifest():
     manifest = {}
     
     # HD: Directory information
-    manifest["hd"] = [(y, f"HD{y}") for y in range(2024, 2001, -1)]
+    manifest["hd"] = [(y, f"HD{y}") for y in range(2025, 2001, -1)]
     
     # IC: Institutional characteristics
-    manifest["ic"] = [(y, f"IC{y}") for y in range(2024, 1999, -1)]
+    manifest["ic"] = [(y, f"IC{y}") for y in range(2025, 1999, -1)]
     
     # IC_AY: Academic year prices
+    # IC{y}_AY / IC{y}_PY end at 2023: from the 2024-25 collection tuition and
+    # cost-of-attendance items moved to the new Cost (CST) survey component,
+    # which NCES has not yet published as a complete data file.
     manifest["ic_ay"] = [(y, f"IC{y}_AY") for y in range(2023, 1999, -1)]
     
     # IC_PY: Program year prices
     manifest["ic_py"] = [(y, f"IC{y}_PY") for y in range(2023, 1999, -1)]
     
     # ADM: Admissions
-    manifest["adm"] = [(y, f"ADM{y}") for y in range(2023, 2013, -1)]
+    manifest["adm"] = [(y, f"ADM{y}") for y in range(2024, 2013, -1)]
     
     # EFIA: 12-month instructional activity
-    manifest["efia"] = [(y, f"EFIA{y}") for y in range(2024, 2001, -1)]
+    manifest["efia"] = [(y, f"EFIA{y}") for y in range(2025, 2001, -1)]
     
     # EFFY: 12-month unduplicated headcount
-    manifest["effy"] = [(y, f"EFFY{y}") for y in range(2024, 2001, -1)]
+    manifest["effy"] = [(y, f"EFFY{y}") for y in range(2025, 2001, -1)]
     
     # EFA: Fall enrollment by race/ethnicity (A component)
-    manifest["ef_a"] = [(y, f"EF{y}A") for y in range(2023, 1999, -1)]
+    manifest["ef_a"] = [(y, f"EF{y}A") for y in range(2024, 1999, -1)]
     
     # EFB: Fall enrollment by age
-    manifest["ef_b"] = [(y, f"EF{y}B") for y in range(2023, 1999, -1)]
+    manifest["ef_b"] = [(y, f"EF{y}B") for y in range(2024, 1999, -1)]
     
     # EFC: Residence and migration
-    manifest["ef_c"] = [(y, f"EF{y}C") for y in range(2023, 1999, -1)]
+    manifest["ef_c"] = [(y, f"EF{y}C") for y in range(2024, 1999, -1)]
     
     # EFD: Retention rates
-    manifest["ef_d"] = [(y, f"EF{y}D") for y in range(2023, 1999, -1)]
+    manifest["ef_d"] = [(y, f"EF{y}D") for y in range(2024, 1999, -1)]
     
     # C_A: Completions awards
-    manifest["c_a"] = [(y, f"C{y}_A") for y in range(2024, 1999, -1)]
+    manifest["c_a"] = [(y, f"C{y}_A") for y in range(2025, 1999, -1)]
     
     # SFA: Student financial aid (uses academic year naming)
     sfa_files = []
+    sfa_files.append((2024, "SFA2324"))
     sfa_files.append((2023, "SFA2223"))
     sfa_files.append((2022, "SFA2122"))
     sfa_files.append((2021, "SFA2021"))
@@ -142,19 +150,19 @@ def build_manifest():
     manifest["sfa"] = sfa_files
     
     # GR: Graduation rates 150%
-    manifest["gr"] = [(y, f"GR{y}") for y in range(2023, 1996, -1)]
+    manifest["gr"] = [(y, f"GR{y}") for y in range(2024, 1996, -1)]
     
     # GR200: Graduation rates 200% (uses 2-digit year in filename)
-    manifest["gr200"] = [(2000 + y, f"GR200_{y:02d}") for y in range(23, 7, -1)]
+    manifest["gr200"] = [(2000 + y, f"GR200_{y:02d}") for y in range(24, 7, -1)]
     
     # OM: Outcome measures
-    manifest["om"] = [(y, f"OM{y}") for y in range(2023, 2014, -1)]
+    manifest["om"] = [(y, f"OM{y}") for y in range(2024, 2014, -1)]
     
     # EAP: Employees by assigned position
-    manifest["eap"] = [(y, f"EAP{y}") for y in range(2023, 2000, -1)]
+    manifest["eap"] = [(y, f"EAP{y}") for y in range(2024, 2000, -1)]
     
     # SAL_IS: Salaries - instructional staff
-    manifest["sal_is"] = [(y, f"SAL{y}_IS") for y in range(2023, 2011, -1)]
+    manifest["sal_is"] = [(y, f"SAL{y}_IS") for y in range(2024, 2011, -1)]
     
     # SAL: Salaries (older format, pre-2012) - these files use different naming;
     # the SAL{year}_IS format only starts in 2012, and pre-2012 data uses
@@ -162,16 +170,16 @@ def build_manifest():
     # manifest["sal"] = [(y, f"SAL{y}") for y in range(2011, 2000, -1)]
     
     # AL: Academic libraries
-    manifest["al"] = [(y, f"AL{y}") for y in range(2023, 2013, -1)]
+    manifest["al"] = [(y, f"AL{y}") for y in range(2024, 2013, -1)]
     
     # FLAGS: Response status
-    manifest["flags"] = [(y, f"FLAGS{y}") for y in range(2024, 2003, -1)]
+    manifest["flags"] = [(y, f"FLAGS{y}") for y in range(2025, 2003, -1)]
     
     # Finance: F1A (GASB/public), F2 (FASB/private nonprofit), F3 (for-profit)
     # Uses academic year naming like SFA (e.g., F2223_F1A for fiscal year ending 2023)
     def _fin_files(suffix, start_yr=2001):
         files = []
-        for end_yr in range(2023, start_yr, -1):
+        for end_yr in range(2024, start_yr, -1):
             yr_code = f"{(end_yr-1) % 100:02d}{end_yr % 100:02d}"
             files.append((end_yr, f"F{yr_code}_{suffix}"))
         return files
@@ -194,13 +202,18 @@ def download_file(filename: str, retries: int = 3) -> Path:
     if local_path.exists() and local_path.stat().st_size > 0:
         return local_path
     
-    url = f"{BASE_URL}{filename}.zip"
+    urls = [f"{BASE_URL}{filename}.zip", f"{LEGACY_BASE_URL}{filename}.zip"]
     for attempt in range(retries):
         try:
-            log.info(f"Downloading {url}" + (f" (attempt {attempt+1})" if attempt > 0 else ""))
-            resp = requests.get(url, timeout=120, stream=False)
-            if resp.status_code != 200:
-                log.warning(f"  Failed to download {filename}: HTTP {resp.status_code}")
+            resp = None
+            for url in urls:
+                log.info(f"Downloading {url}" + (f" (attempt {attempt+1})" if attempt > 0 else ""))
+                resp = requests.get(url, timeout=120, stream=False,
+                                    headers={"User-Agent": "Mozilla/5.0 (datapond ipeds-database build)"})
+                if resp.status_code == 200:
+                    break
+            if resp is None or resp.status_code != 200:
+                log.warning(f"  Failed to download {filename}: HTTP {resp.status_code if resp is not None else '?'}")
                 return None
             local_path.write_bytes(resp.content)
             return local_path
@@ -785,90 +798,113 @@ def load_to_duckdb(con: duckdb.DuckDBPyConnection, table_name: str, df: pd.DataF
 # Main pipeline
 # ---------------------------------------------------------------------------
 
-def process_survey(con: duckdb.DuckDBPyConnection, survey: str, 
+def process_survey(con: duckdb.DuckDBPyConnection, survey: str,
                    file_list: list, harmonizer) -> dict:
-    """Process all years for a single survey component."""
+    """Process all years for a single survey component.
+
+    Each year is harmonized in pandas and staged into DuckDB immediately, then
+    the staged years are combined with UNION ALL BY NAME. This keeps at most one
+    year's frame in memory (the old implementation concatenated every year in
+    pandas, which needs >16 GB for the completions table and was OOM-killed on
+    a 10 GB build machine).
+    """
     log.info(f"{'='*60}")
     log.info(f"Processing survey: {survey}")
     log.info(f"{'='*60}")
-    
-    frames = []
+
+    staged = []
     year_stats = {}
     failed_years = []
-    
+
     for year, filename in file_list:
         zip_path = download_file(filename)
         if zip_path is None:
             log.warning(f"  {filename}: download failed, skipping")
             failed_years.append(year)
             continue
-        
+
         df = read_csv_from_zip(zip_path)
         if df is None:
             log.warning(f"  {filename}: CSV read failed, skipping")
             failed_years.append(year)
             continue
-        
-        # Apply harmonization
+
         try:
             df = harmonizer(df, year)
         except Exception as e:
             log.warning(f"  {filename}: harmonization error: {e}")
             failed_years.append(year)
             continue
-        
+
+        # Avoid INT32 overflow surprises when DuckDB infers types from pandas.
+        for col in df.columns:
+            if df[col].dtype == 'int64' and df[col].abs().max() > 2**31:
+                df[col] = df[col].astype('float64')
+
         row_count = len(df)
         col_count = len(df.columns)
         log.info(f"  {filename}: {row_count:,} rows × {col_count} cols")
         year_stats[year] = {'rows': row_count, 'cols': col_count}
-        frames.append(df)
-    
-    if not frames:
+
+        stage = f"_stage_{survey}_{year}"
+        con.execute(f'DROP TABLE IF EXISTS "{stage}"')
+        con.register('_temp_df', df)
+        con.execute(f'CREATE TABLE "{stage}" AS SELECT * FROM _temp_df')
+        con.unregister('_temp_df')
+        del df
+        staged.append(stage)
+
+    if not staged:
         log.warning(f"  No data loaded for {survey}")
         return {'years_loaded': 0, 'total_rows': 0, 'failed_years': failed_years}
-    
-    # Unify schemas across years
-    frames = unify_schemas(frames)
-    
-    # Concatenate
-    combined = pd.concat(frames, ignore_index=True)
-    log.info(f"  Combined: {len(combined):,} rows × {len(combined.columns)} cols")
-    
-    # Ensure numeric columns use float64 to avoid INT overflow
-    for col in combined.columns:
-        if combined[col].dtype == 'int64':
-            # Check for large values that might overflow INT32
-            if combined[col].abs().max() > 2**31:
-                combined[col] = combined[col].astype('float64')
-        # Convert remaining object columns that look numeric
-        if combined[col].dtype == object:
-            try:
-                converted = pd.to_numeric(combined[col], errors='coerce')
-                non_null_orig = combined[col].notna().sum()
-                non_null_conv = converted.notna().sum()
-                if non_null_orig > 0 and non_null_conv / max(non_null_orig, 1) > 0.7:
-                    combined[col] = converted
-            except:
-                pass
-    
-    # Log column inventory
-    col_types = combined.dtypes.value_counts()
-    log.info(f"  Column types: {dict(col_types)}")
-    
-    # Load into DuckDB
+
+    # Combine years; UNION ALL BY NAME aligns differing column sets and
+    # promotes types (INT + DOUBLE -> DOUBLE, number + text -> VARCHAR).
     table_name = survey
     con.execute(f"DROP TABLE IF EXISTS {table_name}")
-    con.register('_temp_df', combined)
-    con.execute(f"CREATE TABLE {table_name} AS SELECT * FROM _temp_df")
-    con.unregister('_temp_df')
-    
+    union_sql = " UNION ALL BY NAME ".join(f'SELECT * FROM "{st}"' for st in staged)
+    con.execute(f"CREATE TABLE {table_name} AS {union_sql}")
+    for st in staged:
+        con.execute(f'DROP TABLE "{st}"')
+
+    # Mirror the old heuristic: a text column whose values are >70% numeric
+    # becomes DOUBLE. Done in DuckDB on the combined table, so the decision is
+    # made over all years exactly as before.
+    varchar_cols = [
+        r[0] for r in con.execute(
+            "SELECT column_name FROM information_schema.columns "
+            "WHERE table_name = ? AND data_type = 'VARCHAR'", [table_name]
+        ).fetchall()
+    ]
+    for col in varchar_cols:
+        try:
+            non_null, numeric = con.execute(
+                f'SELECT COUNT("{col}"), COUNT(TRY_CAST("{col}" AS DOUBLE)) FROM {table_name}'
+            ).fetchone()
+            if non_null > 0 and numeric / non_null > 0.7:
+                con.execute(
+                    f'ALTER TABLE {table_name} ALTER COLUMN "{col}" '
+                    f'SET DATA TYPE DOUBLE USING TRY_CAST("{col}" AS DOUBLE)'
+                )
+        except Exception as e:
+            log.warning(f"  {table_name}.{col}: numeric conversion skipped: {e}")
+
+    col_types = con.execute(
+        "SELECT data_type, COUNT(*) FROM information_schema.columns "
+        "WHERE table_name = ? GROUP BY 1 ORDER BY 2 DESC", [table_name]
+    ).fetchall()
+    log.info(f"  Column types: {dict(col_types)}")
+
     final_count = con.execute(f"SELECT COUNT(*) FROM {table_name}").fetchone()[0]
-    log.info(f"  Loaded {final_count:,} rows into table '{table_name}'")
-    
+    n_cols = con.execute(
+        "SELECT COUNT(*) FROM information_schema.columns WHERE table_name = ?", [table_name]
+    ).fetchone()[0]
+    log.info(f"  Loaded {final_count:,} rows × {n_cols} cols into table '{table_name}'")
+
     return {
-        'years_loaded': len(frames),
+        'years_loaded': len(staged),
         'total_rows': final_count,
-        'columns': len(combined.columns),
+        'columns': n_cols,
         'failed_years': failed_years,
         'year_stats': year_stats,
     }
@@ -994,6 +1030,11 @@ def main():
         DB_PATH.unlink()
     
     con = duckdb.connect(str(DB_PATH))
+    # Keep DuckDB well inside the build VM; pandas holds one year at a time.
+    con.execute(f"SET memory_limit = '{os.environ.get('DATAPOND_MEMORY_LIMIT', '4GB')}'")
+    con.execute(f"SET threads = {int(os.environ.get('DATAPOND_THREADS', 2))}")
+    con.execute(f"SET temp_directory = '{DB_PATH.resolve()}.tmp'")
+    con.execute("SET preserve_insertion_order = false")
     
     manifest = build_manifest()
     

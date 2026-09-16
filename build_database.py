@@ -299,6 +299,17 @@ def coerce_unitid(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+IDENTIFIER_COLUMNS = re.compile(
+    r"(^|_)(unitid|opeid|ein|duns|fips|stfips|countycd|cbsa|csa|necta|congdist|zip|zip_code|zip4|zipcode|"
+    r"ipeds_id|cipcode|ciptitle|gentele|fax|ueis|sam)($|_)", re.I)
+
+
+def is_identifier_column(name: str) -> bool:
+    """Postal, federal and IPEDS identifier columns whose leading zeros must survive: an
+    explicit type contract that both the pandas cleaning and the DuckDB typing step honour."""
+    return bool(IDENTIFIER_COLUMNS.search(str(name)))
+
+
 def clean_numeric_columns(df: pd.DataFrame, exclude_cols=None) -> pd.DataFrame:
     """
     Convert columns that should be numeric but contain IPEDS special values.
@@ -315,7 +326,7 @@ def clean_numeric_columns(df: pd.DataFrame, exclude_cols=None) -> pd.DataFrame:
                     'closedat', 'cyactive', 'ialias'])
     
     for col in df.columns:
-        if col in exclude:
+        if col in exclude or is_identifier_column(col):
             continue
         if df[col].dtype == object:
             # Check if this looks numeric
@@ -877,6 +888,8 @@ def process_survey(con: duckdb.DuckDBPyConnection, survey: str,
         ).fetchall()
     ]
     for col in varchar_cols:
+        if is_identifier_column(col):
+            continue  # ZIP/OPEID/EIN/FIPS-style codes keep their leading zeros as text
         try:
             non_null, numeric = con.execute(
                 f'SELECT COUNT("{col}"), COUNT(TRY_CAST("{col}" AS DOUBLE)) FROM {table_name}'
@@ -1019,6 +1032,43 @@ def create_metadata(con: duckdb.DuckDBPyConnection, survey_stats: dict):
     con.unregister('_meta')
 
 
+def create_columns_table(con: duckdb.DuckDBPyConnection, batch: int = 64):
+    """Build the per-column `_columns` dictionary (table_name, column_name, data_type,
+    source_file, example_value, join_hint, null_pct) the datapond clients read. Column
+    statistics are computed in batches so wide tables stay within the memory limit."""
+    con.execute("DROP TABLE IF EXISTS _columns")
+    con.execute("CREATE TABLE _columns (table_name VARCHAR, column_name VARCHAR, data_type VARCHAR, "
+                "source_file VARCHAR, example_value VARCHAR, join_hint VARCHAR, null_pct DOUBLE)")
+    hints = {'unitid': 'IPEDS institution id; joins every table', 'year': 'Survey year; joins every table'}
+    tables = [r[0] for r in con.execute(
+        "SELECT table_name FROM information_schema.tables WHERE table_schema = 'main' "
+        "AND table_type = 'BASE TABLE' AND table_name NOT LIKE '\\_%' ESCAPE '\\' ORDER BY 1").fetchall()]
+    n = 0
+    for t in tables:
+        cols = con.execute("SELECT column_name, data_type FROM information_schema.columns "
+                           "WHERE table_schema = 'main' AND table_name = ? ORDER BY ordinal_position", [t]).fetchall()
+        stats = []
+        total = 0
+        for k in range(0, len(cols), batch):
+            aggs = ["COUNT(*)"]
+            for c, _ in cols[k:k + batch]:
+                q = '"' + c.replace('"', '""') + '"'
+                aggs.append(f"COUNT(*) FILTER (WHERE {q} IS NULL)")
+                aggs.append(f"MIN(CAST({q} AS VARCHAR)) FILTER (WHERE {q} IS NOT NULL)")
+            part = con.execute(f'SELECT {", ".join(aggs)} FROM "{t}"').fetchone()
+            total = part[0]
+            stats.extend(part[1:])
+        for i, (c, dt) in enumerate(cols):
+            nulls, example = stats[2 * i], stats[2 * i + 1]
+            if example is not None and len(example) > 80:
+                example = example[:77] + '...'
+            con.execute("INSERT INTO _columns VALUES (?, ?, ?, ?, ?, ?, ?)",
+                        [t, c, dt, None, example, hints.get(c), round(100.0 * nulls / total, 1) if total else None])
+            n += 1
+    log.info(f"  _columns: {n} columns across {len(tables)} tables")
+    return n
+
+
 def main():
     if '--help' in sys.argv or '-h' in sys.argv:
         print(__doc__)
@@ -1039,8 +1089,10 @@ def main():
     manifest = build_manifest()
     
     # Allow filtering to specific surveys via command line
-    if len(sys.argv) > 1:
-        selected = set(sys.argv[1:])
+    argv = [a for a in sys.argv[1:] if not a.startswith('--')]
+    allow_missing = '--allow-missing-years' in sys.argv
+    if argv:
+        selected = set(argv)
         manifest = {k: v for k, v in manifest.items() if k in selected}
     
     survey_stats = {}
@@ -1050,11 +1102,22 @@ def main():
         stats = process_survey(con, survey, file_list, harmonizer)
         survey_stats[survey] = stats
     
+    # Every survey/year in the manifest is a required input: a download, read or
+    # harmonization failure is a failed build, not a warning (--allow-missing-years to
+    # accept a known NCES non-release and document it in the README).
+    missing = {k: v['failed_years'] for k, v in survey_stats.items() if v.get('failed_years')}
+    if missing and not allow_missing:
+        con.close()
+        log.error(f"Required survey years failed to load: {missing}")
+        log.error("Fix the source or rerun with --allow-missing-years to accept the gap.")
+        sys.exit(1)
+    
     # Create analytical views
     create_views(con)
     
-    # Create metadata
+    # Create metadata (+ the _columns dictionary the datapond clients read)
     create_metadata(con, survey_stats)
+    create_columns_table(con)
     
     # Summary
     log.info(f"\n{'='*60}")

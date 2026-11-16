@@ -1,0 +1,8 @@
+{
+  "repository": "Nason/ipeds-database",
+  "commit": "ff0d8df3742249f33dfab5eb4fff91ad56c2e785",
+  "url": "https://huggingface.co/datasets/Nason/ipeds-database/resolve/ff0d8df3742249f33dfab5eb4fff91ad56c2e785/ipeds.duckdb",
+  "sha256": "8df0b1a06af63f5724a3e883930f39ac1a80ac871f5d852b9eee75433388f429",
+  "bytes": 1360801792,
+  "verification": "The repository tree at this commit identifies this exact SHA-256 as the database LFS object ID."
+}

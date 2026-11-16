@@ -1,0 +1,205 @@
+{
+  "result": "Full replay completed successfully from the pinned baseline and included source data in a fresh directory. All replay commands ran. No additional NCES source downloads were used.",
+  "python": "3.12.14",
+  "dependencies": {
+    "certifi": "2026.10.23",
+    "charset-normalizer": "3.5.2",
+    "duckdb": "1.5.5",
+    "idna": "3.20",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "python-dateutil": "4.0.0",
+    "requests": "2.34.2",
+    "tzdata": "2026.6",
+    "urllib3": "2.8.0"
+  },
+  "source_partitions_checked": 60,
+  "source_partitions_corrected": 30,
+  "source_partitions_not_checked": 436,
+  "total_source_tables": 25,
+  "total_source_rows": 27889050,
+  "table_comparisons": [
+    {
+      "table": "adm",
+      "rows": 22528,
+      "columns": 110,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "al",
+      "rows": 43076,
+      "columns": 71,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "c_a",
+      "rows": 6895517,
+      "columns": 144,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "cost1",
+      "rows": 5867,
+      "columns": 419,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "cost2",
+      "rows": 5406,
+      "columns": 540,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "eap",
+      "rows": 9000152,
+      "columns": 40,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "ef_a",
+      "rows": 2944376,
+      "columns": 156,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "ef_b",
+      "rows": 3365440,
+      "columns": 24,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "ef_c",
+      "rows": 1426773,
+      "columns": 8,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "ef_d",
+      "rows": 151360,
+      "columns": 47,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "effy",
+      "rows": 954957,
+      "columns": 151,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "efia",
+      "rows": 160588,
+      "columns": 19,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "f1a",
+      "rows": 44245,
+      "columns": 522,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "f2",
+      "rows": 44704,
+      "columns": 478,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "f3",
+      "rows": 61533,
+      "columns": 329,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "flags",
+      "rows": 153757,
+      "columns": 193,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "gr",
+      "rows": 1251943,
+      "columns": 145,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "gr200",
+      "rows": 93086,
+      "columns": 54,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "hd",
+      "rows": 168427,
+      "columns": 208,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "ic",
+      "rows": 180346,
+      "columns": 250,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "ic_ay",
+      "rows": 90151,
+      "columns": 294,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "ic_py",
+      "rows": 61317,
+      "columns": 134,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "om",
+      "rows": 415198,
+      "columns": 68,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "sal_is",
+      "rows": 209800,
+      "columns": 123,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    },
+    {
+      "table": "sfa",
+      "rows": 138503,
+      "columns": 712,
+      "schema_match": true,
+      "full_row_hash_aggregate_match": true
+    }
+  ],
+  "metadata_full_row_comparisons": "Both _metadata and _columns matched exactly by EXCEPT ALL in both directions.",
+  "views": "Definitions matched exactly, and all replayed views were queried successfully.",
+  "release_sha256": "ab6fcd229dfc03d1e1a5b5259afe99cd115fce887aeca7e53737b50e0c2b09df",
+  "replay_sha256": "66d53530ca6ee2df3127828f9227d8346c06e48b95c64292fa02b3dc95f50fcb",
+  "physical_file_note": "Database file hashes differ because physical storage layout differs. Table counts, complete schemas, full-row hash aggregates, metadata and views match. Each replayed corrected partition also passed its source comparison during the build.",
+  "release_bytes_unchanged": true,
+  "gr_diagnostic": "Raw labels were counted before harmonization: 10,810 in the original and 10,807 in the revised GR 2023 CSV. Both loss stages are reported separately."
+}

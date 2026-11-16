@@ -1,0 +1,8 @@
+{
+  "url": "https://nces.ed.gov/ipeds/complete-data-files/COST2_2024.zip",
+  "downloaded_at": "2026-11-09T17:15:28.904397+00:00",
+  "archive_sha256": "80afe6a141d69f04be191b4048ab6085b50658734943c8e2961d600f51d9b4eb",
+  "member": "cost2_2024.csv",
+  "etag": "\"1dc6ab99d15cb31\"",
+  "last_modified": "Thu, 11 Dec 2025 16:17:15 GMT"
+}

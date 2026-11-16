@@ -1,0 +1,98 @@
+{
+  "hd": {
+    "archive_sha256": "b03acd261382fc92fe793aecac084820eec7a0e543dc9541c271b55d712331d3",
+    "hosted_rows": 6072,
+    "comparisons": {
+      "hd2024.csv": {
+        "sha256": "fc19d5f6e1d3d4de2b54db4965b18373358b08069c79c3b3942891662a709874",
+        "rows": 6072,
+        "different_source_rows": 0,
+        "different_hosted_rows": 0
+      }
+    }
+  },
+  "ic": {
+    "archive_sha256": "6dffa230ee9d58322b33d694e28ef640200987e91a675109597c04cc3b1cd2e0",
+    "hosted_rows": 5963,
+    "comparisons": {
+      "ic2024.csv": {
+        "sha256": "6fce060ce931378adfd8ed1d88f12856e45d9b60401a4140785741226a20bce4",
+        "rows": 5963,
+        "different_source_rows": 0,
+        "different_hosted_rows": 0
+      },
+      "ic2024_rv.csv": {
+        "sha256": "b6487f4b3910a66eb1c47ce6acc7e90554827286725c620365537edcbea87279",
+        "rows": 5963,
+        "different_source_rows": 8,
+        "different_hosted_rows": 8
+      }
+    }
+  },
+  "efia": {
+    "archive_sha256": "5f884b46370075e6594969385b7f63af32e61acd56b11bb2e89f46ebf35e24dc",
+    "hosted_rows": 5861,
+    "comparisons": {
+      "efia2024.csv": {
+        "sha256": "86d12fa8f307f32e12cb5f04025cc89e60bdcb6cf46f53b27b74f0b6e566981d",
+        "rows": 5861,
+        "different_source_rows": 0,
+        "different_hosted_rows": 0
+      },
+      "efia2024_rv.csv": {
+        "sha256": "eac8d780bcf11d074836afb9a01209bcd090aceacd2bf6b508e286b39c4a0d31",
+        "rows": 5861,
+        "different_source_rows": 67,
+        "different_hosted_rows": 67
+      }
+    }
+  },
+  "effy": {
+    "archive_sha256": "f1ae6c99f2a50cd77d03b6b6b36b32466da890fc9617969c41a7aea8402a0f95",
+    "hosted_rows": 115026,
+    "comparisons": {
+      "effy2024.csv": {
+        "sha256": "8bb788ad622aad8ceec02f353601b18ded814dca1d12176da2255f5bc5e95402",
+        "rows": 115026,
+        "different_source_rows": 0,
+        "different_hosted_rows": 0
+      },
+      "effy2024_rv.csv": {
+        "sha256": "eaeb752e3b41eeb591ada4d20519908210786e6dd06f53d65b3aca36ca848754",
+        "rows": 115037,
+        "different_source_rows": 1117,
+        "different_hosted_rows": 1106
+      }
+    }
+  },
+  "c_a": {
+    "archive_sha256": "2a18c4f335630fdfc6c53c2290b69b096e32ef314c211d3b980aa8dedb8b78a0",
+    "hosted_rows": 307707,
+    "comparisons": {
+      "c2024_a.csv": {
+        "sha256": "ddafe74ddbe1a7f4a20efa3f942e7b352a6164a59520f239ecbe38480bd67d74",
+        "rows": 307707,
+        "different_source_rows": 0,
+        "different_hosted_rows": 0
+      },
+      "c2024_a_rv.csv": {
+        "sha256": "3aecc23bee6472b9984c8af92035654d279816a3226e005f0baebccad9b118b7",
+        "rows": 307825,
+        "different_source_rows": 986,
+        "different_hosted_rows": 868
+      }
+    }
+  },
+  "flags": {
+    "archive_sha256": "d208a29e446e3a858cd8af70982b940578cbfe32a511533a4d22c2d1e0adae1e",
+    "hosted_rows": 6072,
+    "comparisons": {
+      "flags2024.csv": {
+        "sha256": "0ce539e6f4d8697e3662c6721b5c533fd26f15d70d00235aee4bdc246e8960f9",
+        "rows": 6072,
+        "different_source_rows": 0,
+        "different_hosted_rows": 0
+      }
+    }
+  }
+}

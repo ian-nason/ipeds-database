@@ -1,0 +1,1055 @@
+{
+  "scope": "This release checks 60 of the 496 table/year source partitions in the baseline and updates 30 partitions to final or revised data. The remaining 436 partitions and all other unchanged data are preserved. This is a limited revision update, not a complete historical refresh.",
+  "source_total_rows": 27877777,
+  "changes": {
+    "adm": [
+      2022,
+      2023
+    ],
+    "al": [
+      2023
+    ],
+    "c_a": [
+      2023,
+      2024
+    ],
+    "eap": [
+      2023
+    ],
+    "ef_a": [
+      2022,
+      2023
+    ],
+    "ef_b": [
+      2022,
+      2023
+    ],
+    "ef_c": [
+      2022,
+      2023
+    ],
+    "ef_d": [
+      2023
+    ],
+    "effy": [
+      2022,
+      2023,
+      2024
+    ],
+    "efia": [
+      2022,
+      2023,
+      2024
+    ],
+    "f1a": [
+      2023
+    ],
+    "f2": [
+      2023
+    ],
+    "f3": [
+      2023
+    ],
+    "gr": [
+      2023
+    ],
+    "gr200": [
+      2023
+    ],
+    "ic": [
+      2022,
+      2023,
+      2024
+    ],
+    "om": [
+      2023
+    ],
+    "sal_is": [
+      2023
+    ],
+    "sfa": [
+      2023
+    ]
+  },
+  "results": [
+    {
+      "table": "adm",
+      "year": 2022,
+      "stem": "ADM2022",
+      "revised": {
+        "member": "adm2022_rv.csv",
+        "sha256": "1a1f5cb999fcdcf617d51ee46af45e30aecf100a1fc600e1a36cb642c1d05ccf",
+        "rows": 1991,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        100,
+        100
+      ],
+      "provisional": {
+        "member": "adm2022.csv",
+        "sha256": "70420a9903ebb6db9ca761d38d62d69523dcb2becbaa1c763eb55e54e338b3e3",
+        "rows": 1991,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "adm",
+      "year": 2023,
+      "stem": "ADM2023",
+      "revised": {
+        "member": "adm2023_RV.csv",
+        "sha256": "cb5dbd65cea18705ff971796a585b1ec722cefda1d88318059957bd2cc50c11b",
+        "rows": 1973,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        48,
+        47
+      ],
+      "provisional": {
+        "member": "adm2023.csv",
+        "sha256": "24aa329b8717d0f27baede42010bb29013f70e7c96a1d8fc05b92c51a8666335",
+        "rows": 1972,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "adm",
+      "year": 2024,
+      "stem": "ADM2024",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "al",
+      "year": 2023,
+      "stem": "AL2023",
+      "revised": {
+        "member": "al2023_rv.csv",
+        "sha256": "a095b51d794da111b2bceb58abf329fb4369c98c5b909ec8a870e6bad8ff8d33",
+        "rows": 3696,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        99,
+        98
+      ],
+      "provisional": {
+        "member": "al2023.csv",
+        "sha256": "2438eec05ca7affcf7e98be240f7d3de82f193d58a45967b27ccd33579389534",
+        "rows": 3695,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "al",
+      "year": 2024,
+      "stem": "AL2024",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "c_a",
+      "year": 2023,
+      "stem": "C2023_A",
+      "revised": {
+        "member": "c2023_a_RV.csv",
+        "sha256": "e1f00b14bce93e8c3edd11aa241a716b9e529617f0ea0555abaff0e517ac094e",
+        "rows": 303460,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        1366,
+        1198
+      ],
+      "provisional": {
+        "member": "c2023_a.csv",
+        "sha256": "0fcdf4f03fb061da3bf68eceb6b633edfa69c3f8d52bea97902ad6d59d3867bf",
+        "rows": 303292,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "c_a",
+      "year": 2024,
+      "stem": "C2024_A",
+      "revised": {
+        "member": "c2024_a_rv.csv",
+        "sha256": "3aecc23bee6472b9984c8af92035654d279816a3226e005f0baebccad9b118b7",
+        "rows": 307825,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        986,
+        868
+      ],
+      "provisional": {
+        "member": "c2024_a.csv",
+        "sha256": "ddafe74ddbe1a7f4a20efa3f942e7b352a6164a59520f239ecbe38480bd67d74",
+        "rows": 307707,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "c_a",
+      "year": 2025,
+      "stem": "C2025_A",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "eap",
+      "year": 2023,
+      "stem": "EAP2023",
+      "revised": {
+        "member": "eap2023_rv.csv",
+        "sha256": "e34ed8e5d06549a367897bae26dd8533e54ffc849dc87986e0cde6e9c5379f83",
+        "rows": 288505,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        3414,
+        3101
+      ],
+      "provisional": {
+        "member": "eap2023.csv",
+        "sha256": "868a1c31ac9da1f5d1436e072c50b26cef7b719fe1572897497247d02520ee63",
+        "rows": 288192,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "eap",
+      "year": 2024,
+      "stem": "EAP2024",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "ef_a",
+      "year": 2022,
+      "stem": "EF2022A",
+      "revised": {
+        "member": "ef2022a_rv.csv",
+        "sha256": "70ec1ccca150f63bda384674a9dee5641e75e26ebf90eead6241fdb5d2f36579",
+        "rows": 116155,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        5252,
+        5207
+      ],
+      "provisional": {
+        "member": "ef2022a.csv",
+        "sha256": "35c74d0bbe223bbecb05a44fe09e250f1ec9d6230765d681d5168d684ed7f5ca",
+        "rows": 116110,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "ef_a",
+      "year": 2023,
+      "stem": "EF2023A",
+      "revised": {
+        "member": "ef2023a_rv.csv",
+        "sha256": "0a0742c9ddc7b81a12f7a99959388a6c496391fbb72c53dbf9cebfb67d7ffa5d",
+        "rows": 115190,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        3550,
+        3516
+      ],
+      "provisional": {
+        "member": "ef2023a.csv",
+        "sha256": "2b0b3864bdf750aeab740c86694b3686c72e1c15c55f981842fb1e401e3b204d",
+        "rows": 115156,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "ef_a",
+      "year": 2024,
+      "stem": "EF2024A",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "ef_b",
+      "year": 2022,
+      "stem": "EF2022B",
+      "revised": {
+        "member": "ef2022b_rv.csv",
+        "sha256": "4afc985d380f43c02a575a292876992e83a3c32695225e6a809638a687b50084",
+        "rows": 78105,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        2292,
+        2183
+      ],
+      "provisional": {
+        "member": "ef2022b.csv",
+        "sha256": "fa4d5319312e5c39f62c3b93401b19eaad663e9d1bcb5c3fa9cf73c61b69e118",
+        "rows": 77996,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "ef_b",
+      "year": 2023,
+      "stem": "EF2023B",
+      "revised": {
+        "member": "ef2023b_rv.csv",
+        "sha256": "6e97979c538896282e1914bda9b57e0a90f57aa987150151d910473c8a4f7da8",
+        "rows": 158922,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        3007,
+        3002
+      ],
+      "provisional": {
+        "member": "ef2023b.csv",
+        "sha256": "8129d1476df5ff8b4ed7684a077a7c4f002e3f3811de23b29006f85ef0a986c1",
+        "rows": 158917,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "ef_b",
+      "year": 2024,
+      "stem": "EF2024B",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "ef_c",
+      "year": 2022,
+      "stem": "EF2022C",
+      "revised": {
+        "member": "ef2022c_rv.csv",
+        "sha256": "956b29b4ae066970a892aea9f8ee61d4613f9686d347c22c4b0143b5f5c7e465",
+        "rows": 71359,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        1503,
+        1538
+      ],
+      "provisional": {
+        "member": "ef2022c.csv",
+        "sha256": "91a5e99dea81b6f7ee08c4865d89de1e090bfcc3723a4d4347e3377844bdb97a",
+        "rows": 71394,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "ef_c",
+      "year": 2023,
+      "stem": "EF2023C",
+      "revised": {
+        "member": "ef2023c_rv.csv",
+        "sha256": "2b08864b878bdbc35e7c96f6cec50d971d0f493e442458309094fd7863f6c6ed",
+        "rows": 40345,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        258,
+        308
+      ],
+      "provisional": {
+        "member": "ef2023c.csv",
+        "sha256": "7d6cb0d03f2aede522c0dd091a032697f58eed7fe1ec59774820c6d5a245c526",
+        "rows": 40395,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "ef_c",
+      "year": 2024,
+      "stem": "EF2024C",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "ef_d",
+      "year": 2023,
+      "stem": "EF2023D",
+      "revised": {
+        "member": "ef2023d_rv.csv",
+        "sha256": "caaa366f858c3464ad24b90dbfa7cc83c7c79a4be3f60df1334578d390fb1807",
+        "rows": 5646,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        190,
+        190
+      ],
+      "provisional": {
+        "member": "ef2023d.csv",
+        "sha256": "bc55730d4f808be381474e91110c767c17b48aacd64da4b8b3cf026286766ce2",
+        "rows": 5646,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "ef_d",
+      "year": 2024,
+      "stem": "EF2024D",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "effy",
+      "year": 2022,
+      "stem": "EFFY2022",
+      "revised": {
+        "member": "effy2022_rv.csv",
+        "sha256": "39c7178001eeedfbb4257591a8e08747b529146bd210fdea6d6ea528ae1078f2",
+        "rows": 117543,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        1587,
+        1565
+      ],
+      "provisional": {
+        "member": "effy2022.csv",
+        "sha256": "0fb7460025a3eef0352482fdd84fca1e94f4ca71efebfc01c3685a2610d2d787",
+        "rows": 117521,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "effy",
+      "year": 2023,
+      "stem": "EFFY2023",
+      "revised": {
+        "member": "effy2023_RV.csv",
+        "sha256": "5237fc9e8ca09185ecf8fd411419304464deb0132ca794a5083d5654a6e01ffa",
+        "rows": 116437,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        1038,
+        1032
+      ],
+      "provisional": {
+        "member": "effy2023.csv",
+        "sha256": "0b2eeb47de9e229b91aee1c808005f8bcf57cf2b49f75104713b40a9273c4324",
+        "rows": 116431,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "effy",
+      "year": 2024,
+      "stem": "EFFY2024",
+      "revised": {
+        "member": "effy2024_rv.csv",
+        "sha256": "eaeb752e3b41eeb591ada4d20519908210786e6dd06f53d65b3aca36ca848754",
+        "rows": 115037,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        1117,
+        1106
+      ],
+      "provisional": {
+        "member": "effy2024.csv",
+        "sha256": "8bb788ad622aad8ceec02f353601b18ded814dca1d12176da2255f5bc5e95402",
+        "rows": 115026,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "effy",
+      "year": 2025,
+      "stem": "EFFY2025",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "efia",
+      "year": 2022,
+      "stem": "EFIA2022",
+      "revised": {
+        "member": "efia2022_rv.csv",
+        "sha256": "05bd2dff06648dfd63224dc27fd207b6c9f3f11abad04abf2a3c2f6d59fb7a71",
+        "rows": 6036,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        88,
+        88
+      ],
+      "provisional": {
+        "member": "efia2022.csv",
+        "sha256": "315b930a8f413368ddd9b692b4a3dbdf45fb4a637cd7e17915e686fca3689659",
+        "rows": 6036,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "efia",
+      "year": 2023,
+      "stem": "EFIA2023",
+      "revised": {
+        "member": "efia2023_RV.csv",
+        "sha256": "7956dfe63d8ff0063177ae0f56f4ad83375eb7cb73286fcff2556a8c54aaf972",
+        "rows": 5959,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        61,
+        61
+      ],
+      "provisional": {
+        "member": "efia2023.csv",
+        "sha256": "43ce78124e202d83685933f948e2accf1d02b7ab8bd042028d637569429f0d41",
+        "rows": 5959,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "efia",
+      "year": 2024,
+      "stem": "EFIA2024",
+      "revised": {
+        "member": "efia2024_rv.csv",
+        "sha256": "eac8d780bcf11d074836afb9a01209bcd090aceacd2bf6b508e286b39c4a0d31",
+        "rows": 5861,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        67,
+        67
+      ],
+      "provisional": {
+        "member": "efia2024.csv",
+        "sha256": "86d12fa8f307f32e12cb5f04025cc89e60bdcb6cf46f53b27b74f0b6e566981d",
+        "rows": 5861,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "efia",
+      "year": 2025,
+      "stem": "EFIA2025",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "f1a",
+      "year": 2023,
+      "stem": "F2223_F1A",
+      "revised": {
+        "member": "f2223_f1a_rv.csv",
+        "sha256": "08b28ad7dd40907b14ad48ff82e8b4c2b57de8af7d1e402259176e7c2309a240",
+        "rows": 1916,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        113,
+        113
+      ],
+      "provisional": {
+        "member": "f2223_f1a.csv",
+        "sha256": "8d2c21e9142c4c821933fca587104e191776aefa4df532272ac705bf56464f11",
+        "rows": 1916,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "f1a",
+      "year": 2024,
+      "stem": "F2324_F1A",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "f2",
+      "year": 2023,
+      "stem": "F2223_F2",
+      "revised": {
+        "member": "f2223_f2_rv.csv",
+        "sha256": "9cfc6a0fe1473547f338cc160442020d45ddba69875c0a589f2a4938ff771bf7",
+        "rows": 1766,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        79,
+        79
+      ],
+      "provisional": {
+        "member": "f2223_f2.csv",
+        "sha256": "fb9581b27980a31089aae77caa6e922c011added59fce375f6ccb92fc4f9ba87",
+        "rows": 1766,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "f2",
+      "year": 2024,
+      "stem": "F2324_F2",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "f3",
+      "year": 2023,
+      "stem": "F2223_F3",
+      "revised": {
+        "member": "f2223_f3_rv.csv",
+        "sha256": "0ab3080135533d8f36e5ac0512855f8273b418a10c132ecd7b507a360ad50a82",
+        "rows": 2090,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        15,
+        15
+      ],
+      "provisional": {
+        "member": "f2223_f3.csv",
+        "sha256": "c3adec5cd7a40e05a4cef76ff5ae50b1ee4bdd59feebc785a6b787f9daa69e53",
+        "rows": 2090,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "f3",
+      "year": 2024,
+      "stem": "F2324_F3",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "flags",
+      "year": 2023,
+      "stem": "FLAGS2023",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "flags",
+      "year": 2024,
+      "stem": "FLAGS2024",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "flags",
+      "year": 2025,
+      "stem": "FLAGS2025",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "gr",
+      "year": 2023,
+      "stem": "GR2023",
+      "revised": {
+        "member": "gr2023_RV.csv",
+        "sha256": "b100a214c099961dab6d54632b838f63612692693ef9b1da5de3891e07fe4b68",
+        "rows": 51391,
+        "coercion_losses": {
+          "line": 10807
+        }
+      },
+      "revision_diff": [
+        642,
+        619
+      ],
+      "provisional": {
+        "member": "gr2023.csv",
+        "sha256": "75f4116ceb22b4e912316fee32c03be8e73b1624309930a80cc87623189e1405",
+        "rows": 51368,
+        "coercion_losses": {
+          "line": 10810
+        }
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "known_preexisting_limitation": "Safe to apply final revisions within unchanged existing lossy schema after review. Exactly the same four nonnumeric line-label categories are already lost in baseline; final file changes their counts, not the unsupported categories. No new label class introduced. Preserving the true labels requires a separately reviewed schema repair to VARCHAR; this partition does not make that change.",
+      "status": "corrected"
+    },
+    {
+      "table": "gr",
+      "year": 2024,
+      "stem": "GR2024",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "gr200",
+      "year": 2023,
+      "stem": "GR200_23",
+      "revised": {
+        "member": "gr200_23_RV.csv",
+        "sha256": "752338c3b8e61e6f838784c5d85f52e203db0a0c9bb2bb2a883ebedbda2c581b",
+        "rows": 4954,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        12,
+        12
+      ],
+      "provisional": {
+        "member": "gr200_23.csv",
+        "sha256": "1ada204bccead76307f1e5403ac6fe5f3eee975af12b9e30c1af85eb447a8139",
+        "rows": 4954,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "gr200",
+      "year": 2024,
+      "stem": "GR200_24",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "hd",
+      "year": 2022,
+      "stem": "HD2022",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "hd",
+      "year": 2023,
+      "stem": "HD2023",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "hd",
+      "year": 2024,
+      "stem": "HD2024",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "hd",
+      "year": 2025,
+      "stem": "HD2025",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "ic",
+      "year": 2022,
+      "stem": "IC2022",
+      "revised": {
+        "member": "ic2022_rv.csv",
+        "sha256": "0665180ac5f83efcbcb1ea6712e9684fffa368ff5b79cfc495fa42844e306352",
+        "rows": 6138,
+        "coercion_losses": {
+          "applfeeu": 362
+        }
+      },
+      "revision_diff": [
+        56,
+        56
+      ],
+      "provisional": {
+        "member": "ic2022.csv",
+        "sha256": "3f3ec4843a1ae57f12989996caed703719699407af3f379a6b73b3ac9e1f889b",
+        "rows": 6138,
+        "coercion_losses": {
+          "applfeeu": 362
+        }
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "ic",
+      "year": 2023,
+      "stem": "IC2023",
+      "revised": {
+        "member": "ic2023_rv.csv",
+        "sha256": "5a14b302a346456321f7e1e4250c49adc23d18147fdf4ca306fcf5dcf8aa26b3",
+        "rows": 6049,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        44,
+        44
+      ],
+      "provisional": {
+        "member": "ic2023.csv",
+        "sha256": "7682474b0a53f65f3e7d04b38f124059ee6a1ebd1a07ab6039c1c830f2d4c8a8",
+        "rows": 6049,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "ic",
+      "year": 2024,
+      "stem": "IC2024",
+      "revised": {
+        "member": "ic2024_rv.csv",
+        "sha256": "b6487f4b3910a66eb1c47ce6acc7e90554827286725c620365537edcbea87279",
+        "rows": 5963,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        8,
+        8
+      ],
+      "provisional": {
+        "member": "ic2024.csv",
+        "sha256": "6fce060ce931378adfd8ed1d88f12856e45d9b60401a4140785741226a20bce4",
+        "rows": 5963,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "ic",
+      "year": 2025,
+      "stem": "IC2025",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "ic_ay",
+      "year": 2022,
+      "stem": "IC2022_AY",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "ic_ay",
+      "year": 2023,
+      "stem": "IC2023_AY",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "ic_py",
+      "year": 2022,
+      "stem": "IC2022_PY",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "ic_py",
+      "year": 2023,
+      "stem": "IC2023_PY",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "om",
+      "year": 2023,
+      "stem": "OM2023",
+      "revised": {
+        "member": "om2023_RV.csv",
+        "sha256": "5533b32e3270551f6aea22742211d293ac1c7fc9e282ce7625d9ae9111d18b77",
+        "rows": 47362,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        466,
+        446
+      ],
+      "provisional": {
+        "member": "om2023.csv",
+        "sha256": "a86a66bc07b913fc437f33c4fd35b4c5597d55b9204ff3972564cbab36a6257b",
+        "rows": 47342,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "om",
+      "year": 2024,
+      "stem": "OM2024",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "sal_is",
+      "year": 2023,
+      "stem": "SAL2023_IS",
+      "revised": {
+        "member": "sal2023_is_rv.csv",
+        "sha256": "da396fc170725b0e8d7ddbb93a4d4bcc7595f0fb2b87b4d3aee797928a98d89b",
+        "rows": 15308,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        263,
+        255
+      ],
+      "provisional": {
+        "member": "sal2023_is.csv",
+        "sha256": "3943f9b7e1d03226f79bc9d6538bdbf42fc98dcd0445915d8366facd5ae1c893",
+        "rows": 15300,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "sal_is",
+      "year": 2024,
+      "stem": "SAL2024_IS",
+      "status": "no_revised_member"
+    },
+    {
+      "table": "sfa",
+      "year": 2023,
+      "stem": "SFA2223",
+      "revised": {
+        "member": "sfa2223_RV.csv",
+        "sha256": "9b11dfa367997bbf60059bca3508c190b7d56ca3d879947047cb137e446562ca",
+        "rows": 5653,
+        "coercion_losses": {}
+      },
+      "revision_diff": [
+        117,
+        117
+      ],
+      "provisional": {
+        "member": "sfa2223.csv",
+        "sha256": "49c806e2ace007328ebb5ae628f6b0ad82a831ce83aff5d5836a93c52da761c3",
+        "rows": 5653,
+        "coercion_losses": {}
+      },
+      "provisional_diff": [
+        0,
+        0
+      ],
+      "status": "corrected"
+    },
+    {
+      "table": "sfa",
+      "year": 2024,
+      "stem": "SFA2324",
+      "status": "no_revised_member"
+    }
+  ],
+  "blocked_count": 0,
+  "corrected_partition_count": 30,
+  "known_preexisting_limitations": [
+    "Source equality is after existing harmonization and projection, not raw CSV equality. HD close_date remains DOUBLE and loses date strings; HD is unchanged. GR line remains numeric and loses labels 29A / 12A / 18A / 11A; GR 2023 final revision changes counts but not the lost label categories."
+  ],
+  "source_partitions_total": 496,
+  "source_partitions_verified": 60,
+  "validation": "Every corrected partition exactly equals revised source under existing schema; all other source rows count/hash match original; schemas preserved; metadata counts and null percentages refreshed.",
+  "sha256": "756c6c48a7ffaf06e6534ddfff8a1f6fc1bb28aefe475f2dc3699621ba8d312b",
+  "bytes": 1413492736
+}

@@ -1,0 +1,2 @@
+The harmonization code in build_database.upstream.py comes from Paul Goldsmith-Pinkham's IPEDS database project: https://github.com/paulgp/ipeds-database . The project identifies its license as MIT. See its authoritative license: https://github.com/paulgp/ipeds-database/blob/master/LICENSE . Original project attribution is retained; no changes were made to this copied upstream file. The replay uses its harmonizers only, not its old source-year manifest.
+The complete upstream MIT license is included as LICENSE.upstream.txt.

@@ -1,0 +1,2978 @@
+[
+  {
+    "table": "adm",
+    "year": 2014,
+    "stem": "ADM2014",
+    "hosted_rows": 2236
+  },
+  {
+    "table": "adm",
+    "year": 2015,
+    "stem": "ADM2015",
+    "hosted_rows": 2210
+  },
+  {
+    "table": "adm",
+    "year": 2016,
+    "stem": "ADM2016",
+    "hosted_rows": 2068
+  },
+  {
+    "table": "adm",
+    "year": 2017,
+    "stem": "ADM2017",
+    "hosted_rows": 2075
+  },
+  {
+    "table": "adm",
+    "year": 2018,
+    "stem": "ADM2018",
+    "hosted_rows": 2038
+  },
+  {
+    "table": "adm",
+    "year": 2019,
+    "stem": "ADM2019",
+    "hosted_rows": 2011
+  },
+  {
+    "table": "adm",
+    "year": 2020,
+    "stem": "ADM2020",
+    "hosted_rows": 1989
+  },
+  {
+    "table": "adm",
+    "year": 2021,
+    "stem": "ADM2021",
+    "hosted_rows": 1981
+  },
+  {
+    "table": "adm",
+    "year": 2022,
+    "stem": "ADM2022",
+    "hosted_rows": 1991
+  },
+  {
+    "table": "adm",
+    "year": 2023,
+    "stem": "ADM2023",
+    "hosted_rows": 1972
+  },
+  {
+    "table": "adm",
+    "year": 2024,
+    "stem": "ADM2024",
+    "hosted_rows": 1956
+  },
+  {
+    "table": "al",
+    "year": 2014,
+    "stem": "AL2014",
+    "hosted_rows": 4271
+  },
+  {
+    "table": "al",
+    "year": 2015,
+    "stem": "AL2015",
+    "hosted_rows": 4266
+  },
+  {
+    "table": "al",
+    "year": 2016,
+    "stem": "AL2016",
+    "hosted_rows": 4141
+  },
+  {
+    "table": "al",
+    "year": 2017,
+    "stem": "AL2017",
+    "hosted_rows": 4074
+  },
+  {
+    "table": "al",
+    "year": 2018,
+    "stem": "AL2018",
+    "hosted_rows": 3849
+  },
+  {
+    "table": "al",
+    "year": 2019,
+    "stem": "AL2019",
+    "hosted_rows": 3834
+  },
+  {
+    "table": "al",
+    "year": 2020,
+    "stem": "AL2020",
+    "hosted_rows": 3788
+  },
+  {
+    "table": "al",
+    "year": 2021,
+    "stem": "AL2021",
+    "hosted_rows": 3764
+  },
+  {
+    "table": "al",
+    "year": 2022,
+    "stem": "AL2022",
+    "hosted_rows": 3741
+  },
+  {
+    "table": "al",
+    "year": 2023,
+    "stem": "AL2023",
+    "hosted_rows": 3695
+  },
+  {
+    "table": "al",
+    "year": 2024,
+    "stem": "AL2024",
+    "hosted_rows": 3652
+  },
+  {
+    "table": "c_a",
+    "year": 2000,
+    "stem": "C2000_A",
+    "hosted_rows": 173137
+  },
+  {
+    "table": "c_a",
+    "year": 2001,
+    "stem": "C2001_A",
+    "hosted_rows": 194569
+  },
+  {
+    "table": "c_a",
+    "year": 2002,
+    "stem": "C2002_A",
+    "hosted_rows": 200336
+  },
+  {
+    "table": "c_a",
+    "year": 2003,
+    "stem": "C2003_A",
+    "hosted_rows": 211859
+  },
+  {
+    "table": "c_a",
+    "year": 2004,
+    "stem": "C2004_A",
+    "hosted_rows": 219682
+  },
+  {
+    "table": "c_a",
+    "year": 2005,
+    "stem": "C2005_A",
+    "hosted_rows": 230135
+  },
+  {
+    "table": "c_a",
+    "year": 2006,
+    "stem": "C2006_A",
+    "hosted_rows": 238406
+  },
+  {
+    "table": "c_a",
+    "year": 2007,
+    "stem": "C2007_A",
+    "hosted_rows": 240507
+  },
+  {
+    "table": "c_a",
+    "year": 2008,
+    "stem": "C2008_A",
+    "hosted_rows": 247075
+  },
+  {
+    "table": "c_a",
+    "year": 2009,
+    "stem": "C2009_A",
+    "hosted_rows": 255884
+  },
+  {
+    "table": "c_a",
+    "year": 2010,
+    "stem": "C2010_A",
+    "hosted_rows": 265604
+  },
+  {
+    "table": "c_a",
+    "year": 2011,
+    "stem": "C2011_A",
+    "hosted_rows": 265808
+  },
+  {
+    "table": "c_a",
+    "year": 2012,
+    "stem": "C2012_A",
+    "hosted_rows": 270166
+  },
+  {
+    "table": "c_a",
+    "year": 2013,
+    "stem": "C2013_A",
+    "hosted_rows": 284907
+  },
+  {
+    "table": "c_a",
+    "year": 2014,
+    "stem": "C2014_A",
+    "hosted_rows": 293259
+  },
+  {
+    "table": "c_a",
+    "year": 2015,
+    "stem": "C2015_A",
+    "hosted_rows": 300222
+  },
+  {
+    "table": "c_a",
+    "year": 2016,
+    "stem": "C2016_A",
+    "hosted_rows": 301984
+  },
+  {
+    "table": "c_a",
+    "year": 2017,
+    "stem": "C2017_A",
+    "hosted_rows": 308943
+  },
+  {
+    "table": "c_a",
+    "year": 2018,
+    "stem": "C2018_A",
+    "hosted_rows": 290119
+  },
+  {
+    "table": "c_a",
+    "year": 2019,
+    "stem": "C2019_A",
+    "hosted_rows": 291052
+  },
+  {
+    "table": "c_a",
+    "year": 2020,
+    "stem": "C2020_A",
+    "hosted_rows": 289792
+  },
+  {
+    "table": "c_a",
+    "year": 2021,
+    "stem": "C2021_A",
+    "hosted_rows": 296343
+  },
+  {
+    "table": "c_a",
+    "year": 2022,
+    "stem": "C2022_A",
+    "hosted_rows": 300877
+  },
+  {
+    "table": "c_a",
+    "year": 2023,
+    "stem": "C2023_A",
+    "hosted_rows": 303292
+  },
+  {
+    "table": "c_a",
+    "year": 2024,
+    "stem": "C2024_A",
+    "hosted_rows": 307707
+  },
+  {
+    "table": "c_a",
+    "year": 2025,
+    "stem": "C2025_A",
+    "hosted_rows": 313566
+  },
+  {
+    "table": "eap",
+    "year": 2001,
+    "stem": "EAP2001",
+    "hosted_rows": 44747
+  },
+  {
+    "table": "eap",
+    "year": 2002,
+    "stem": "EAP2002",
+    "hosted_rows": 485227
+  },
+  {
+    "table": "eap",
+    "year": 2003,
+    "stem": "EAP2003",
+    "hosted_rows": 494252
+  },
+  {
+    "table": "eap",
+    "year": 2004,
+    "stem": "EAP2004",
+    "hosted_rows": 498970
+  },
+  {
+    "table": "eap",
+    "year": 2005,
+    "stem": "EAP2005",
+    "hosted_rows": 507292
+  },
+  {
+    "table": "eap",
+    "year": 2006,
+    "stem": "EAP2006",
+    "hosted_rows": 513723
+  },
+  {
+    "table": "eap",
+    "year": 2007,
+    "stem": "EAP2007",
+    "hosted_rows": 477042
+  },
+  {
+    "table": "eap",
+    "year": 2008,
+    "stem": "EAP2008",
+    "hosted_rows": 487198
+  },
+  {
+    "table": "eap",
+    "year": 2009,
+    "stem": "EAP2009",
+    "hosted_rows": 494113
+  },
+  {
+    "table": "eap",
+    "year": 2010,
+    "stem": "EAP2010",
+    "hosted_rows": 509176
+  },
+  {
+    "table": "eap",
+    "year": 2011,
+    "stem": "EAP2011",
+    "hosted_rows": 515283
+  },
+  {
+    "table": "eap",
+    "year": 2012,
+    "stem": "EAP2012",
+    "hosted_rows": 323362
+  },
+  {
+    "table": "eap",
+    "year": 2013,
+    "stem": "EAP2013",
+    "hosted_rows": 321510
+  },
+  {
+    "table": "eap",
+    "year": 2014,
+    "stem": "EAP2014",
+    "hosted_rows": 318189
+  },
+  {
+    "table": "eap",
+    "year": 2015,
+    "stem": "EAP2015",
+    "hosted_rows": 317243
+  },
+  {
+    "table": "eap",
+    "year": 2016,
+    "stem": "EAP2016",
+    "hosted_rows": 320286
+  },
+  {
+    "table": "eap",
+    "year": 2017,
+    "stem": "EAP2017",
+    "hosted_rows": 316248
+  },
+  {
+    "table": "eap",
+    "year": 2018,
+    "stem": "EAP2018",
+    "hosted_rows": 306226
+  },
+  {
+    "table": "eap",
+    "year": 2019,
+    "stem": "EAP2019",
+    "hosted_rows": 299579
+  },
+  {
+    "table": "eap",
+    "year": 2020,
+    "stem": "EAP2020",
+    "hosted_rows": 293460
+  },
+  {
+    "table": "eap",
+    "year": 2021,
+    "stem": "EAP2021",
+    "hosted_rows": 291327
+  },
+  {
+    "table": "eap",
+    "year": 2022,
+    "stem": "EAP2022",
+    "hosted_rows": 291935
+  },
+  {
+    "table": "eap",
+    "year": 2023,
+    "stem": "EAP2023",
+    "hosted_rows": 288192
+  },
+  {
+    "table": "eap",
+    "year": 2024,
+    "stem": "EAP2024",
+    "hosted_rows": 285259
+  },
+  {
+    "table": "ef_a",
+    "year": 2000,
+    "stem": "EF2000A",
+    "hosted_rows": 53063
+  },
+  {
+    "table": "ef_a",
+    "year": 2001,
+    "stem": "EF2001A",
+    "hosted_rows": 65786
+  },
+  {
+    "table": "ef_a",
+    "year": 2002,
+    "stem": "EF2002A",
+    "hosted_rows": 94038
+  },
+  {
+    "table": "ef_a",
+    "year": 2003,
+    "stem": "EF2003A",
+    "hosted_rows": 96107
+  },
+  {
+    "table": "ef_a",
+    "year": 2004,
+    "stem": "EF2004A",
+    "hosted_rows": 97863
+  },
+  {
+    "table": "ef_a",
+    "year": 2005,
+    "stem": "EF2005A",
+    "hosted_rows": 99856
+  },
+  {
+    "table": "ef_a",
+    "year": 2006,
+    "stem": "EF2006A",
+    "hosted_rows": 124880
+  },
+  {
+    "table": "ef_a",
+    "year": 2007,
+    "stem": "EF2007A",
+    "hosted_rows": 129649
+  },
+  {
+    "table": "ef_a",
+    "year": 2008,
+    "stem": "EF2008A",
+    "hosted_rows": 132563
+  },
+  {
+    "table": "ef_a",
+    "year": 2009,
+    "stem": "EF2009A",
+    "hosted_rows": 134318
+  },
+  {
+    "table": "ef_a",
+    "year": 2010,
+    "stem": "EF2010A",
+    "hosted_rows": 136838
+  },
+  {
+    "table": "ef_a",
+    "year": 2011,
+    "stem": "EF2011A",
+    "hosted_rows": 141348
+  },
+  {
+    "table": "ef_a",
+    "year": 2012,
+    "stem": "EF2012A",
+    "hosted_rows": 141795
+  },
+  {
+    "table": "ef_a",
+    "year": 2013,
+    "stem": "EF2013A",
+    "hosted_rows": 141315
+  },
+  {
+    "table": "ef_a",
+    "year": 2014,
+    "stem": "EF2014A",
+    "hosted_rows": 139682
+  },
+  {
+    "table": "ef_a",
+    "year": 2015,
+    "stem": "EF2015A",
+    "hosted_rows": 136955
+  },
+  {
+    "table": "ef_a",
+    "year": 2016,
+    "stem": "EF2016A",
+    "hosted_rows": 129900
+  },
+  {
+    "table": "ef_a",
+    "year": 2017,
+    "stem": "EF2017A",
+    "hosted_rows": 127757
+  },
+  {
+    "table": "ef_a",
+    "year": 2018,
+    "stem": "EF2018A",
+    "hosted_rows": 121831
+  },
+  {
+    "table": "ef_a",
+    "year": 2019,
+    "stem": "EF2019A",
+    "hosted_rows": 118890
+  },
+  {
+    "table": "ef_a",
+    "year": 2020,
+    "stem": "EF2020A",
+    "hosted_rows": 117860
+  },
+  {
+    "table": "ef_a",
+    "year": 2021,
+    "stem": "EF2021A",
+    "hosted_rows": 116904
+  },
+  {
+    "table": "ef_a",
+    "year": 2022,
+    "stem": "EF2022A",
+    "hosted_rows": 116110
+  },
+  {
+    "table": "ef_a",
+    "year": 2023,
+    "stem": "EF2023A",
+    "hosted_rows": 115156
+  },
+  {
+    "table": "ef_a",
+    "year": 2024,
+    "stem": "EF2024A",
+    "hosted_rows": 113833
+  },
+  {
+    "table": "ef_b",
+    "year": 2000,
+    "stem": "EF2000B",
+    "hosted_rows": 74605
+  },
+  {
+    "table": "ef_b",
+    "year": 2001,
+    "stem": "EF2001B",
+    "hosted_rows": 133498
+  },
+  {
+    "table": "ef_b",
+    "year": 2002,
+    "stem": "EF2002B",
+    "hosted_rows": 133264
+  },
+  {
+    "table": "ef_b",
+    "year": 2003,
+    "stem": "EF2003B",
+    "hosted_rows": 178407
+  },
+  {
+    "table": "ef_b",
+    "year": 2004,
+    "stem": "EF2004B",
+    "hosted_rows": 141495
+  },
+  {
+    "table": "ef_b",
+    "year": 2005,
+    "stem": "EF2005B",
+    "hosted_rows": 182241
+  },
+  {
+    "table": "ef_b",
+    "year": 2006,
+    "stem": "EF2006B",
+    "hosted_rows": 137854
+  },
+  {
+    "table": "ef_b",
+    "year": 2007,
+    "stem": "EF2007B",
+    "hosted_rows": 184759
+  },
+  {
+    "table": "ef_b",
+    "year": 2008,
+    "stem": "EF2008B",
+    "hosted_rows": 93295
+  },
+  {
+    "table": "ef_b",
+    "year": 2009,
+    "stem": "EF2009B",
+    "hosted_rows": 186186
+  },
+  {
+    "table": "ef_b",
+    "year": 2010,
+    "stem": "EF2010B",
+    "hosted_rows": 89997
+  },
+  {
+    "table": "ef_b",
+    "year": 2011,
+    "stem": "EF2011B",
+    "hosted_rows": 197871
+  },
+  {
+    "table": "ef_b",
+    "year": 2012,
+    "stem": "EF2012B",
+    "hosted_rows": 95793
+  },
+  {
+    "table": "ef_b",
+    "year": 2013,
+    "stem": "EF2013B",
+    "hosted_rows": 196761
+  },
+  {
+    "table": "ef_b",
+    "year": 2014,
+    "stem": "EF2014B",
+    "hosted_rows": 88845
+  },
+  {
+    "table": "ef_b",
+    "year": 2015,
+    "stem": "EF2015B",
+    "hosted_rows": 190200
+  },
+  {
+    "table": "ef_b",
+    "year": 2016,
+    "stem": "EF2016B",
+    "hosted_rows": 85129
+  },
+  {
+    "table": "ef_b",
+    "year": 2017,
+    "stem": "EF2017B",
+    "hosted_rows": 176749
+  },
+  {
+    "table": "ef_b",
+    "year": 2018,
+    "stem": "EF2018B",
+    "hosted_rows": 81362
+  },
+  {
+    "table": "ef_b",
+    "year": 2019,
+    "stem": "EF2019B",
+    "hosted_rows": 164712
+  },
+  {
+    "table": "ef_b",
+    "year": 2020,
+    "stem": "EF2020B",
+    "hosted_rows": 77882
+  },
+  {
+    "table": "ef_b",
+    "year": 2021,
+    "stem": "EF2021B",
+    "hosted_rows": 161149
+  },
+  {
+    "table": "ef_b",
+    "year": 2022,
+    "stem": "EF2022B",
+    "hosted_rows": 77996
+  },
+  {
+    "table": "ef_b",
+    "year": 2023,
+    "stem": "EF2023B",
+    "hosted_rows": 158917
+  },
+  {
+    "table": "ef_b",
+    "year": 2024,
+    "stem": "EF2024B",
+    "hosted_rows": 76359
+  },
+  {
+    "table": "ef_c",
+    "year": 2000,
+    "stem": "EF2000C",
+    "hosted_rows": 62018
+  },
+  {
+    "table": "ef_c",
+    "year": 2001,
+    "stem": "EF2001C",
+    "hosted_rows": 35520
+  },
+  {
+    "table": "ef_c",
+    "year": 2002,
+    "stem": "EF2002C",
+    "hosted_rows": 65970
+  },
+  {
+    "table": "ef_c",
+    "year": 2003,
+    "stem": "EF2003C",
+    "hosted_rows": 51326
+  },
+  {
+    "table": "ef_c",
+    "year": 2004,
+    "stem": "EF2004C",
+    "hosted_rows": 68196
+  },
+  {
+    "table": "ef_c",
+    "year": 2005,
+    "stem": "EF2005C",
+    "hosted_rows": 56534
+  },
+  {
+    "table": "ef_c",
+    "year": 2006,
+    "stem": "EF2006C",
+    "hosted_rows": 69700
+  },
+  {
+    "table": "ef_c",
+    "year": 2007,
+    "stem": "EF2007C",
+    "hosted_rows": 51710
+  },
+  {
+    "table": "ef_c",
+    "year": 2008,
+    "stem": "EF2008C",
+    "hosted_rows": 71273
+  },
+  {
+    "table": "ef_c",
+    "year": 2009,
+    "stem": "EF2009C",
+    "hosted_rows": 38458
+  },
+  {
+    "table": "ef_c",
+    "year": 2010,
+    "stem": "EF2010C",
+    "hosted_rows": 75543
+  },
+  {
+    "table": "ef_c",
+    "year": 2011,
+    "stem": "EF2011C",
+    "hosted_rows": 39739
+  },
+  {
+    "table": "ef_c",
+    "year": 2012,
+    "stem": "EF2012C",
+    "hosted_rows": 75187
+  },
+  {
+    "table": "ef_c",
+    "year": 2013,
+    "stem": "EF2013C",
+    "hosted_rows": 40027
+  },
+  {
+    "table": "ef_c",
+    "year": 2014,
+    "stem": "EF2014C",
+    "hosted_rows": 74332
+  },
+  {
+    "table": "ef_c",
+    "year": 2015,
+    "stem": "EF2015C",
+    "hosted_rows": 39509
+  },
+  {
+    "table": "ef_c",
+    "year": 2016,
+    "stem": "EF2016C",
+    "hosted_rows": 71884
+  },
+  {
+    "table": "ef_c",
+    "year": 2017,
+    "stem": "EF2017C",
+    "hosted_rows": 39500
+  },
+  {
+    "table": "ef_c",
+    "year": 2018,
+    "stem": "EF2018C",
+    "hosted_rows": 70411
+  },
+  {
+    "table": "ef_c",
+    "year": 2019,
+    "stem": "EF2019C",
+    "hosted_rows": 39173
+  },
+  {
+    "table": "ef_c",
+    "year": 2020,
+    "stem": "EF2020C",
+    "hosted_rows": 68783
+  },
+  {
+    "table": "ef_c",
+    "year": 2021,
+    "stem": "EF2021C",
+    "hosted_rows": 40157
+  },
+  {
+    "table": "ef_c",
+    "year": 2022,
+    "stem": "EF2022C",
+    "hosted_rows": 71394
+  },
+  {
+    "table": "ef_c",
+    "year": 2023,
+    "stem": "EF2023C",
+    "hosted_rows": 40395
+  },
+  {
+    "table": "ef_c",
+    "year": 2024,
+    "stem": "EF2024C",
+    "hosted_rows": 70119
+  },
+  {
+    "table": "ef_d",
+    "year": 2000,
+    "stem": "EF2000D",
+    "hosted_rows": 6083
+  },
+  {
+    "table": "ef_d",
+    "year": 2002,
+    "stem": "EF2002D",
+    "hosted_rows": 6129
+  },
+  {
+    "table": "ef_d",
+    "year": 2003,
+    "stem": "EF2003D",
+    "hosted_rows": 6081
+  },
+  {
+    "table": "ef_d",
+    "year": 2004,
+    "stem": "EF2004D",
+    "hosted_rows": 6172
+  },
+  {
+    "table": "ef_d",
+    "year": 2005,
+    "stem": "EF2005D",
+    "hosted_rows": 6230
+  },
+  {
+    "table": "ef_d",
+    "year": 2006,
+    "stem": "EF2006D",
+    "hosted_rows": 6050
+  },
+  {
+    "table": "ef_d",
+    "year": 2007,
+    "stem": "EF2007D",
+    "hosted_rows": 6071
+  },
+  {
+    "table": "ef_d",
+    "year": 2008,
+    "stem": "EF2008D",
+    "hosted_rows": 6178
+  },
+  {
+    "table": "ef_d",
+    "year": 2009,
+    "stem": "EF2009D",
+    "hosted_rows": 6672
+  },
+  {
+    "table": "ef_d",
+    "year": 2010,
+    "stem": "EF2010D",
+    "hosted_rows": 6929
+  },
+  {
+    "table": "ef_d",
+    "year": 2011,
+    "stem": "EF2011D",
+    "hosted_rows": 7124
+  },
+  {
+    "table": "ef_d",
+    "year": 2012,
+    "stem": "EF2012D",
+    "hosted_rows": 7166
+  },
+  {
+    "table": "ef_d",
+    "year": 2013,
+    "stem": "EF2013D",
+    "hosted_rows": 7151
+  },
+  {
+    "table": "ef_d",
+    "year": 2014,
+    "stem": "EF2014D",
+    "hosted_rows": 7050
+  },
+  {
+    "table": "ef_d",
+    "year": 2015,
+    "stem": "EF2015D",
+    "hosted_rows": 6914
+  },
+  {
+    "table": "ef_d",
+    "year": 2016,
+    "stem": "EF2016D",
+    "hosted_rows": 6506
+  },
+  {
+    "table": "ef_d",
+    "year": 2017,
+    "stem": "EF2017D",
+    "hosted_rows": 6371
+  },
+  {
+    "table": "ef_d",
+    "year": 2018,
+    "stem": "EF2018D",
+    "hosted_rows": 6053
+  },
+  {
+    "table": "ef_d",
+    "year": 2019,
+    "stem": "EF2019D",
+    "hosted_rows": 5885
+  },
+  {
+    "table": "ef_d",
+    "year": 2020,
+    "stem": "EF2020D",
+    "hosted_rows": 5845
+  },
+  {
+    "table": "ef_d",
+    "year": 2021,
+    "stem": "EF2021D",
+    "hosted_rows": 5770
+  },
+  {
+    "table": "ef_d",
+    "year": 2022,
+    "stem": "EF2022D",
+    "hosted_rows": 5706
+  },
+  {
+    "table": "ef_d",
+    "year": 2023,
+    "stem": "EF2023D",
+    "hosted_rows": 5646
+  },
+  {
+    "table": "ef_d",
+    "year": 2024,
+    "stem": "EF2024D",
+    "hosted_rows": 5578
+  },
+  {
+    "table": "effy",
+    "year": 2002,
+    "stem": "EFFY2002",
+    "hosted_rows": 14994
+  },
+  {
+    "table": "effy",
+    "year": 2003,
+    "stem": "EFFY2003",
+    "hosted_rows": 15167
+  },
+  {
+    "table": "effy",
+    "year": 2004,
+    "stem": "EFFY2004",
+    "hosted_rows": 15357
+  },
+  {
+    "table": "effy",
+    "year": 2005,
+    "stem": "EFFY2005",
+    "hosted_rows": 15536
+  },
+  {
+    "table": "effy",
+    "year": 2006,
+    "stem": "EFFY2006",
+    "hosted_rows": 15653
+  },
+  {
+    "table": "effy",
+    "year": 2007,
+    "stem": "EFFY2007",
+    "hosted_rows": 15713
+  },
+  {
+    "table": "effy",
+    "year": 2008,
+    "stem": "EFFY2008",
+    "hosted_rows": 15860
+  },
+  {
+    "table": "effy",
+    "year": 2009,
+    "stem": "EFFY2009",
+    "hosted_rows": 16002
+  },
+  {
+    "table": "effy",
+    "year": 2010,
+    "stem": "EFFY2010",
+    "hosted_rows": 16245
+  },
+  {
+    "table": "effy",
+    "year": 2011,
+    "stem": "EFFY2011",
+    "hosted_rows": 16729
+  },
+  {
+    "table": "effy",
+    "year": 2012,
+    "stem": "EFFY2012",
+    "hosted_rows": 16899
+  },
+  {
+    "table": "effy",
+    "year": 2013,
+    "stem": "EFFY2013",
+    "hosted_rows": 16879
+  },
+  {
+    "table": "effy",
+    "year": 2014,
+    "stem": "EFFY2014",
+    "hosted_rows": 16688
+  },
+  {
+    "table": "effy",
+    "year": 2015,
+    "stem": "EFFY2015",
+    "hosted_rows": 16476
+  },
+  {
+    "table": "effy",
+    "year": 2016,
+    "stem": "EFFY2016",
+    "hosted_rows": 15726
+  },
+  {
+    "table": "effy",
+    "year": 2017,
+    "stem": "EFFY2017",
+    "hosted_rows": 15395
+  },
+  {
+    "table": "effy",
+    "year": 2018,
+    "stem": "EFFY2018",
+    "hosted_rows": 14941
+  },
+  {
+    "table": "effy",
+    "year": 2019,
+    "stem": "EFFY2019",
+    "hosted_rows": 14326
+  },
+  {
+    "table": "effy",
+    "year": 2020,
+    "stem": "EFFY2020",
+    "hosted_rows": 103704
+  },
+  {
+    "table": "effy",
+    "year": 2021,
+    "stem": "EFFY2021",
+    "hosted_rows": 103604
+  },
+  {
+    "table": "effy",
+    "year": 2022,
+    "stem": "EFFY2022",
+    "hosted_rows": 117521
+  },
+  {
+    "table": "effy",
+    "year": 2023,
+    "stem": "EFFY2023",
+    "hosted_rows": 116431
+  },
+  {
+    "table": "effy",
+    "year": 2024,
+    "stem": "EFFY2024",
+    "hosted_rows": 115026
+  },
+  {
+    "table": "effy",
+    "year": 2025,
+    "stem": "EFFY2025",
+    "hosted_rows": 114046
+  },
+  {
+    "table": "efia",
+    "year": 2002,
+    "stem": "EFIA2002",
+    "hosted_rows": 6472
+  },
+  {
+    "table": "efia",
+    "year": 2003,
+    "stem": "EFIA2003",
+    "hosted_rows": 6525
+  },
+  {
+    "table": "efia",
+    "year": 2004,
+    "stem": "EFIA2004",
+    "hosted_rows": 6597
+  },
+  {
+    "table": "efia",
+    "year": 2005,
+    "stem": "EFIA2005",
+    "hosted_rows": 6673
+  },
+  {
+    "table": "efia",
+    "year": 2006,
+    "stem": "EFIA2006",
+    "hosted_rows": 6715
+  },
+  {
+    "table": "efia",
+    "year": 2007,
+    "stem": "EFIA2007",
+    "hosted_rows": 6720
+  },
+  {
+    "table": "efia",
+    "year": 2008,
+    "stem": "EFIA2008",
+    "hosted_rows": 6868
+  },
+  {
+    "table": "efia",
+    "year": 2009,
+    "stem": "EFIA2009",
+    "hosted_rows": 6999
+  },
+  {
+    "table": "efia",
+    "year": 2010,
+    "stem": "EFIA2010",
+    "hosted_rows": 7246
+  },
+  {
+    "table": "efia",
+    "year": 2011,
+    "stem": "EFIA2011",
+    "hosted_rows": 7479
+  },
+  {
+    "table": "efia",
+    "year": 2012,
+    "stem": "EFIA2012",
+    "hosted_rows": 7544
+  },
+  {
+    "table": "efia",
+    "year": 2013,
+    "stem": "EFIA2013",
+    "hosted_rows": 7514
+  },
+  {
+    "table": "efia",
+    "year": 2014,
+    "stem": "EFIA2014",
+    "hosted_rows": 7429
+  },
+  {
+    "table": "efia",
+    "year": 2015,
+    "stem": "EFIA2015",
+    "hosted_rows": 7322
+  },
+  {
+    "table": "efia",
+    "year": 2016,
+    "stem": "EFIA2016",
+    "hosted_rows": 6951
+  },
+  {
+    "table": "efia",
+    "year": 2017,
+    "stem": "EFIA2017",
+    "hosted_rows": 6785
+  },
+  {
+    "table": "efia",
+    "year": 2018,
+    "stem": "EFIA2018",
+    "hosted_rows": 6561
+  },
+  {
+    "table": "efia",
+    "year": 2019,
+    "stem": "EFIA2019",
+    "hosted_rows": 6272
+  },
+  {
+    "table": "efia",
+    "year": 2020,
+    "stem": "EFIA2020",
+    "hosted_rows": 6169
+  },
+  {
+    "table": "efia",
+    "year": 2021,
+    "stem": "EFIA2021",
+    "hosted_rows": 6086
+  },
+  {
+    "table": "efia",
+    "year": 2022,
+    "stem": "EFIA2022",
+    "hosted_rows": 6036
+  },
+  {
+    "table": "efia",
+    "year": 2023,
+    "stem": "EFIA2023",
+    "hosted_rows": 5959
+  },
+  {
+    "table": "efia",
+    "year": 2024,
+    "stem": "EFIA2024",
+    "hosted_rows": 5861
+  },
+  {
+    "table": "efia",
+    "year": 2025,
+    "stem": "EFIA2025",
+    "hosted_rows": 5805
+  },
+  {
+    "table": "f1a",
+    "year": 2002,
+    "stem": "F0102_F1A",
+    "hosted_rows": 1280
+  },
+  {
+    "table": "f1a",
+    "year": 2003,
+    "stem": "F0203_F1A",
+    "hosted_rows": 1655
+  },
+  {
+    "table": "f1a",
+    "year": 2004,
+    "stem": "F0304_F1A",
+    "hosted_rows": 1923
+  },
+  {
+    "table": "f1a",
+    "year": 2005,
+    "stem": "F0405_F1A",
+    "hosted_rows": 1962
+  },
+  {
+    "table": "f1a",
+    "year": 2006,
+    "stem": "F0506_F1A",
+    "hosted_rows": 1971
+  },
+  {
+    "table": "f1a",
+    "year": 2007,
+    "stem": "F0607_F1A",
+    "hosted_rows": 1971
+  },
+  {
+    "table": "f1a",
+    "year": 2008,
+    "stem": "F0708_F1A",
+    "hosted_rows": 1960
+  },
+  {
+    "table": "f1a",
+    "year": 2009,
+    "stem": "F0809_F1A",
+    "hosted_rows": 1973
+  },
+  {
+    "table": "f1a",
+    "year": 2010,
+    "stem": "F0910_F1A",
+    "hosted_rows": 2012
+  },
+  {
+    "table": "f1a",
+    "year": 2011,
+    "stem": "F1011_F1A",
+    "hosted_rows": 2018
+  },
+  {
+    "table": "f1a",
+    "year": 2012,
+    "stem": "F1112_F1A",
+    "hosted_rows": 2004
+  },
+  {
+    "table": "f1a",
+    "year": 2013,
+    "stem": "F1213_F1A",
+    "hosted_rows": 1995
+  },
+  {
+    "table": "f1a",
+    "year": 2014,
+    "stem": "F1314_F1A",
+    "hosted_rows": 1988
+  },
+  {
+    "table": "f1a",
+    "year": 2015,
+    "stem": "F1415_F1A",
+    "hosted_rows": 1986
+  },
+  {
+    "table": "f1a",
+    "year": 2016,
+    "stem": "F1516_F1A",
+    "hosted_rows": 1986
+  },
+  {
+    "table": "f1a",
+    "year": 2017,
+    "stem": "F1617_F1A",
+    "hosted_rows": 1978
+  },
+  {
+    "table": "f1a",
+    "year": 2018,
+    "stem": "F1718_F1A",
+    "hosted_rows": 1964
+  },
+  {
+    "table": "f1a",
+    "year": 2019,
+    "stem": "F1819_F1A",
+    "hosted_rows": 1961
+  },
+  {
+    "table": "f1a",
+    "year": 2020,
+    "stem": "F1920_F1A",
+    "hosted_rows": 1949
+  },
+  {
+    "table": "f1a",
+    "year": 2021,
+    "stem": "F2021_F1A",
+    "hosted_rows": 1946
+  },
+  {
+    "table": "f1a",
+    "year": 2022,
+    "stem": "F2122_F1A",
+    "hosted_rows": 1936
+  },
+  {
+    "table": "f1a",
+    "year": 2023,
+    "stem": "F2223_F1A",
+    "hosted_rows": 1916
+  },
+  {
+    "table": "f1a",
+    "year": 2024,
+    "stem": "F2324_F1A",
+    "hosted_rows": 1911
+  },
+  {
+    "table": "f2",
+    "year": 2001,
+    "stem": "F0001_F2",
+    "hosted_rows": 1895
+  },
+  {
+    "table": "f2",
+    "year": 2002,
+    "stem": "F0102_F2",
+    "hosted_rows": 1903
+  },
+  {
+    "table": "f2",
+    "year": 2003,
+    "stem": "F0203_F2",
+    "hosted_rows": 1910
+  },
+  {
+    "table": "f2",
+    "year": 2004,
+    "stem": "F0304_F2",
+    "hosted_rows": 1902
+  },
+  {
+    "table": "f2",
+    "year": 2005,
+    "stem": "F0405_F2",
+    "hosted_rows": 1902
+  },
+  {
+    "table": "f2",
+    "year": 2006,
+    "stem": "F0506_F2",
+    "hosted_rows": 1896
+  },
+  {
+    "table": "f2",
+    "year": 2007,
+    "stem": "F0607_F2",
+    "hosted_rows": 1863
+  },
+  {
+    "table": "f2",
+    "year": 2008,
+    "stem": "F0708_F2",
+    "hosted_rows": 1861
+  },
+  {
+    "table": "f2",
+    "year": 2009,
+    "stem": "F0809_F2",
+    "hosted_rows": 1871
+  },
+  {
+    "table": "f2",
+    "year": 2010,
+    "stem": "F0910_F2",
+    "hosted_rows": 1862
+  },
+  {
+    "table": "f2",
+    "year": 2011,
+    "stem": "F1011_F2",
+    "hosted_rows": 1888
+  },
+  {
+    "table": "f2",
+    "year": 2012,
+    "stem": "F1112_F2",
+    "hosted_rows": 1878
+  },
+  {
+    "table": "f2",
+    "year": 2013,
+    "stem": "F1213_F2",
+    "hosted_rows": 1889
+  },
+  {
+    "table": "f2",
+    "year": 2014,
+    "stem": "F1314_F2",
+    "hosted_rows": 1883
+  },
+  {
+    "table": "f2",
+    "year": 2015,
+    "stem": "F1415_F2",
+    "hosted_rows": 1922
+  },
+  {
+    "table": "f2",
+    "year": 2016,
+    "stem": "F1516_F2",
+    "hosted_rows": 1888
+  },
+  {
+    "table": "f2",
+    "year": 2017,
+    "stem": "F1617_F2",
+    "hosted_rows": 1884
+  },
+  {
+    "table": "f2",
+    "year": 2018,
+    "stem": "F1718_F2",
+    "hosted_rows": 1849
+  },
+  {
+    "table": "f2",
+    "year": 2019,
+    "stem": "F1819_F2",
+    "hosted_rows": 1836
+  },
+  {
+    "table": "f2",
+    "year": 2020,
+    "stem": "F1920_F2",
+    "hosted_rows": 1819
+  },
+  {
+    "table": "f2",
+    "year": 2021,
+    "stem": "F2021_F2",
+    "hosted_rows": 1805
+  },
+  {
+    "table": "f2",
+    "year": 2022,
+    "stem": "F2122_F2",
+    "hosted_rows": 1782
+  },
+  {
+    "table": "f2",
+    "year": 2023,
+    "stem": "F2223_F2",
+    "hosted_rows": 1766
+  },
+  {
+    "table": "f2",
+    "year": 2024,
+    "stem": "F2324_F2",
+    "hosted_rows": 1750
+  },
+  {
+    "table": "f3",
+    "year": 2001,
+    "stem": "F0001_F3",
+    "hosted_rows": 2160
+  },
+  {
+    "table": "f3",
+    "year": 2002,
+    "stem": "F0102_F3",
+    "hosted_rows": 2098
+  },
+  {
+    "table": "f3",
+    "year": 2003,
+    "stem": "F0203_F3",
+    "hosted_rows": 2174
+  },
+  {
+    "table": "f3",
+    "year": 2004,
+    "stem": "F0304_F3",
+    "hosted_rows": 2262
+  },
+  {
+    "table": "f3",
+    "year": 2005,
+    "stem": "F0405_F3",
+    "hosted_rows": 2504
+  },
+  {
+    "table": "f3",
+    "year": 2006,
+    "stem": "F0506_F3",
+    "hosted_rows": 2577
+  },
+  {
+    "table": "f3",
+    "year": 2007,
+    "stem": "F0607_F3",
+    "hosted_rows": 2622
+  },
+  {
+    "table": "f3",
+    "year": 2008,
+    "stem": "F0708_F3",
+    "hosted_rows": 2718
+  },
+  {
+    "table": "f3",
+    "year": 2009,
+    "stem": "F0809_F3",
+    "hosted_rows": 2798
+  },
+  {
+    "table": "f3",
+    "year": 2010,
+    "stem": "F0910_F3",
+    "hosted_rows": 3021
+  },
+  {
+    "table": "f3",
+    "year": 2011,
+    "stem": "F1011_F3",
+    "hosted_rows": 3184
+  },
+  {
+    "table": "f3",
+    "year": 2012,
+    "stem": "F1112_F3",
+    "hosted_rows": 3246
+  },
+  {
+    "table": "f3",
+    "year": 2013,
+    "stem": "F1213_F3",
+    "hosted_rows": 3214
+  },
+  {
+    "table": "f3",
+    "year": 2014,
+    "stem": "F1314_F3",
+    "hosted_rows": 3176
+  },
+  {
+    "table": "f3",
+    "year": 2015,
+    "stem": "F1415_F3",
+    "hosted_rows": 3018
+  },
+  {
+    "table": "f3",
+    "year": 2016,
+    "stem": "F1516_F3",
+    "hosted_rows": 2782
+  },
+  {
+    "table": "f3",
+    "year": 2017,
+    "stem": "F1617_F3",
+    "hosted_rows": 2657
+  },
+  {
+    "table": "f3",
+    "year": 2018,
+    "stem": "F1718_F3",
+    "hosted_rows": 2379
+  },
+  {
+    "table": "f3",
+    "year": 2019,
+    "stem": "F1819_F3",
+    "hosted_rows": 2272
+  },
+  {
+    "table": "f3",
+    "year": 2020,
+    "stem": "F1920_F3",
+    "hosted_rows": 2244
+  },
+  {
+    "table": "f3",
+    "year": 2021,
+    "stem": "F2021_F3",
+    "hosted_rows": 2171
+  },
+  {
+    "table": "f3",
+    "year": 2022,
+    "stem": "F2122_F3",
+    "hosted_rows": 2120
+  },
+  {
+    "table": "f3",
+    "year": 2023,
+    "stem": "F2223_F3",
+    "hosted_rows": 2090
+  },
+  {
+    "table": "f3",
+    "year": 2024,
+    "stem": "F2324_F3",
+    "hosted_rows": 2046
+  },
+  {
+    "table": "flags",
+    "year": 2004,
+    "stem": "FLAGS2004",
+    "hosted_rows": 6916
+  },
+  {
+    "table": "flags",
+    "year": 2005,
+    "stem": "FLAGS2005",
+    "hosted_rows": 7018
+  },
+  {
+    "table": "flags",
+    "year": 2006,
+    "stem": "FLAGS2006",
+    "hosted_rows": 7052
+  },
+  {
+    "table": "flags",
+    "year": 2007,
+    "stem": "FLAGS2007",
+    "hosted_rows": 7052
+  },
+  {
+    "table": "flags",
+    "year": 2008,
+    "stem": "FLAGS2008",
+    "hosted_rows": 7126
+  },
+  {
+    "table": "flags",
+    "year": 2009,
+    "stem": "FLAGS2009",
+    "hosted_rows": 7316
+  },
+  {
+    "table": "flags",
+    "year": 2010,
+    "stem": "FLAGS2010",
+    "hosted_rows": 7503
+  },
+  {
+    "table": "flags",
+    "year": 2011,
+    "stem": "FLAGS2011",
+    "hosted_rows": 7643
+  },
+  {
+    "table": "flags",
+    "year": 2012,
+    "stem": "FLAGS2012",
+    "hosted_rows": 7735
+  },
+  {
+    "table": "flags",
+    "year": 2013,
+    "stem": "FLAGS2013",
+    "hosted_rows": 7764
+  },
+  {
+    "table": "flags",
+    "year": 2014,
+    "stem": "FLAGS2014",
+    "hosted_rows": 7687
+  },
+  {
+    "table": "flags",
+    "year": 2015,
+    "stem": "FLAGS2015",
+    "hosted_rows": 7647
+  },
+  {
+    "table": "flags",
+    "year": 2016,
+    "stem": "FLAGS2016",
+    "hosted_rows": 7521
+  },
+  {
+    "table": "flags",
+    "year": 2017,
+    "stem": "FLAGS2017",
+    "hosted_rows": 7153
+  },
+  {
+    "table": "flags",
+    "year": 2018,
+    "stem": "FLAGS2018",
+    "hosted_rows": 6857
+  },
+  {
+    "table": "flags",
+    "year": 2019,
+    "stem": "FLAGS2019",
+    "hosted_rows": 6559
+  },
+  {
+    "table": "flags",
+    "year": 2020,
+    "stem": "FLAGS2020",
+    "hosted_rows": 6440
+  },
+  {
+    "table": "flags",
+    "year": 2021,
+    "stem": "FLAGS2021",
+    "hosted_rows": 6289
+  },
+  {
+    "table": "flags",
+    "year": 2022,
+    "stem": "FLAGS2022",
+    "hosted_rows": 6256
+  },
+  {
+    "table": "flags",
+    "year": 2023,
+    "stem": "FLAGS2023",
+    "hosted_rows": 6163
+  },
+  {
+    "table": "flags",
+    "year": 2024,
+    "stem": "FLAGS2024",
+    "hosted_rows": 6072
+  },
+  {
+    "table": "flags",
+    "year": 2025,
+    "stem": "FLAGS2025",
+    "hosted_rows": 5988
+  },
+  {
+    "table": "gr",
+    "year": 1997,
+    "stem": "GR1997",
+    "hosted_rows": 31375
+  },
+  {
+    "table": "gr",
+    "year": 1998,
+    "stem": "GR1998",
+    "hosted_rows": 32326
+  },
+  {
+    "table": "gr",
+    "year": 1999,
+    "stem": "GR1999",
+    "hosted_rows": 35035
+  },
+  {
+    "table": "gr",
+    "year": 2000,
+    "stem": "GR2000",
+    "hosted_rows": 27872
+  },
+  {
+    "table": "gr",
+    "year": 2001,
+    "stem": "GR2001",
+    "hosted_rows": 34528
+  },
+  {
+    "table": "gr",
+    "year": 2002,
+    "stem": "GR2002",
+    "hosted_rows": 42390
+  },
+  {
+    "table": "gr",
+    "year": 2003,
+    "stem": "GR2003",
+    "hosted_rows": 40214
+  },
+  {
+    "table": "gr",
+    "year": 2004,
+    "stem": "GR2004",
+    "hosted_rows": 34148
+  },
+  {
+    "table": "gr",
+    "year": 2005,
+    "stem": "GR2005",
+    "hosted_rows": 34874
+  },
+  {
+    "table": "gr",
+    "year": 2006,
+    "stem": "GR2006",
+    "hosted_rows": 35232
+  },
+  {
+    "table": "gr",
+    "year": 2007,
+    "stem": "GR2007",
+    "hosted_rows": 35956
+  },
+  {
+    "table": "gr",
+    "year": 2008,
+    "stem": "GR2008",
+    "hosted_rows": 36479
+  },
+  {
+    "table": "gr",
+    "year": 2009,
+    "stem": "GR2009",
+    "hosted_rows": 42351
+  },
+  {
+    "table": "gr",
+    "year": 2010,
+    "stem": "GR2010",
+    "hosted_rows": 43199
+  },
+  {
+    "table": "gr",
+    "year": 2011,
+    "stem": "GR2011",
+    "hosted_rows": 55346
+  },
+  {
+    "table": "gr",
+    "year": 2012,
+    "stem": "GR2012",
+    "hosted_rows": 56221
+  },
+  {
+    "table": "gr",
+    "year": 2013,
+    "stem": "GR2013",
+    "hosted_rows": 56741
+  },
+  {
+    "table": "gr",
+    "year": 2014,
+    "stem": "GR2014",
+    "hosted_rows": 57362
+  },
+  {
+    "table": "gr",
+    "year": 2015,
+    "stem": "GR2015",
+    "hosted_rows": 57333
+  },
+  {
+    "table": "gr",
+    "year": 2016,
+    "stem": "GR2016",
+    "hosted_rows": 55742
+  },
+  {
+    "table": "gr",
+    "year": 2017,
+    "stem": "GR2017",
+    "hosted_rows": 54714
+  },
+  {
+    "table": "gr",
+    "year": 2018,
+    "stem": "GR2018",
+    "hosted_rows": 51868
+  },
+  {
+    "table": "gr",
+    "year": 2019,
+    "stem": "GR2019",
+    "hosted_rows": 50447
+  },
+  {
+    "table": "gr",
+    "year": 2020,
+    "stem": "GR2020",
+    "hosted_rows": 50098
+  },
+  {
+    "table": "gr",
+    "year": 2021,
+    "stem": "GR2021",
+    "hosted_rows": 49539
+  },
+  {
+    "table": "gr",
+    "year": 2022,
+    "stem": "GR2022",
+    "hosted_rows": 48151
+  },
+  {
+    "table": "gr",
+    "year": 2023,
+    "stem": "GR2023",
+    "hosted_rows": 51368
+  },
+  {
+    "table": "gr",
+    "year": 2024,
+    "stem": "GR2024",
+    "hosted_rows": 51011
+  },
+  {
+    "table": "gr200",
+    "year": 2008,
+    "stem": "GR200_08",
+    "hosted_rows": 5605
+  },
+  {
+    "table": "gr200",
+    "year": 2009,
+    "stem": "GR200_09",
+    "hosted_rows": 5694
+  },
+  {
+    "table": "gr200",
+    "year": 2010,
+    "stem": "GR200_10",
+    "hosted_rows": 5724
+  },
+  {
+    "table": "gr200",
+    "year": 2011,
+    "stem": "GR200_11",
+    "hosted_rows": 5838
+  },
+  {
+    "table": "gr200",
+    "year": 2012,
+    "stem": "GR200_12",
+    "hosted_rows": 5897
+  },
+  {
+    "table": "gr200",
+    "year": 2013,
+    "stem": "GR200_13",
+    "hosted_rows": 5851
+  },
+  {
+    "table": "gr200",
+    "year": 2014,
+    "stem": "GR200_14",
+    "hosted_rows": 5976
+  },
+  {
+    "table": "gr200",
+    "year": 2015,
+    "stem": "GR200_15",
+    "hosted_rows": 5922
+  },
+  {
+    "table": "gr200",
+    "year": 2016,
+    "stem": "GR200_16",
+    "hosted_rows": 5651
+  },
+  {
+    "table": "gr200",
+    "year": 2017,
+    "stem": "GR200_17",
+    "hosted_rows": 5534
+  },
+  {
+    "table": "gr200",
+    "year": 2018,
+    "stem": "GR200_18",
+    "hosted_rows": 5301
+  },
+  {
+    "table": "gr200",
+    "year": 2019,
+    "stem": "GR200_19",
+    "hosted_rows": 5129
+  },
+  {
+    "table": "gr200",
+    "year": 2020,
+    "stem": "GR200_20",
+    "hosted_rows": 5094
+  },
+  {
+    "table": "gr200",
+    "year": 2021,
+    "stem": "GR200_21",
+    "hosted_rows": 5068
+  },
+  {
+    "table": "gr200",
+    "year": 2022,
+    "stem": "GR200_22",
+    "hosted_rows": 5010
+  },
+  {
+    "table": "gr200",
+    "year": 2023,
+    "stem": "GR200_23",
+    "hosted_rows": 4954
+  },
+  {
+    "table": "gr200",
+    "year": 2024,
+    "stem": "GR200_24",
+    "hosted_rows": 4838
+  },
+  {
+    "table": "hd",
+    "year": 2002,
+    "stem": "HD2002",
+    "hosted_rows": 7643
+  },
+  {
+    "table": "hd",
+    "year": 2003,
+    "stem": "HD2003",
+    "hosted_rows": 7030
+  },
+  {
+    "table": "hd",
+    "year": 2004,
+    "stem": "HD2004",
+    "hosted_rows": 6916
+  },
+  {
+    "table": "hd",
+    "year": 2005,
+    "stem": "HD2005",
+    "hosted_rows": 7018
+  },
+  {
+    "table": "hd",
+    "year": 2006,
+    "stem": "HD2006",
+    "hosted_rows": 7052
+  },
+  {
+    "table": "hd",
+    "year": 2007,
+    "stem": "HD2007",
+    "hosted_rows": 7052
+  },
+  {
+    "table": "hd",
+    "year": 2008,
+    "stem": "HD2008",
+    "hosted_rows": 7126
+  },
+  {
+    "table": "hd",
+    "year": 2009,
+    "stem": "HD2009",
+    "hosted_rows": 7316
+  },
+  {
+    "table": "hd",
+    "year": 2010,
+    "stem": "HD2010",
+    "hosted_rows": 7503
+  },
+  {
+    "table": "hd",
+    "year": 2011,
+    "stem": "HD2011",
+    "hosted_rows": 7643
+  },
+  {
+    "table": "hd",
+    "year": 2012,
+    "stem": "HD2012",
+    "hosted_rows": 7735
+  },
+  {
+    "table": "hd",
+    "year": 2013,
+    "stem": "HD2013",
+    "hosted_rows": 7764
+  },
+  {
+    "table": "hd",
+    "year": 2014,
+    "stem": "HD2014",
+    "hosted_rows": 7687
+  },
+  {
+    "table": "hd",
+    "year": 2015,
+    "stem": "HD2015",
+    "hosted_rows": 7647
+  },
+  {
+    "table": "hd",
+    "year": 2016,
+    "stem": "HD2016",
+    "hosted_rows": 7521
+  },
+  {
+    "table": "hd",
+    "year": 2017,
+    "stem": "HD2017",
+    "hosted_rows": 7153
+  },
+  {
+    "table": "hd",
+    "year": 2018,
+    "stem": "HD2018",
+    "hosted_rows": 6857
+  },
+  {
+    "table": "hd",
+    "year": 2019,
+    "stem": "HD2019",
+    "hosted_rows": 6559
+  },
+  {
+    "table": "hd",
+    "year": 2020,
+    "stem": "HD2020",
+    "hosted_rows": 6440
+  },
+  {
+    "table": "hd",
+    "year": 2021,
+    "stem": "HD2021",
+    "hosted_rows": 6289
+  },
+  {
+    "table": "hd",
+    "year": 2022,
+    "stem": "HD2022",
+    "hosted_rows": 6256
+  },
+  {
+    "table": "hd",
+    "year": 2023,
+    "stem": "HD2023",
+    "hosted_rows": 6163
+  },
+  {
+    "table": "hd",
+    "year": 2024,
+    "stem": "HD2024",
+    "hosted_rows": 6072
+  },
+  {
+    "table": "hd",
+    "year": 2025,
+    "stem": "HD2025",
+    "hosted_rows": 5985
+  },
+  {
+    "table": "ic",
+    "year": 2000,
+    "stem": "IC2000",
+    "hosted_rows": 9513
+  },
+  {
+    "table": "ic",
+    "year": 2001,
+    "stem": "IC2001",
+    "hosted_rows": 6896
+  },
+  {
+    "table": "ic",
+    "year": 2002,
+    "stem": "IC2002",
+    "hosted_rows": 6823
+  },
+  {
+    "table": "ic",
+    "year": 2003,
+    "stem": "IC2003",
+    "hosted_rows": 6875
+  },
+  {
+    "table": "ic",
+    "year": 2004,
+    "stem": "IC2004",
+    "hosted_rows": 6804
+  },
+  {
+    "table": "ic",
+    "year": 2005,
+    "stem": "IC2005",
+    "hosted_rows": 6844
+  },
+  {
+    "table": "ic",
+    "year": 2006,
+    "stem": "IC2006",
+    "hosted_rows": 6891
+  },
+  {
+    "table": "ic",
+    "year": 2007,
+    "stem": "IC2007",
+    "hosted_rows": 6902
+  },
+  {
+    "table": "ic",
+    "year": 2008,
+    "stem": "IC2008",
+    "hosted_rows": 7034
+  },
+  {
+    "table": "ic",
+    "year": 2009,
+    "stem": "IC2009",
+    "hosted_rows": 7135
+  },
+  {
+    "table": "ic",
+    "year": 2010,
+    "stem": "IC2010",
+    "hosted_rows": 7367
+  },
+  {
+    "table": "ic",
+    "year": 2011,
+    "stem": "IC2011",
+    "hosted_rows": 7591
+  },
+  {
+    "table": "ic",
+    "year": 2012,
+    "stem": "IC2012",
+    "hosted_rows": 7651
+  },
+  {
+    "table": "ic",
+    "year": 2013,
+    "stem": "IC2013",
+    "hosted_rows": 7614
+  },
+  {
+    "table": "ic",
+    "year": 2014,
+    "stem": "IC2014",
+    "hosted_rows": 7531
+  },
+  {
+    "table": "ic",
+    "year": 2015,
+    "stem": "IC2015",
+    "hosted_rows": 7418
+  },
+  {
+    "table": "ic",
+    "year": 2016,
+    "stem": "IC2016",
+    "hosted_rows": 7047
+  },
+  {
+    "table": "ic",
+    "year": 2017,
+    "stem": "IC2017",
+    "hosted_rows": 6882
+  },
+  {
+    "table": "ic",
+    "year": 2018,
+    "stem": "IC2018",
+    "hosted_rows": 6668
+  },
+  {
+    "table": "ic",
+    "year": 2019,
+    "stem": "IC2019",
+    "hosted_rows": 6362
+  },
+  {
+    "table": "ic",
+    "year": 2020,
+    "stem": "IC2020",
+    "hosted_rows": 6264
+  },
+  {
+    "table": "ic",
+    "year": 2021,
+    "stem": "IC2021",
+    "hosted_rows": 6179
+  },
+  {
+    "table": "ic",
+    "year": 2022,
+    "stem": "IC2022",
+    "hosted_rows": 6138
+  },
+  {
+    "table": "ic",
+    "year": 2023,
+    "stem": "IC2023",
+    "hosted_rows": 6049
+  },
+  {
+    "table": "ic",
+    "year": 2024,
+    "stem": "IC2024",
+    "hosted_rows": 5963
+  },
+  {
+    "table": "ic",
+    "year": 2025,
+    "stem": "IC2025",
+    "hosted_rows": 5905
+  },
+  {
+    "table": "ic_ay",
+    "year": 2000,
+    "stem": "IC2000_AY",
+    "hosted_rows": 4552
+  },
+  {
+    "table": "ic_ay",
+    "year": 2001,
+    "stem": "IC2001_AY",
+    "hosted_rows": 6896
+  },
+  {
+    "table": "ic_ay",
+    "year": 2002,
+    "stem": "IC2002_AY",
+    "hosted_rows": 4706
+  },
+  {
+    "table": "ic_ay",
+    "year": 2003,
+    "stem": "IC2003_AY",
+    "hosted_rows": 4730
+  },
+  {
+    "table": "ic_ay",
+    "year": 2004,
+    "stem": "IC2004_AY",
+    "hosted_rows": 4631
+  },
+  {
+    "table": "ic_ay",
+    "year": 2005,
+    "stem": "IC2005_AY",
+    "hosted_rows": 4568
+  },
+  {
+    "table": "ic_ay",
+    "year": 2006,
+    "stem": "IC2006_AY",
+    "hosted_rows": 4573
+  },
+  {
+    "table": "ic_ay",
+    "year": 2007,
+    "stem": "IC2007_AY",
+    "hosted_rows": 4563
+  },
+  {
+    "table": "ic_ay",
+    "year": 2008,
+    "stem": "IC2008_AY",
+    "hosted_rows": 4603
+  },
+  {
+    "table": "ic_ay",
+    "year": 2013,
+    "stem": "IC2013_AY",
+    "hosted_rows": 4783
+  },
+  {
+    "table": "ic_ay",
+    "year": 2014,
+    "stem": "IC2014_AY",
+    "hosted_rows": 4660
+  },
+  {
+    "table": "ic_ay",
+    "year": 2015,
+    "stem": "IC2015_AY",
+    "hosted_rows": 4607
+  },
+  {
+    "table": "ic_ay",
+    "year": 2016,
+    "stem": "IC2016_AY",
+    "hosted_rows": 4397
+  },
+  {
+    "table": "ic_ay",
+    "year": 2017,
+    "stem": "IC2017_AY",
+    "hosted_rows": 4281
+  },
+  {
+    "table": "ic_ay",
+    "year": 2018,
+    "stem": "IC2018_AY",
+    "hosted_rows": 4125
+  },
+  {
+    "table": "ic_ay",
+    "year": 2019,
+    "stem": "IC2019_AY",
+    "hosted_rows": 3993
+  },
+  {
+    "table": "ic_ay",
+    "year": 2020,
+    "stem": "IC2020_AY",
+    "hosted_rows": 3911
+  },
+  {
+    "table": "ic_ay",
+    "year": 2021,
+    "stem": "IC2021_AY",
+    "hosted_rows": 3871
+  },
+  {
+    "table": "ic_ay",
+    "year": 2022,
+    "stem": "IC2022_AY",
+    "hosted_rows": 3876
+  },
+  {
+    "table": "ic_ay",
+    "year": 2023,
+    "stem": "IC2023_AY",
+    "hosted_rows": 3825
+  },
+  {
+    "table": "ic_py",
+    "year": 2000,
+    "stem": "IC2000_PY",
+    "hosted_rows": 2030
+  },
+  {
+    "table": "ic_py",
+    "year": 2001,
+    "stem": "IC2001_PY",
+    "hosted_rows": 6896
+  },
+  {
+    "table": "ic_py",
+    "year": 2002,
+    "stem": "IC2002_PY",
+    "hosted_rows": 2037
+  },
+  {
+    "table": "ic_py",
+    "year": 2003,
+    "stem": "IC2003_PY",
+    "hosted_rows": 2047
+  },
+  {
+    "table": "ic_py",
+    "year": 2004,
+    "stem": "IC2004_PY",
+    "hosted_rows": 2075
+  },
+  {
+    "table": "ic_py",
+    "year": 2005,
+    "stem": "IC2005_PY",
+    "hosted_rows": 2159
+  },
+  {
+    "table": "ic_py",
+    "year": 2006,
+    "stem": "IC2006_PY",
+    "hosted_rows": 2226
+  },
+  {
+    "table": "ic_py",
+    "year": 2007,
+    "stem": "IC2007_PY",
+    "hosted_rows": 2248
+  },
+  {
+    "table": "ic_py",
+    "year": 2008,
+    "stem": "IC2008_PY",
+    "hosted_rows": 2328
+  },
+  {
+    "table": "ic_py",
+    "year": 2009,
+    "stem": "IC2009_PY",
+    "hosted_rows": 2383
+  },
+  {
+    "table": "ic_py",
+    "year": 2010,
+    "stem": "IC2010_PY",
+    "hosted_rows": 2607
+  },
+  {
+    "table": "ic_py",
+    "year": 2011,
+    "stem": "IC2011_PY",
+    "hosted_rows": 2707
+  },
+  {
+    "table": "ic_py",
+    "year": 2012,
+    "stem": "IC2012_PY",
+    "hosted_rows": 2752
+  },
+  {
+    "table": "ic_py",
+    "year": 2013,
+    "stem": "IC2013_PY",
+    "hosted_rows": 2735
+  },
+  {
+    "table": "ic_py",
+    "year": 2014,
+    "stem": "IC2014_PY",
+    "hosted_rows": 2758
+  },
+  {
+    "table": "ic_py",
+    "year": 2015,
+    "stem": "IC2015_PY",
+    "hosted_rows": 2723
+  },
+  {
+    "table": "ic_py",
+    "year": 2016,
+    "stem": "IC2016_PY",
+    "hosted_rows": 2556
+  },
+  {
+    "table": "ic_py",
+    "year": 2017,
+    "stem": "IC2017_PY",
+    "hosted_rows": 2511
+  },
+  {
+    "table": "ic_py",
+    "year": 2018,
+    "stem": "IC2018_PY",
+    "hosted_rows": 2453
+  },
+  {
+    "table": "ic_py",
+    "year": 2019,
+    "stem": "IC2019_PY",
+    "hosted_rows": 2285
+  },
+  {
+    "table": "ic_py",
+    "year": 2020,
+    "stem": "IC2020_PY",
+    "hosted_rows": 2266
+  },
+  {
+    "table": "ic_py",
+    "year": 2021,
+    "stem": "IC2021_PY",
+    "hosted_rows": 2222
+  },
+  {
+    "table": "ic_py",
+    "year": 2022,
+    "stem": "IC2022_PY",
+    "hosted_rows": 2172
+  },
+  {
+    "table": "ic_py",
+    "year": 2023,
+    "stem": "IC2023_PY",
+    "hosted_rows": 2141
+  },
+  {
+    "table": "om",
+    "year": 2015,
+    "stem": "OM2015",
+    "hosted_rows": 13577
+  },
+  {
+    "table": "om",
+    "year": 2016,
+    "stem": "OM2016",
+    "hosted_rows": 13201
+  },
+  {
+    "table": "om",
+    "year": 2017,
+    "stem": "OM2017",
+    "hosted_rows": 51580
+  },
+  {
+    "table": "om",
+    "year": 2018,
+    "stem": "OM2018",
+    "hosted_rows": 50004
+  },
+  {
+    "table": "om",
+    "year": 2019,
+    "stem": "OM2019",
+    "hosted_rows": 48524
+  },
+  {
+    "table": "om",
+    "year": 2020,
+    "stem": "OM2020",
+    "hosted_rows": 48223
+  },
+  {
+    "table": "om",
+    "year": 2021,
+    "stem": "OM2021",
+    "hosted_rows": 47802
+  },
+  {
+    "table": "om",
+    "year": 2022,
+    "stem": "OM2022",
+    "hosted_rows": 47896
+  },
+  {
+    "table": "om",
+    "year": 2023,
+    "stem": "OM2023",
+    "hosted_rows": 47342
+  },
+  {
+    "table": "om",
+    "year": 2024,
+    "stem": "OM2024",
+    "hosted_rows": 47029
+  },
+  {
+    "table": "sal_is",
+    "year": 2012,
+    "stem": "SAL2012_IS",
+    "hosted_rows": 16898
+  },
+  {
+    "table": "sal_is",
+    "year": 2013,
+    "stem": "SAL2013_IS",
+    "hosted_rows": 17339
+  },
+  {
+    "table": "sal_is",
+    "year": 2014,
+    "stem": "SAL2014_IS",
+    "hosted_rows": 17161
+  },
+  {
+    "table": "sal_is",
+    "year": 2015,
+    "stem": "SAL2015_IS",
+    "hosted_rows": 16948
+  },
+  {
+    "table": "sal_is",
+    "year": 2016,
+    "stem": "SAL2016_IS",
+    "hosted_rows": 16557
+  },
+  {
+    "table": "sal_is",
+    "year": 2017,
+    "stem": "SAL2017_IS",
+    "hosted_rows": 16456
+  },
+  {
+    "table": "sal_is",
+    "year": 2018,
+    "stem": "SAL2018_IS",
+    "hosted_rows": 15939
+  },
+  {
+    "table": "sal_is",
+    "year": 2019,
+    "stem": "SAL2019_IS",
+    "hosted_rows": 15681
+  },
+  {
+    "table": "sal_is",
+    "year": 2020,
+    "stem": "SAL2020_IS",
+    "hosted_rows": 15464
+  },
+  {
+    "table": "sal_is",
+    "year": 2021,
+    "stem": "SAL2021_IS",
+    "hosted_rows": 15382
+  },
+  {
+    "table": "sal_is",
+    "year": 2022,
+    "stem": "SAL2022_IS",
+    "hosted_rows": 15451
+  },
+  {
+    "table": "sal_is",
+    "year": 2023,
+    "stem": "SAL2023_IS",
+    "hosted_rows": 15300
+  },
+  {
+    "table": "sal_is",
+    "year": 2024,
+    "stem": "SAL2024_IS",
+    "hosted_rows": 15216
+  },
+  {
+    "table": "sfa",
+    "year": 2002,
+    "stem": "SFA0102",
+    "hosted_rows": 5729
+  },
+  {
+    "table": "sfa",
+    "year": 2003,
+    "stem": "SFA0203",
+    "hosted_rows": 6028
+  },
+  {
+    "table": "sfa",
+    "year": 2004,
+    "stem": "SFA0304",
+    "hosted_rows": 6074
+  },
+  {
+    "table": "sfa",
+    "year": 2005,
+    "stem": "SFA0405",
+    "hosted_rows": 6191
+  },
+  {
+    "table": "sfa",
+    "year": 2006,
+    "stem": "SFA0506",
+    "hosted_rows": 6185
+  },
+  {
+    "table": "sfa",
+    "year": 2007,
+    "stem": "SFA0607",
+    "hosted_rows": 6197
+  },
+  {
+    "table": "sfa",
+    "year": 2008,
+    "stem": "SFA0708",
+    "hosted_rows": 6524
+  },
+  {
+    "table": "sfa",
+    "year": 2009,
+    "stem": "SFA0809",
+    "hosted_rows": 6632
+  },
+  {
+    "table": "sfa",
+    "year": 2011,
+    "stem": "SFA1011",
+    "hosted_rows": 7081
+  },
+  {
+    "table": "sfa",
+    "year": 2012,
+    "stem": "SFA1112",
+    "hosted_rows": 7137
+  },
+  {
+    "table": "sfa",
+    "year": 2013,
+    "stem": "SFA1213",
+    "hosted_rows": 7156
+  },
+  {
+    "table": "sfa",
+    "year": 2014,
+    "stem": "SFA1314",
+    "hosted_rows": 7075
+  },
+  {
+    "table": "sfa",
+    "year": 2015,
+    "stem": "SFA1415",
+    "hosted_rows": 6959
+  },
+  {
+    "table": "sfa",
+    "year": 2016,
+    "stem": "SFA1516",
+    "hosted_rows": 6543
+  },
+  {
+    "table": "sfa",
+    "year": 2017,
+    "stem": "SFA1617",
+    "hosted_rows": 6394
+  },
+  {
+    "table": "sfa",
+    "year": 2018,
+    "stem": "SFA1718",
+    "hosted_rows": 6114
+  },
+  {
+    "table": "sfa",
+    "year": 2019,
+    "stem": "SFA1819",
+    "hosted_rows": 5909
+  },
+  {
+    "table": "sfa",
+    "year": 2020,
+    "stem": "SFA1920",
+    "hosted_rows": 5859
+  },
+  {
+    "table": "sfa",
+    "year": 2021,
+    "stem": "SFA2021",
+    "hosted_rows": 5779
+  },
+  {
+    "table": "sfa",
+    "year": 2022,
+    "stem": "SFA2122",
+    "hosted_rows": 5709
+  },
+  {
+    "table": "sfa",
+    "year": 2023,
+    "stem": "SFA2223",
+    "hosted_rows": 5653
+  },
+  {
+    "table": "sfa",
+    "year": 2024,
+    "stem": "SFA2324",
+    "hosted_rows": 5575
+  }
+]

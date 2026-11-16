@@ -1,0 +1,15 @@
+{
+  "duckdb": "1.5.5",
+  "pandas": "3.1.1",
+  "original": {
+    "raw_nonnumeric_labels": 10810,
+    "lost_during_harmonization": 0,
+    "lost_during_casting": 10810
+  },
+  "revised": {
+    "raw_nonnumeric_labels": 10807,
+    "lost_during_harmonization": 0,
+    "lost_during_casting": 10807
+  },
+  "result": "Passed raw-label accounting, exact provisional baseline comparison and revised difference checks."
+}

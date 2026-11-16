@@ -1,0 +1,35 @@
+{
+  "original": {
+    "rows": 51368,
+    "lost_line_labels": {
+      "29A": 4260,
+      "12A": 2381,
+      "18A": 2367,
+      "11A": 1802
+    },
+    "loss_stages": {
+      "raw_nonnumeric_labels": 10810,
+      "lost_during_harmonization": 0,
+      "lost_during_casting": 10810
+    },
+    "sha256": "75f4116ceb22b4e912316fee32c03be8e73b1624309930a80cc87623189e1405"
+  },
+  "revised": {
+    "rows": 51391,
+    "lost_line_labels": {
+      "29A": 4260,
+      "12A": 2380,
+      "18A": 2365,
+      "11A": 1802
+    },
+    "loss_stages": {
+      "raw_nonnumeric_labels": 10807,
+      "lost_during_harmonization": 0,
+      "lost_during_casting": 10807
+    },
+    "sha256": "b100a214c099961dab6d54632b838f63612692693ef9b1da5de3891e07fe4b68"
+  },
+  "different_revised_rows": 642,
+  "different_original_rows": 619,
+  "disposition": "Safe to apply final revisions within unchanged existing lossy schema after review. Exactly the same four nonnumeric line-label categories are already lost in baseline; final file changes their counts, not the unsupported categories. No new label class introduced. Preserving the true labels requires a separately reviewed schema repair to VARCHAR; this partition does not make that change."
+}

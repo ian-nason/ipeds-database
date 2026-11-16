@@ -1,0 +1,16 @@
+[
+  {
+    "source": "COST1_2024",
+    "url": "https://nces.ed.gov/ipeds/complete-data-files/COST1_2024.zip",
+    "bytes": 678341,
+    "sha256": "22301e0881ab1815d3c7002e3cff22f5c913b8ca7305bd411428319f0d9da2bb",
+    "unchanged": true
+  },
+  {
+    "source": "COST2_2024",
+    "url": "https://nces.ed.gov/ipeds/complete-data-files/COST2_2024.zip",
+    "bytes": 1506481,
+    "sha256": "80afe6a141d69f04be191b4048ab6085b50658734943c8e2961d600f51d9b4eb",
+    "unchanged": true
+  }
+]

@@ -1,10 +1,12 @@
-# Data Dictionary
+# IPEDS data dictionary
 
-Source: [https://nces.ed.gov/ipeds/use-the-data](https://nces.ed.gov/ipeds/use-the-data)
+Release: November 16, 2026. All 496 historical partitions and both 2024 Cost inputs were rechecked. See README for source revisions, provisional Cost vintages and retained legacy type limitations.
+
+Cost fields preserve empty strings; a 0% NULL rate does not mean that every field has a substantive value. See [official Cost field definitions](https://huggingface.co/datasets/Nason/ipeds-database/resolve/9fd4840987da2e5496d7b98814678225f92b8514/cost-field-dictionary.json).
 
 ## adm
 
-Rows: 22,527
+Rows: 22,532
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -32,13 +34,13 @@ Rows: 22,527
 | xapplcnun | VARCHAR | 73.7% | R |  |
 | applcnun | DOUBLE | 78.0% | 908.0 |  |
 | xadmssn | VARCHAR | 0.0% | R |  |
-| admissions_total | DOUBLE | 1.0% | 13564.0 |  |
+| admissions_total | DOUBLE | 1.1% | 13564.0 |  |
 | xadmssnm | VARCHAR | 0.0% | R |  |
-| admissions_men | DOUBLE | 4.5% | 4580.0 |  |
+| admissions_men | DOUBLE | 4.6% | 4580.0 |  |
 | xadmssnw | VARCHAR | 0.0% | R |  |
 | admissions_women | DOUBLE | 5.0% | 8981.0 |  |
 | xadmssnan | VARCHAR | 73.7% | A |  |
-| admssnan | DOUBLE | 96.9% | 8.0 |  |
+| admssnan | DOUBLE | 97.0% | 8.0 |  |
 | xadmssnun | VARCHAR | 73.7% | R |  |
 | admssnun | DOUBLE | 78.0% | 3.0 |  |
 | xenrlt | VARCHAR | 0.0% | R |  |
@@ -52,13 +54,13 @@ Rows: 22,527
 | xenrlun | VARCHAR | 73.7% | R |  |
 | enrlun | DOUBLE | 78.0% | 0.0 |  |
 | xenrlft | VARCHAR | 0.0% | R |  |
-| enrlft | DOUBLE | 1.7% | 1939.0 |  |
+| enrlft | DOUBLE | 1.8% | 1939.0 |  |
 | xenrlftm | VARCHAR | 0.0% | R |  |
-| enrlftm | DOUBLE | 6.3% | 818.0 |  |
+| enrlftm | DOUBLE | 6.4% | 818.0 |  |
 | xenrlftw | VARCHAR | 0.0% | R |  |
 | enrlftw | DOUBLE | 6.0% | 1121.0 |  |
 | xenrlftan | VARCHAR | 73.7% | A |  |
-| enrlftan | DOUBLE | 98.2% | 21.0 |  |
+| enrlftan | DOUBLE | 98.3% | 21.0 |  |
 | xenrlftun | VARCHAR | 73.7% | R |  |
 | enrlftun | DOUBLE | 78.1% | 0.0 |  |
 | xenrlpt | VARCHAR | 0.0% | R |  |
@@ -78,7 +80,7 @@ Rows: 22,527
 | xactnum | VARCHAR | 0.0% | R |  |
 | actnum | DOUBLE | 39.2% | 1317.0 |  |
 | xactpct | VARCHAR | 0.0% | R |  |
-| actpct | DOUBLE | 39.4% | 67.0 |  |
+| actpct | DOUBLE | 39.3% | 67.0 |  |
 | xsatvr25 | VARCHAR | 0.0% | R |  |
 | sat_verbal_25th | DOUBLE | 45.1% | 420.0 |  |
 | xsatvr50 | VARCHAR | 73.7% | R |  |
@@ -86,27 +88,27 @@ Rows: 22,527
 | xsatvr75 | VARCHAR | 0.0% | R |  |
 | sat_verbal_75th | DOUBLE | 45.1% | 530.0 |  |
 | xsatmt25 | VARCHAR | 0.0% | R |  |
-| sat_math_25th | DOUBLE | 45.0% | 390.0 |  |
+| sat_math_25th | DOUBLE | 44.9% | 390.0 |  |
 | xsatmt50 | VARCHAR | 73.7% | R |  |
 | satmt50 | DOUBLE | 86.9% | 440.0 |  |
 | xsatmt75 | VARCHAR | 0.0% | R |  |
-| sat_math_75th | DOUBLE | 45.0% | 510.0 |  |
+| sat_math_75th | DOUBLE | 44.9% | 510.0 |  |
 | xactcm25 | VARCHAR | 0.0% | R |  |
-| act_composite_25th | DOUBLE | 44.0% | 14.0 |  |
+| act_composite_25th | DOUBLE | 43.9% | 14.0 |  |
 | xactcm50 | VARCHAR | 73.7% | R |  |
 | actcm50 | DOUBLE | 87.1% | 17.0 |  |
 | xactcm75 | VARCHAR | 0.0% | R |  |
-| act_composite_75th | DOUBLE | 44.0% | 19.0 |  |
+| act_composite_75th | DOUBLE | 43.9% | 19.0 |  |
 | xacten25 | VARCHAR | 0.0% | R |  |
-| act_english_25th | DOUBLE | 48.0% | 13.0 |  |
+| act_english_25th | DOUBLE | 47.9% | 13.0 |  |
 | xacten50 | VARCHAR | 73.7% | R |  |
 | acten50 | DOUBLE | 87.9% | 16.0 |  |
 | xacten75 | VARCHAR | 0.0% | R |  |
-| act_english_75th | DOUBLE | 48.0% | 19.0 |  |
+| act_english_75th | DOUBLE | 47.9% | 19.0 |  |
 | xactmt25 | VARCHAR | 0.0% | R |  |
 | act_math_25th | DOUBLE | 47.9% | 14.0 |  |
 | xactmt50 | VARCHAR | 73.7% | R |  |
-| actmt50 | DOUBLE | 87.9% | 16.0 |  |
+| actmt50 | DOUBLE | 87.8% | 16.0 |  |
 | xactmt75 | VARCHAR | 0.0% | R |  |
 | act_math_75th | DOUBLE | 47.9% | 17.0 |  |
 | year | BIGINT | 0.0% | 2024 | Appears in 26 tables, common join key |
@@ -121,7 +123,7 @@ Rows: 22,527
 
 ## al
 
-Rows: 43,075
+Rows: 43,078
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -199,7 +201,7 @@ Rows: 43,075
 
 ## c_a
 
-Rows: 6,895,231
+Rows: 6,896,254
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -348,39 +350,1012 @@ Rows: 6,895,231
 | xcrace24 | VARCHAR | 80.6% | R |  |
 | crace24 | BIGINT | 80.6% | 44 |  |
 
+## cost1
+
+Rows: 5,867
+
+| Column | Type | Nulls | Example | Join |
+|--------|------|-------|---------|------|
+| unitid | BIGINT | 0.0% | 100654 | Primary institution ID, joins across IPEDS tables |
+| room | VARCHAR | 0.0% | 1 |  |
+| xroomcap | VARCHAR | 0.0% | R |  |
+| roomcap | VARCHAR | 0.0% | 4200 |  |
+| alloncam | VARCHAR | 0.0% | 2 |  |
+| tuitvary | VARCHAR | 0.0% | 1 |  |
+| board | VARCHAR | 0.0% | 1 |  |
+| xmealswk | VARCHAR | 0.0% | R |  |
+| mealswk | VARCHAR | 0.0% | 21 |  |
+| xappfeeu | VARCHAR | 0.0% | R |  |
+| applfeeu | VARCHAR | 0.0% | 30 |  |
+| appfeeuw | VARCHAR | 0.0% | 1 |  |
+| xappfeeg | VARCHAR | 0.0% | R |  |
+| applfeeg | VARCHAR | 0.0% | 45 |  |
+| appfeegw | VARCHAR | 0.0% | 0 |  |
+| xappfeed | VARCHAR | 0.0% | A |  |
+| applfeed | VARCHAR | 0.0% |  |  |
+| appfeedw | VARCHAR | 0.0% | -2 |  |
+| prmpgm | VARCHAR | 0.0% | 2 |  |
+| tuitpl | VARCHAR | 0.0% | 1 |  |
+| tuitpl1 | VARCHAR | 0.0% | 0 |  |
+| tuitpl2 | VARCHAR | 0.0% | 0 |  |
+| tuitpl3 | VARCHAR | 0.0% | 1 |  |
+| tuitpl4 | VARCHAR | 0.0% | 0 |  |
+| fafsaq1 | VARCHAR | 0.0% | 2 |  |
+| fafsaq2 | VARCHAR | 0.0% | 2 |  |
+| fafq2url | VARCHAR | 0.0% |  |  |
+| prgmofr | VARCHAR | 0.0% | -2 |  |
+| xroomamt | VARCHAR | 0.0% | R |  |
+| roomamt | VARCHAR | 0.0% | 5103 |  |
+| xbordamt | VARCHAR | 0.0% | R |  |
+| boardamt | VARCHAR | 0.0% | 4202 |  |
+| xrmbdamt | VARCHAR | 0.0% | A |  |
+| rmbrdamt | VARCHAR | 0.0% |  |  |
+| xtuit1 | VARCHAR | 0.0% | R |  |
+| tuition1 | VARCHAR | 0.0% | 8610 |  |
+| xfee1 | VARCHAR | 0.0% | R |  |
+| fee1 | VARCHAR | 0.0% | 1414 |  |
+| xhrchg1 | VARCHAR | 0.0% | R |  |
+| hrchg1 | VARCHAR | 0.0% | 287 |  |
+| xhrchf1 | VARCHAR | 0.0% | R |  |
+| hrchf1 | VARCHAR | 0.0% | 536 |  |
+| xtuit2 | VARCHAR | 0.0% | R |  |
+| tuition2 | VARCHAR | 0.0% | 8610 |  |
+| xfee2 | VARCHAR | 0.0% | R |  |
+| fee2 | VARCHAR | 0.0% | 1414 |  |
+| xhrchg2 | VARCHAR | 0.0% | R |  |
+| hrchg2 | VARCHAR | 0.0% | 287 |  |
+| xhrchf2 | VARCHAR | 0.0% | R |  |
+| hrchf2 | VARCHAR | 0.0% | 536 |  |
+| xtuit3 | VARCHAR | 0.0% | R |  |
+| tuition3 | VARCHAR | 0.0% | 17220 |  |
+| xfee3 | VARCHAR | 0.0% | R |  |
+| fee3 | VARCHAR | 0.0% | 1414 |  |
+| xhrchg3 | VARCHAR | 0.0% | R |  |
+| hrchg3 | VARCHAR | 0.0% | 574 |  |
+| xhrchf3 | VARCHAR | 0.0% | R |  |
+| hrchf3 | VARCHAR | 0.0% | 536 |  |
+| xtuit5 | VARCHAR | 0.0% | R |  |
+| tuition5 | VARCHAR | 0.0% | 7596 |  |
+| xfee5 | VARCHAR | 0.0% | R |  |
+| fee5 | VARCHAR | 0.0% | 1414 |  |
+| xhrchg5 | VARCHAR | 0.0% | R |  |
+| hrchg5 | VARCHAR | 0.0% | 422 |  |
+| xhrchf5 | VARCHAR | 0.0% | R |  |
+| hrchf5 | VARCHAR | 0.0% | 536 |  |
+| xtuit6 | VARCHAR | 0.0% | R |  |
+| tuition6 | VARCHAR | 0.0% | 7596 |  |
+| xfee6 | VARCHAR | 0.0% | R |  |
+| fee6 | VARCHAR | 0.0% | 1414 |  |
+| xhrchg6 | VARCHAR | 0.0% | R |  |
+| hrchg6 | VARCHAR | 0.0% | 422 |  |
+| xhrchf6 | VARCHAR | 0.0% | R |  |
+| hrchf6 | VARCHAR | 0.0% | 536 |  |
+| xtuit7 | VARCHAR | 0.0% | R |  |
+| tuition7 | VARCHAR | 0.0% | 15192 |  |
+| xfee7 | VARCHAR | 0.0% | R |  |
+| fee7 | VARCHAR | 0.0% | 1414 |  |
+| xhrchg7 | VARCHAR | 0.0% | R |  |
+| hrchg7 | VARCHAR | 0.0% | 840 |  |
+| xhrchf7 | VARCHAR | 0.0% | R |  |
+| hrchf7 | VARCHAR | 0.0% | 536 |  |
+| xispro1 | VARCHAR | 0.0% | A |  |
+| isprof1 | VARCHAR | 0.0% |  |  |
+| xispfe1 | VARCHAR | 0.0% | A |  |
+| ispfee1 | VARCHAR | 0.0% |  |  |
+| xospro1 | VARCHAR | 0.0% | A |  |
+| osprof1 | VARCHAR | 0.0% |  |  |
+| xospfe1 | VARCHAR | 0.0% | A |  |
+| ospfee1 | VARCHAR | 0.0% |  |  |
+| xispro2 | VARCHAR | 0.0% | A |  |
+| isprof2 | VARCHAR | 0.0% |  |  |
+| xispfe2 | VARCHAR | 0.0% | A |  |
+| ispfee2 | VARCHAR | 0.0% |  |  |
+| xospro2 | VARCHAR | 0.0% | A |  |
+| osprof2 | VARCHAR | 0.0% |  |  |
+| xospfe2 | VARCHAR | 0.0% | A |  |
+| ospfee2 | VARCHAR | 0.0% |  |  |
+| xispro3 | VARCHAR | 0.0% | A |  |
+| isprof3 | VARCHAR | 0.0% |  |  |
+| xispfe3 | VARCHAR | 0.0% | A |  |
+| ispfee3 | VARCHAR | 0.0% |  |  |
+| xospro3 | VARCHAR | 0.0% | A |  |
+| osprof3 | VARCHAR | 0.0% |  |  |
+| xospfe3 | VARCHAR | 0.0% | A |  |
+| ospfee3 | VARCHAR | 0.0% |  |  |
+| xispro4 | VARCHAR | 0.0% | A |  |
+| isprof4 | VARCHAR | 0.0% |  |  |
+| xispfe4 | VARCHAR | 0.0% | A |  |
+| ispfee4 | VARCHAR | 0.0% |  |  |
+| xospro4 | VARCHAR | 0.0% | A |  |
+| osprof4 | VARCHAR | 0.0% |  |  |
+| xospfe4 | VARCHAR | 0.0% | A |  |
+| ospfee4 | VARCHAR | 0.0% |  |  |
+| xispro5 | VARCHAR | 0.0% | A |  |
+| isprof5 | VARCHAR | 0.0% |  |  |
+| xispfe5 | VARCHAR | 0.0% | A |  |
+| ispfee5 | VARCHAR | 0.0% |  |  |
+| xospro5 | VARCHAR | 0.0% | A |  |
+| osprof5 | VARCHAR | 0.0% |  |  |
+| xospfe5 | VARCHAR | 0.0% | A |  |
+| ospfee5 | VARCHAR | 0.0% |  |  |
+| xispro6 | VARCHAR | 0.0% | A |  |
+| isprof6 | VARCHAR | 0.0% |  |  |
+| xispfe6 | VARCHAR | 0.0% | A |  |
+| ispfee6 | VARCHAR | 0.0% |  |  |
+| xospro6 | VARCHAR | 0.0% | A |  |
+| osprof6 | VARCHAR | 0.0% |  |  |
+| xospfe6 | VARCHAR | 0.0% | A |  |
+| ospfee6 | VARCHAR | 0.0% |  |  |
+| xispro7 | VARCHAR | 0.0% | A |  |
+| isprof7 | VARCHAR | 0.0% |  |  |
+| xispfe7 | VARCHAR | 0.0% | A |  |
+| ispfee7 | VARCHAR | 0.0% |  |  |
+| xospro7 | VARCHAR | 0.0% | A |  |
+| osprof7 | VARCHAR | 0.0% |  |  |
+| xospfe7 | VARCHAR | 0.0% | A |  |
+| ospfee7 | VARCHAR | 0.0% |  |  |
+| xispro8 | VARCHAR | 0.0% | A |  |
+| isprof8 | VARCHAR | 0.0% |  |  |
+| xispfe8 | VARCHAR | 0.0% | A |  |
+| ispfee8 | VARCHAR | 0.0% |  |  |
+| xospro8 | VARCHAR | 0.0% | A |  |
+| osprof8 | VARCHAR | 0.0% |  |  |
+| xospfe8 | VARCHAR | 0.0% | A |  |
+| ospfee8 | VARCHAR | 0.0% |  |  |
+| xispro9 | VARCHAR | 0.0% | A |  |
+| isprof9 | VARCHAR | 0.0% |  |  |
+| xispfe9 | VARCHAR | 0.0% | A |  |
+| ispfee9 | VARCHAR | 0.0% |  |  |
+| xospro9 | VARCHAR | 0.0% | A |  |
+| osprof9 | VARCHAR | 0.0% |  |  |
+| xospfe9 | VARCHAR | 0.0% | A |  |
+| ospfee9 | VARCHAR | 0.0% |  |  |
+| xchg1at0 | VARCHAR | 0.0% | R |  |
+| chg1at0 | VARCHAR | 0.0% | 8610 |  |
+| xchg1af0 | VARCHAR | 0.0% | R |  |
+| chg1af0 | VARCHAR | 0.0% | 1414 |  |
+| xchg1ay0 | VARCHAR | 0.0% | R |  |
+| chg1ay0 | VARCHAR | 0.0% | 10024 |  |
+| xchg1at1 | VARCHAR | 0.0% | R |  |
+| chg1at1 | VARCHAR | 0.0% | 8610 |  |
+| xchg1af1 | VARCHAR | 0.0% | R |  |
+| chg1af1 | VARCHAR | 0.0% | 1414 |  |
+| xchg1ay1 | VARCHAR | 0.0% | R |  |
+| chg1ay1 | VARCHAR | 0.0% | 10024 |  |
+| xchg1at2 | VARCHAR | 0.0% | R |  |
+| chg1at2 | VARCHAR | 0.0% | 8610 |  |
+| xchg1af2 | VARCHAR | 0.0% | R |  |
+| chg1af2 | VARCHAR | 0.0% | 1414 |  |
+| xchg1ay2 | VARCHAR | 0.0% | R |  |
+| chg1ay2 | VARCHAR | 0.0% | 10024 |  |
+| xchg1at3 | VARCHAR | 0.0% | R |  |
+| chg1at3 | VARCHAR | 0.0% | 8610 |  |
+| xchg1af3 | VARCHAR | 0.0% | R |  |
+| chg1af3 | VARCHAR | 0.0% | 1414 |  |
+| xchg1ay3 | VARCHAR | 0.0% | R |  |
+| chg1ay3 | VARCHAR | 0.0% | 10024 |  |
+| chg1tgtd | VARCHAR | 0.0% |  |  |
+| chg1fgtd | VARCHAR | 0.0% |  |  |
+| xchg2at0 | VARCHAR | 0.0% | R |  |
+| chg2at0 | VARCHAR | 0.0% | 8610 |  |
+| xchg2af0 | VARCHAR | 0.0% | R |  |
+| chg2af0 | VARCHAR | 0.0% | 1414 |  |
+| xchg2ay0 | VARCHAR | 0.0% | R |  |
+| chg2ay0 | VARCHAR | 0.0% | 10024 |  |
+| xchg2at1 | VARCHAR | 0.0% | R |  |
+| chg2at1 | VARCHAR | 0.0% | 8610 |  |
+| xchg2af1 | VARCHAR | 0.0% | R |  |
+| chg2af1 | VARCHAR | 0.0% | 1414 |  |
+| xchg2ay1 | VARCHAR | 0.0% | R |  |
+| chg2ay1 | VARCHAR | 0.0% | 10024 |  |
+| xchg2at2 | VARCHAR | 0.0% | R |  |
+| chg2at2 | VARCHAR | 0.0% | 8610 |  |
+| xchg2af2 | VARCHAR | 0.0% | R |  |
+| chg2af2 | VARCHAR | 0.0% | 1414 |  |
+| xchg2ay2 | VARCHAR | 0.0% | R |  |
+| chg2ay2 | VARCHAR | 0.0% | 10024 |  |
+| xchg2at3 | VARCHAR | 0.0% | R |  |
+| chg2at3 | VARCHAR | 0.0% | 8610 |  |
+| xchg2af3 | VARCHAR | 0.0% | R |  |
+| chg2af3 | VARCHAR | 0.0% | 1414 |  |
+| xchg2ay3 | VARCHAR | 0.0% | R |  |
+| chg2ay3 | VARCHAR | 0.0% | 10024 |  |
+| chg2tgtd | VARCHAR | 0.0% |  |  |
+| chg2fgtd | VARCHAR | 0.0% |  |  |
+| xchg3at0 | VARCHAR | 0.0% | R |  |
+| chg3at0 | VARCHAR | 0.0% | 17220 |  |
+| xchg3af0 | VARCHAR | 0.0% | R |  |
+| chg3af0 | VARCHAR | 0.0% | 1414 |  |
+| xchg3ay0 | VARCHAR | 0.0% | R |  |
+| chg3ay0 | VARCHAR | 0.0% | 18634 |  |
+| xchg3at1 | VARCHAR | 0.0% | R |  |
+| chg3at1 | VARCHAR | 0.0% | 17220 |  |
+| xchg3af1 | VARCHAR | 0.0% | R |  |
+| chg3af1 | VARCHAR | 0.0% | 1414 |  |
+| xchg3ay1 | VARCHAR | 0.0% | R |  |
+| chg3ay1 | VARCHAR | 0.0% | 18634 |  |
+| xchg3at2 | VARCHAR | 0.0% | R |  |
+| chg3at2 | VARCHAR | 0.0% | 17220 |  |
+| xchg3af2 | VARCHAR | 0.0% | R |  |
+| chg3af2 | VARCHAR | 0.0% | 1414 |  |
+| xchg3ay2 | VARCHAR | 0.0% | R |  |
+| chg3ay2 | VARCHAR | 0.0% | 18634 |  |
+| xchg3at3 | VARCHAR | 0.0% | R |  |
+| chg3at3 | VARCHAR | 0.0% | 17220 |  |
+| xchg3af3 | VARCHAR | 0.0% | R |  |
+| chg3af3 | VARCHAR | 0.0% | 1414 |  |
+| xchg3ay3 | VARCHAR | 0.0% | R |  |
+| chg3ay3 | VARCHAR | 0.0% | 18634 |  |
+| chg3tgtd | VARCHAR | 0.0% |  |  |
+| chg3fgtd | VARCHAR | 0.0% |  |  |
+| xchg4ay0 | VARCHAR | 0.0% | R |  |
+| chg4ay0 | VARCHAR | 0.0% | 1600 |  |
+| xchg4ay1 | VARCHAR | 0.0% | R |  |
+| chg4ay1 | VARCHAR | 0.0% | 1600 |  |
+| xchg4ay2 | VARCHAR | 0.0% | R |  |
+| chg4ay2 | VARCHAR | 0.0% | 2192 |  |
+| xchg4ay3 | VARCHAR | 0.0% | R |  |
+| chg4ay3 | VARCHAR | 0.0% | 2270 |  |
+| xchg5ay0 | VARCHAR | 0.0% | R |  |
+| chg5ay0 | VARCHAR | 0.0% | 9520 |  |
+| xchg5ay1 | VARCHAR | 0.0% | R |  |
+| chg5ay1 | VARCHAR | 0.0% | 9520 |  |
+| xchg5ay2 | VARCHAR | 0.0% | R |  |
+| chg5ay2 | VARCHAR | 0.0% | 11402 |  |
+| xchg5ay3 | VARCHAR | 0.0% | R |  |
+| chg5ay3 | VARCHAR | 0.0% | 11402 |  |
+| xchg6ay0 | VARCHAR | 0.0% | R |  |
+| chg6ay0 | VARCHAR | 0.0% | 3090 |  |
+| xchg6ay1 | VARCHAR | 0.0% | R |  |
+| chg6ay1 | VARCHAR | 0.0% | 3090 |  |
+| xchg6ay2 | VARCHAR | 0.0% | R |  |
+| chg6ay2 | VARCHAR | 0.0% | 3864 |  |
+| xchg6ay3 | VARCHAR | 0.0% | R |  |
+| chg6ay3 | VARCHAR | 0.0% | 4036 |  |
+| xchg7ay0 | VARCHAR | 0.0% | R |  |
+| chg7ay0 | VARCHAR | 0.0% | 9520 |  |
+| xchg7ay1 | VARCHAR | 0.0% | R |  |
+| chg7ay1 | VARCHAR | 0.0% | 9520 |  |
+| xchg7ay2 | VARCHAR | 0.0% | R |  |
+| chg7ay2 | VARCHAR | 0.0% | 11402 |  |
+| xchg7ay3 | VARCHAR | 0.0% | R |  |
+| chg7ay3 | VARCHAR | 0.0% | 11402 |  |
+| xchg8ay0 | VARCHAR | 0.0% | R |  |
+| chg8ay0 | VARCHAR | 0.0% | 3090 |  |
+| xchg8ay1 | VARCHAR | 0.0% | R |  |
+| chg8ay1 | VARCHAR | 0.0% | 3090 |  |
+| xchg8ay2 | VARCHAR | 0.0% | R |  |
+| chg8ay2 | VARCHAR | 0.0% | 3864 |  |
+| xchg8ay3 | VARCHAR | 0.0% | R |  |
+| chg8ay3 | VARCHAR | 0.0% | 4036 |  |
+| xchg10ay0 | VARCHAR | 0.0% | A |  |
+| chg10ay0 | VARCHAR | 0.0% |  |  |
+| xchg10ay1 | VARCHAR | 0.0% | A |  |
+| chg10ay1 | VARCHAR | 0.0% |  |  |
+| xchg10ay2 | VARCHAR | 0.0% | A |  |
+| chg10ay2 | VARCHAR | 0.0% |  |  |
+| xchg10ay3 | VARCHAR | 0.0% | R |  |
+| chg10ay3 | VARCHAR | 0.0% | 11402 |  |
+| xchg9ay0 | VARCHAR | 0.0% | R |  |
+| chg9ay0 | VARCHAR | 0.0% | 3440 |  |
+| xchg9ay1 | VARCHAR | 0.0% | R |  |
+| chg9ay1 | VARCHAR | 0.0% | 3440 |  |
+| xchg9ay2 | VARCHAR | 0.0% | R |  |
+| chg9ay2 | VARCHAR | 0.0% | 4271 |  |
+| xchg9ay3 | VARCHAR | 0.0% | R |  |
+| chg9ay3 | VARCHAR | 0.0% | 4036 |  |
+| cipcode1 | VARCHAR | 0.0% | -2 |  |
+| xciptui1 | VARCHAR | 0.0% | A |  |
+| ciptuit1 | VARCHAR | 0.0% |  |  |
+| xcipsup1 | VARCHAR | 0.0% | A |  |
+| cipsupp1 | VARCHAR | 0.0% |  |  |
+| xciplgt1 | VARCHAR | 0.0% | A |  |
+| ciplgth1 | VARCHAR | 0.0% |  |  |
+| prgmsr1 | VARCHAR | 0.0% | -2 |  |
+| xmthcmp1 | VARCHAR | 0.0% | A |  |
+| mthcmp1 | VARCHAR | 0.0% |  |  |
+| xwkcmp1 | VARCHAR | 0.0% | A |  |
+| wkcmp1 | VARCHAR | 0.0% |  |  |
+| xlnayhr1 | VARCHAR | 0.0% | A |  |
+| lnayhr1 | VARCHAR | 0.0% |  |  |
+| xlnaywk1 | VARCHAR | 0.0% | A |  |
+| lnaywk1 | VARCHAR | 0.0% |  |  |
+| xchg1py0 | VARCHAR | 0.0% | A |  |
+| chg1py0 | VARCHAR | 0.0% |  |  |
+| xchg1py1 | VARCHAR | 0.0% | A |  |
+| chg1py1 | VARCHAR | 0.0% |  |  |
+| xchg1py2 | VARCHAR | 0.0% | A |  |
+| chg1py2 | VARCHAR | 0.0% |  |  |
+| xchg1py3 | VARCHAR | 0.0% | A |  |
+| chg1py3 | VARCHAR | 0.0% |  |  |
+| xchg4py0 | VARCHAR | 0.0% | A |  |
+| chg4py0 | VARCHAR | 0.0% |  |  |
+| xchg4py1 | VARCHAR | 0.0% | A |  |
+| chg4py1 | VARCHAR | 0.0% |  |  |
+| xchg4py2 | VARCHAR | 0.0% | A |  |
+| chg4py2 | VARCHAR | 0.0% |  |  |
+| xchg4py3 | VARCHAR | 0.0% | A |  |
+| chg4py3 | VARCHAR | 0.0% |  |  |
+| xchg5py0 | VARCHAR | 0.0% | A |  |
+| chg5py0 | VARCHAR | 0.0% |  |  |
+| xchg5py1 | VARCHAR | 0.0% | A |  |
+| chg5py1 | VARCHAR | 0.0% |  |  |
+| xchg5py2 | VARCHAR | 0.0% | A |  |
+| chg5py2 | VARCHAR | 0.0% |  |  |
+| xchg5py3 | VARCHAR | 0.0% | A |  |
+| chg5py3 | VARCHAR | 0.0% |  |  |
+| xchg6py0 | VARCHAR | 0.0% | A |  |
+| chg6py0 | VARCHAR | 0.0% |  |  |
+| xchg6py1 | VARCHAR | 0.0% | A |  |
+| chg6py1 | VARCHAR | 0.0% |  |  |
+| xchg6py2 | VARCHAR | 0.0% | A |  |
+| chg6py2 | VARCHAR | 0.0% |  |  |
+| xchg6py3 | VARCHAR | 0.0% | A |  |
+| chg6py3 | VARCHAR | 0.0% |  |  |
+| xchg7py0 | VARCHAR | 0.0% | A |  |
+| chg7py0 | VARCHAR | 0.0% |  |  |
+| xchg7py1 | VARCHAR | 0.0% | A |  |
+| chg7py1 | VARCHAR | 0.0% |  |  |
+| xchg7py2 | VARCHAR | 0.0% | A |  |
+| chg7py2 | VARCHAR | 0.0% |  |  |
+| xchg7py3 | VARCHAR | 0.0% | A |  |
+| chg7py3 | VARCHAR | 0.0% |  |  |
+| xchg8py0 | VARCHAR | 0.0% | A |  |
+| chg8py0 | VARCHAR | 0.0% |  |  |
+| xchg8py1 | VARCHAR | 0.0% | A |  |
+| chg8py1 | VARCHAR | 0.0% |  |  |
+| xchg8py2 | VARCHAR | 0.0% | A |  |
+| chg8py2 | VARCHAR | 0.0% |  |  |
+| xchg8py3 | VARCHAR | 0.0% | A |  |
+| chg8py3 | VARCHAR | 0.0% |  |  |
+| xchg10py0 | VARCHAR | 0.0% | A |  |
+| chg10py0 | VARCHAR | 0.0% |  |  |
+| xchg10py1 | VARCHAR | 0.0% | A |  |
+| chg10py1 | VARCHAR | 0.0% |  |  |
+| xchg10py2 | VARCHAR | 0.0% | A |  |
+| chg10py2 | VARCHAR | 0.0% |  |  |
+| xchg10py3 | VARCHAR | 0.0% | A |  |
+| chg10py3 | VARCHAR | 0.0% |  |  |
+| xchg9py0 | VARCHAR | 0.0% | A |  |
+| chg9py0 | VARCHAR | 0.0% |  |  |
+| xchg9py1 | VARCHAR | 0.0% | A |  |
+| chg9py1 | VARCHAR | 0.0% |  |  |
+| xchg9py2 | VARCHAR | 0.0% | A |  |
+| chg9py2 | VARCHAR | 0.0% |  |  |
+| xchg9py3 | VARCHAR | 0.0% | A |  |
+| chg9py3 | VARCHAR | 0.0% |  |  |
+| cipcode2 | VARCHAR | 0.0% | -2 |  |
+| xciptui2 | VARCHAR | 0.0% | A |  |
+| ciptuit2 | VARCHAR | 0.0% |  |  |
+| xcipsup2 | VARCHAR | 0.0% | A |  |
+| cipsupp2 | VARCHAR | 0.0% |  |  |
+| xciplgt2 | VARCHAR | 0.0% | A |  |
+| ciplgth2 | VARCHAR | 0.0% |  |  |
+| prgmsr2 | VARCHAR | 0.0% | -2 |  |
+| xmthcmp2 | VARCHAR | 0.0% | A |  |
+| mthcmp2 | VARCHAR | 0.0% |  |  |
+| cipcode3 | VARCHAR | 0.0% | -2 |  |
+| xciptui3 | VARCHAR | 0.0% | A |  |
+| ciptuit3 | VARCHAR | 0.0% |  |  |
+| xcipsup3 | VARCHAR | 0.0% | A |  |
+| cipsupp3 | VARCHAR | 0.0% |  |  |
+| xciplgt3 | VARCHAR | 0.0% | A |  |
+| ciplgth3 | VARCHAR | 0.0% |  |  |
+| prgmsr3 | VARCHAR | 0.0% | -2 |  |
+| xmthcmp3 | VARCHAR | 0.0% | A |  |
+| mthcmp3 | VARCHAR | 0.0% |  |  |
+| cipcode4 | VARCHAR | 0.0% | -2 |  |
+| xciptui4 | VARCHAR | 0.0% | A |  |
+| ciptuit4 | VARCHAR | 0.0% |  |  |
+| xcipsup4 | VARCHAR | 0.0% | A |  |
+| cipsupp4 | VARCHAR | 0.0% |  |  |
+| xciplgt4 | VARCHAR | 0.0% | A |  |
+| ciplgth4 | VARCHAR | 0.0% |  |  |
+| prgmsr4 | VARCHAR | 0.0% | -2 |  |
+| xmthcmp4 | VARCHAR | 0.0% | A |  |
+| mthcmp4 | VARCHAR | 0.0% |  |  |
+| cipcode5 | VARCHAR | 0.0% | -2 |  |
+| xciptui5 | VARCHAR | 0.0% | A |  |
+| ciptuit5 | VARCHAR | 0.0% |  |  |
+| xcipsup5 | VARCHAR | 0.0% | A |  |
+| cipsupp5 | VARCHAR | 0.0% |  |  |
+| xciplgt5 | VARCHAR | 0.0% | A |  |
+| ciplgth5 | VARCHAR | 0.0% |  |  |
+| prgmsr5 | VARCHAR | 0.0% | -2 |  |
+| xmthcmp5 | VARCHAR | 0.0% | A |  |
+| mthcmp5 | VARCHAR | 0.0% |  |  |
+| cipcode6 | VARCHAR | 0.0% | -2 |  |
+| xciptui6 | VARCHAR | 0.0% | A |  |
+| ciptuit6 | VARCHAR | 0.0% |  |  |
+| xcipsup6 | VARCHAR | 0.0% | A |  |
+| cipsupp6 | VARCHAR | 0.0% |  |  |
+| xciplgt6 | VARCHAR | 0.0% | A |  |
+| ciplgth6 | VARCHAR | 0.0% |  |  |
+| prgmsr6 | VARCHAR | 0.0% | -2 |  |
+| xmthcmp6 | VARCHAR | 0.0% | A |  |
+| mthcmp6 | VARCHAR | 0.0% |  |  |
+| year | BIGINT | 0.0% | 2024 |  |
+
+## cost2
+
+Rows: 5,406
+
+| Column | Type | Nulls | Example | Join |
+|--------|------|-------|---------|------|
+| unitid | BIGINT | 0.0% | 100654 | Primary institution ID, joins across IPEDS tables |
+| xcscugfn | VARCHAR | 0.0% | R |  |
+| cscugffn | VARCHAR | 0.0% | 1976 |  |
+| xcscfa1n | VARCHAR | 0.0% | R |  |
+| cscfa1n | VARCHAR | 0.0% | 1976 |  |
+| xscfa11n | VARCHAR | 0.0% | R |  |
+| scfa11n | VARCHAR | 0.0% | 0 |  |
+| xscfa11p | VARCHAR | 0.0% | R |  |
+| scfa11p | VARCHAR | 0.0% | 0 |  |
+| xscfa12n | VARCHAR | 0.0% | R |  |
+| scfa12n | VARCHAR | 0.0% | 976 |  |
+| xscfa12p | VARCHAR | 0.0% | R |  |
+| scfa12p | VARCHAR | 0.0% | 49 |  |
+| xscfa13n | VARCHAR | 0.0% | R |  |
+| scfa13n | VARCHAR | 0.0% | 1000 |  |
+| xscfa13p | VARCHAR | 0.0% | R |  |
+| scfa13p | VARCHAR | 0.0% | 51 |  |
+| xscfa14n | VARCHAR | 0.0% | R |  |
+| scfa14n | VARCHAR | 0.0% | 0 |  |
+| xscfa14p | VARCHAR | 0.0% | R |  |
+| scfa14p | VARCHAR | 0.0% | 0 |  |
+| xcscfy1n | VARCHAR | 0.0% | A |  |
+| cscfy1n | VARCHAR | 0.0% |  |  |
+| xgistn2 | VARCHAR | 0.0% | R |  |
+| gistn2 | VARCHAR | 0.0% | 847 |  |
+| xgiston2 | VARCHAR | 0.0% | R |  |
+| giston2 | VARCHAR | 0.0% | 788 |  |
+| xgistwf2 | VARCHAR | 0.0% | R |  |
+| gistwf2 | VARCHAR | 0.0% | 36 |  |
+| xgistof2 | VARCHAR | 0.0% | R |  |
+| gistof2 | VARCHAR | 0.0% | 23 |  |
+| xgistun2 | VARCHAR | 0.0% | R |  |
+| gistun2 | VARCHAR | 0.0% | 0 |  |
+| xgistt2 | VARCHAR | 0.0% | R |  |
+| gistt2 | VARCHAR | 0.0% | 8354041 |  |
+| xgista2 | VARCHAR | 0.0% | R |  |
+| gista2 | VARCHAR | 0.0% | 9863 |  |
+| xgistn1 | VARCHAR | 0.0% | R |  |
+| gistn1 | VARCHAR | 0.0% | 712 |  |
+| xgiston1 | VARCHAR | 0.0% | R |  |
+| giston1 | VARCHAR | 0.0% | 619 |  |
+| xgistwf1 | VARCHAR | 0.0% | R |  |
+| gistwf1 | VARCHAR | 0.0% | 70 |  |
+| xgistof1 | VARCHAR | 0.0% | R |  |
+| gistof1 | VARCHAR | 0.0% | 22 |  |
+| xgistun1 | VARCHAR | 0.0% | R |  |
+| gistun1 | VARCHAR | 0.0% | 1 |  |
+| xgistt1 | VARCHAR | 0.0% | R |  |
+| gistt1 | VARCHAR | 0.0% | 6598275 |  |
+| xgista1 | VARCHAR | 0.0% | R |  |
+| gista1 | VARCHAR | 0.0% | 9267 |  |
+| xgistn0 | VARCHAR | 0.0% | R |  |
+| gistn0 | VARCHAR | 0.0% | 612 |  |
+| xgiston0 | VARCHAR | 0.0% | R |  |
+| giston0 | VARCHAR | 0.0% | 471 |  |
+| xgistwf0 | VARCHAR | 0.0% | R |  |
+| gistwf0 | VARCHAR | 0.0% | 78 |  |
+| xgistof0 | VARCHAR | 0.0% | R |  |
+| gistof0 | VARCHAR | 0.0% | 63 |  |
+| xgistun0 | VARCHAR | 0.0% | R |  |
+| gistun0 | VARCHAR | 0.0% | 0 |  |
+| xgistt0 | VARCHAR | 0.0% | R |  |
+| gistt0 | VARCHAR | 0.0% | 5180341 |  |
+| xgista0 | VARCHAR | 0.0% | R |  |
+| gista0 | VARCHAR | 0.0% | 8465 |  |
+| xgis4n2 | VARCHAR | 0.0% | R |  |
+| gis4n2 | VARCHAR | 0.0% | 868 |  |
+| xgis4on2 | VARCHAR | 0.0% | R |  |
+| gis4on2 | VARCHAR | 0.0% | 805 |  |
+| xgis4wf2 | VARCHAR | 0.0% | R |  |
+| gis4wf2 | VARCHAR | 0.0% | 26 |  |
+| xgis4of2 | VARCHAR | 0.0% | R |  |
+| gis4of2 | VARCHAR | 0.0% | 37 |  |
+| xgis4un2 | VARCHAR | 0.0% | R |  |
+| gis4un2 | VARCHAR | 0.0% | 0 |  |
+| xgis4g2 | VARCHAR | 0.0% | R |  |
+| gis4g2 | VARCHAR | 0.0% | 847 |  |
+| xgis4t2 | VARCHAR | 0.0% | R |  |
+| gis4t2 | VARCHAR | 0.0% | 8273649 |  |
+| xgis4a2 | VARCHAR | 0.0% | R |  |
+| gis4a2 | VARCHAR | 0.0% | 9532 |  |
+| xgis4n12 | VARCHAR | 0.0% | R |  |
+| gis4n12 | VARCHAR | 0.0% | 429 |  |
+| xgis4g12 | VARCHAR | 0.0% | R |  |
+| gis4g12 | VARCHAR | 0.0% | 428 |  |
+| xgis4t12 | VARCHAR | 0.0% | R |  |
+| gis4t12 | VARCHAR | 0.0% | 4570215 |  |
+| xgis4a12 | VARCHAR | 0.0% | R |  |
+| gis4a12 | VARCHAR | 0.0% | 10653 |  |
+| xgis4n22 | VARCHAR | 0.0% | R |  |
+| gis4n22 | VARCHAR | 0.0% | 175 |  |
+| xgis4g22 | VARCHAR | 0.0% | R |  |
+| gis4g22 | VARCHAR | 0.0% | 175 |  |
+| xgis4t22 | VARCHAR | 0.0% | R |  |
+| gis4t22 | VARCHAR | 0.0% | 1884104 |  |
+| xgis4a22 | VARCHAR | 0.0% | R |  |
+| gis4a22 | VARCHAR | 0.0% | 10766 |  |
+| xgis4n32 | VARCHAR | 0.0% | R |  |
+| gis4n32 | VARCHAR | 0.0% | 134 |  |
+| xgis4g32 | VARCHAR | 0.0% | R |  |
+| gis4g32 | VARCHAR | 0.0% | 130 |  |
+| xgis4t32 | VARCHAR | 0.0% | R |  |
+| gis4t32 | VARCHAR | 0.0% | 1009130 |  |
+| xgis4a32 | VARCHAR | 0.0% | R |  |
+| gis4a32 | VARCHAR | 0.0% | 7531 |  |
+| xgis4n42 | VARCHAR | 0.0% | R |  |
+| gis4n42 | VARCHAR | 0.0% | 55 |  |
+| xgis4g42 | VARCHAR | 0.0% | R |  |
+| gis4g42 | VARCHAR | 0.0% | 43 |  |
+| xgis4t42 | VARCHAR | 0.0% | R |  |
+| gis4t42 | VARCHAR | 0.0% | 301001 |  |
+| xgis4a42 | VARCHAR | 0.0% | R |  |
+| gis4a42 | VARCHAR | 0.0% | 5473 |  |
+| xgis4n52 | VARCHAR | 0.0% | R |  |
+| gis4n52 | VARCHAR | 0.0% | 75 |  |
+| xgis4g52 | VARCHAR | 0.0% | R |  |
+| gis4g52 | VARCHAR | 0.0% | 71 |  |
+| xgis4t52 | VARCHAR | 0.0% | R |  |
+| gis4t52 | VARCHAR | 0.0% | 509199 |  |
+| xgis4a52 | VARCHAR | 0.0% | R |  |
+| gis4a52 | VARCHAR | 0.0% | 6789 |  |
+| xgis4n1 | VARCHAR | 0.0% | R |  |
+| gis4n1 | VARCHAR | 0.0% | 645 |  |
+| xgis4on1 | VARCHAR | 0.0% | R |  |
+| gis4on1 | VARCHAR | 0.0% | 592 |  |
+| xgis4wf1 | VARCHAR | 0.0% | R |  |
+| gis4wf1 | VARCHAR | 0.0% | 34 |  |
+| xgis4of1 | VARCHAR | 0.0% | R |  |
+| gis4of1 | VARCHAR | 0.0% | 19 |  |
+| xgis4un1 | VARCHAR | 0.0% | R |  |
+| gis4un1 | VARCHAR | 0.0% | 0 |  |
+| xgis4g1 | VARCHAR | 0.0% | R |  |
+| gis4g1 | VARCHAR | 0.0% | 636 |  |
+| xgis4t1 | VARCHAR | 0.0% | R |  |
+| gis4t1 | VARCHAR | 0.0% | 5928907 |  |
+| xgis4a1 | VARCHAR | 0.0% | R |  |
+| gis4a1 | VARCHAR | 0.0% | 9192 |  |
+| xgis4n11 | VARCHAR | 0.0% | R |  |
+| gis4n11 | VARCHAR | 0.0% | 328 |  |
+| xgis4g11 | VARCHAR | 0.0% | R |  |
+| gis4g11 | VARCHAR | 0.0% | 328 |  |
+| xgis4t11 | VARCHAR | 0.0% | R |  |
+| gis4t11 | VARCHAR | 0.0% | 3271951 |  |
+| xgis4a11 | VARCHAR | 0.0% | R |  |
+| gis4a11 | VARCHAR | 0.0% | 9975 |  |
+| xgis4n21 | VARCHAR | 0.0% | R |  |
+| gis4n21 | VARCHAR | 0.0% | 176 |  |
+| xgis4g21 | VARCHAR | 0.0% | R |  |
+| gis4g21 | VARCHAR | 0.0% | 176 |  |
+| xgis4t21 | VARCHAR | 0.0% | R |  |
+| gis4t21 | VARCHAR | 0.0% | 1729702 |  |
+| xgis4a21 | VARCHAR | 0.0% | R |  |
+| gis4a21 | VARCHAR | 0.0% | 9828 |  |
+| xgis4n31 | VARCHAR | 0.0% | R |  |
+| gis4n31 | VARCHAR | 0.0% | 94 |  |
+| xgis4g31 | VARCHAR | 0.0% | R |  |
+| gis4g31 | VARCHAR | 0.0% | 91 |  |
+| xgis4t31 | VARCHAR | 0.0% | R |  |
+| gis4t31 | VARCHAR | 0.0% | 684364 |  |
+| xgis4a31 | VARCHAR | 0.0% | R |  |
+| gis4a31 | VARCHAR | 0.0% | 7280 |  |
+| xgis4n41 | VARCHAR | 0.0% | R |  |
+| gis4n41 | VARCHAR | 0.0% | 21 |  |
+| xgis4g41 | VARCHAR | 0.0% | R |  |
+| gis4g41 | VARCHAR | 0.0% | 18 |  |
+| xgis4t41 | VARCHAR | 0.0% | R |  |
+| gis4t41 | VARCHAR | 0.0% | 98566 |  |
+| xgis4a41 | VARCHAR | 0.0% | R |  |
+| gis4a41 | VARCHAR | 0.0% | 4694 |  |
+| xgis4n51 | VARCHAR | 0.0% | R |  |
+| gis4n51 | VARCHAR | 0.0% | 26 |  |
+| xgis4g51 | VARCHAR | 0.0% | R |  |
+| gis4g51 | VARCHAR | 0.0% | 23 |  |
+| xgis4t51 | VARCHAR | 0.0% | R |  |
+| gis4t51 | VARCHAR | 0.0% | 144324 |  |
+| xgis4a51 | VARCHAR | 0.0% | R |  |
+| gis4a51 | VARCHAR | 0.0% | 5551 |  |
+| xgis4n0 | VARCHAR | 0.0% | R |  |
+| gis4n0 | VARCHAR | 0.0% | 567 |  |
+| xgis4on0 | VARCHAR | 0.0% | R |  |
+| gis4on0 | VARCHAR | 0.0% | 439 |  |
+| xgis4wf0 | VARCHAR | 0.0% | R |  |
+| gis4wf0 | VARCHAR | 0.0% | 66 |  |
+| xgis4of0 | VARCHAR | 0.0% | R |  |
+| gis4of0 | VARCHAR | 0.0% | 62 |  |
+| xgis4un0 | VARCHAR | 0.0% | R |  |
+| gis4un0 | VARCHAR | 0.0% | 0 |  |
+| xgis4g0 | VARCHAR | 0.0% | R |  |
+| gis4g0 | VARCHAR | 0.0% | 549 |  |
+| xgis4t0 | VARCHAR | 0.0% | R |  |
+| gis4t0 | VARCHAR | 0.0% | 4640730 |  |
+| xgis4a0 | VARCHAR | 0.0% | R |  |
+| gis4a0 | VARCHAR | 0.0% | 8185 |  |
+| xgis4n10 | VARCHAR | 0.0% | R |  |
+| gis4n10 | VARCHAR | 0.0% | 311 |  |
+| xgis4g10 | VARCHAR | 0.0% | R |  |
+| gis4g10 | VARCHAR | 0.0% | 307 |  |
+| xgis4t10 | VARCHAR | 0.0% | R |  |
+| gis4t10 | VARCHAR | 0.0% | 2787106 |  |
+| xgis4a10 | VARCHAR | 0.0% | R |  |
+| gis4a10 | VARCHAR | 0.0% | 8962 |  |
+| xgis4n20 | VARCHAR | 0.0% | R |  |
+| gis4n20 | VARCHAR | 0.0% | 143 |  |
+| xgis4g20 | VARCHAR | 0.0% | R |  |
+| gis4g20 | VARCHAR | 0.0% | 142 |  |
+| xgis4t20 | VARCHAR | 0.0% | R |  |
+| gis4t20 | VARCHAR | 0.0% | 1235673 |  |
+| xgis4a20 | VARCHAR | 0.0% | R |  |
+| gis4a20 | VARCHAR | 0.0% | 8641 |  |
+| xgis4n30 | VARCHAR | 0.0% | R |  |
+| gis4n30 | VARCHAR | 0.0% | 57 |  |
+| xgis4g30 | VARCHAR | 0.0% | R |  |
+| gis4g30 | VARCHAR | 0.0% | 53 |  |
+| xgis4t30 | VARCHAR | 0.0% | R |  |
+| gis4t30 | VARCHAR | 0.0% | 378171 |  |
+| xgis4a30 | VARCHAR | 0.0% | R |  |
+| gis4a30 | VARCHAR | 0.0% | 6635 |  |
+| xgis4n40 | VARCHAR | 0.0% | R |  |
+| gis4n40 | VARCHAR | 0.0% | 29 |  |
+| xgis4g40 | VARCHAR | 0.0% | R |  |
+| gis4g40 | VARCHAR | 0.0% | 22 |  |
+| xgis4t40 | VARCHAR | 0.0% | R |  |
+| gis4t40 | VARCHAR | 0.0% | 87821 |  |
+| xgis4a40 | VARCHAR | 0.0% | R |  |
+| gis4a40 | VARCHAR | 0.0% | 3028 |  |
+| xgis4n50 | VARCHAR | 0.0% | R |  |
+| gis4n50 | VARCHAR | 0.0% | 27 |  |
+| xgis4g50 | VARCHAR | 0.0% | R |  |
+| gis4g50 | VARCHAR | 0.0% | 25 |  |
+| xgis4t50 | VARCHAR | 0.0% | R |  |
+| gis4t50 | VARCHAR | 0.0% | 151959 |  |
+| xgis4a50 | VARCHAR | 0.0% | R |  |
+| gis4a50 | VARCHAR | 0.0% | 5628 |  |
+| coaisgs2 | VARCHAR | 0.0% | 27015 |  |
+| coaisgs1 | VARCHAR | 0.0% | 23331 |  |
+| coaisgs0 | VARCHAR | 0.0% | 23065 |  |
+| xnpist2 | VARCHAR | 0.0% | R |  |
+| npist2 | VARCHAR | 0.0% | 17152 |  |
+| xnpist1 | VARCHAR | 0.0% | R |  |
+| npist1 | VARCHAR | 0.0% | 14064 |  |
+| xnpist0 | VARCHAR | 0.0% | R |  |
+| npist0 | VARCHAR | 0.0% | 14600 |  |
+| coaist42 | VARCHAR | 0.0% | 27153 |  |
+| coaist41 | VARCHAR | 0.0% | 23751 |  |
+| coaist40 | VARCHAR | 0.0% | 23167 |  |
+| xnpis412 | VARCHAR | 0.0% | R |  |
+| npis412 | VARCHAR | 0.0% | 16500 |  |
+| xnpis422 | VARCHAR | 0.0% | R |  |
+| npis422 | VARCHAR | 0.0% | 16387 |  |
+| xnpis432 | VARCHAR | 0.0% | R |  |
+| npis432 | VARCHAR | 0.0% | 19622 |  |
+| xnpis442 | VARCHAR | 0.0% | R |  |
+| npis442 | VARCHAR | 0.0% | 21680 |  |
+| xnpis452 | VARCHAR | 0.0% | R |  |
+| npis452 | VARCHAR | 0.0% | 20364 |  |
+| xnpis42 | VARCHAR | 0.0% | R |  |
+| npis42 | VARCHAR | 0.0% | 17621 |  |
+| xnpis411 | VARCHAR | 0.0% | R |  |
+| npis411 | VARCHAR | 0.0% | 13776 |  |
+| xnpis421 | VARCHAR | 0.0% | R |  |
+| npis421 | VARCHAR | 0.0% | 13923 |  |
+| xnpis431 | VARCHAR | 0.0% | R |  |
+| npis431 | VARCHAR | 0.0% | 16471 |  |
+| xnpis441 | VARCHAR | 0.0% | R |  |
+| npis441 | VARCHAR | 0.0% | 19057 |  |
+| xnpis451 | VARCHAR | 0.0% | R |  |
+| npis451 | VARCHAR | 0.0% | 18200 |  |
+| xnpis41 | VARCHAR | 0.0% | R |  |
+| npis41 | VARCHAR | 0.0% | 14559 |  |
+| xnpis410 | VARCHAR | 0.0% | R |  |
+| npis410 | VARCHAR | 0.0% | 14205 |  |
+| xnpis420 | VARCHAR | 0.0% | R |  |
+| npis420 | VARCHAR | 0.0% | 14526 |  |
+| xnpis430 | VARCHAR | 0.0% | R |  |
+| npis430 | VARCHAR | 0.0% | 16532 |  |
+| xnpis440 | VARCHAR | 0.0% | R |  |
+| npis440 | VARCHAR | 0.0% | 20139 |  |
+| xnpis450 | VARCHAR | 0.0% | R |  |
+| npis450 | VARCHAR | 0.0% | 17539 |  |
+| xnpis40 | VARCHAR | 0.0% | R |  |
+| npis40 | VARCHAR | 0.0% | 14982 |  |
+| xgrntn2 | VARCHAR | 0.0% | A |  |
+| grntn2 | VARCHAR | 0.0% |  |  |
+| xgrnton2 | VARCHAR | 0.0% | A |  |
+| grnton2 | VARCHAR | 0.0% |  |  |
+| xgrntwf2 | VARCHAR | 0.0% | A |  |
+| grntwf2 | VARCHAR | 0.0% |  |  |
+| xgrntof2 | VARCHAR | 0.0% | A |  |
+| grntof2 | VARCHAR | 0.0% |  |  |
+| xgrntun2 | VARCHAR | 0.0% | A |  |
+| grntun2 | VARCHAR | 0.0% |  |  |
+| xgrntt2 | VARCHAR | 0.0% | A |  |
+| grntt2 | VARCHAR | 0.0% |  |  |
+| xgrnta2 | VARCHAR | 0.0% | A |  |
+| grnta2 | VARCHAR | 0.0% |  |  |
+| xgrntn1 | VARCHAR | 0.0% | A |  |
+| grntn1 | VARCHAR | 0.0% |  |  |
+| xgrnton1 | VARCHAR | 0.0% | A |  |
+| grnton1 | VARCHAR | 0.0% |  |  |
+| xgrntwf1 | VARCHAR | 0.0% | A |  |
+| grntwf1 | VARCHAR | 0.0% |  |  |
+| xgrntof1 | VARCHAR | 0.0% | A |  |
+| grntof1 | VARCHAR | 0.0% |  |  |
+| xgrntun1 | VARCHAR | 0.0% | A |  |
+| grntun1 | VARCHAR | 0.0% |  |  |
+| xgrntt1 | VARCHAR | 0.0% | A |  |
+| grntt1 | VARCHAR | 0.0% |  |  |
+| xgrnta1 | VARCHAR | 0.0% | A |  |
+| grnta1 | VARCHAR | 0.0% |  |  |
+| xgrntn0 | VARCHAR | 0.0% | A |  |
+| grntn0 | VARCHAR | 0.0% |  |  |
+| xgrnton0 | VARCHAR | 0.0% | A |  |
+| grnton0 | VARCHAR | 0.0% |  |  |
+| xgrntwf0 | VARCHAR | 0.0% | A |  |
+| grntwf0 | VARCHAR | 0.0% |  |  |
+| xgrntof0 | VARCHAR | 0.0% | A |  |
+| grntof0 | VARCHAR | 0.0% |  |  |
+| xgrntun0 | VARCHAR | 0.0% | A |  |
+| grntun0 | VARCHAR | 0.0% |  |  |
+| xgrntt0 | VARCHAR | 0.0% | A |  |
+| grntt0 | VARCHAR | 0.0% |  |  |
+| xgrnta0 | VARCHAR | 0.0% | A |  |
+| grnta0 | VARCHAR | 0.0% |  |  |
+| xgrn4n2 | VARCHAR | 0.0% | A |  |
+| grn4n2 | VARCHAR | 0.0% |  |  |
+| xgrn4on2 | VARCHAR | 0.0% | A |  |
+| grn4on2 | VARCHAR | 0.0% |  |  |
+| xgrn4wf2 | VARCHAR | 0.0% | A |  |
+| grn4wf2 | VARCHAR | 0.0% |  |  |
+| xgrn4of2 | VARCHAR | 0.0% | A |  |
+| grn4of2 | VARCHAR | 0.0% |  |  |
+| xgrn4un2 | VARCHAR | 0.0% | A |  |
+| grn4un2 | VARCHAR | 0.0% |  |  |
+| xgrn4g2 | VARCHAR | 0.0% | A |  |
+| grn4g2 | VARCHAR | 0.0% |  |  |
+| xgrn4t2 | VARCHAR | 0.0% | A |  |
+| grn4t2 | VARCHAR | 0.0% |  |  |
+| xgrn4a2 | VARCHAR | 0.0% | A |  |
+| grn4a2 | VARCHAR | 0.0% |  |  |
+| xgrn4n12 | VARCHAR | 0.0% | A |  |
+| grn4n12 | VARCHAR | 0.0% |  |  |
+| xgrn4g12 | VARCHAR | 0.0% | A |  |
+| grn4g12 | VARCHAR | 0.0% |  |  |
+| xgrn4t12 | VARCHAR | 0.0% | A |  |
+| grn4t12 | VARCHAR | 0.0% |  |  |
+| xgrn4a12 | VARCHAR | 0.0% | A |  |
+| grn4a12 | VARCHAR | 0.0% |  |  |
+| xgrn4n22 | VARCHAR | 0.0% | A |  |
+| grn4n22 | VARCHAR | 0.0% |  |  |
+| xgrn4g22 | VARCHAR | 0.0% | A |  |
+| grn4g22 | VARCHAR | 0.0% |  |  |
+| xgrn4t22 | VARCHAR | 0.0% | A |  |
+| grn4t22 | VARCHAR | 0.0% |  |  |
+| xgrn4a22 | VARCHAR | 0.0% | A |  |
+| grn4a22 | VARCHAR | 0.0% |  |  |
+| xgrn4n32 | VARCHAR | 0.0% | A |  |
+| grn4n32 | VARCHAR | 0.0% |  |  |
+| xgrn4g32 | VARCHAR | 0.0% | A |  |
+| grn4g32 | VARCHAR | 0.0% |  |  |
+| xgrn4t32 | VARCHAR | 0.0% | A |  |
+| grn4t32 | VARCHAR | 0.0% |  |  |
+| xgrn4a32 | VARCHAR | 0.0% | A |  |
+| grn4a32 | VARCHAR | 0.0% |  |  |
+| xgrn4n42 | VARCHAR | 0.0% | A |  |
+| grn4n42 | VARCHAR | 0.0% |  |  |
+| xgrn4g42 | VARCHAR | 0.0% | A |  |
+| grn4g42 | VARCHAR | 0.0% |  |  |
+| xgrn4t42 | VARCHAR | 0.0% | A |  |
+| grn4t42 | VARCHAR | 0.0% |  |  |
+| xgrn4a42 | VARCHAR | 0.0% | A |  |
+| grn4a42 | VARCHAR | 0.0% |  |  |
+| xgrn4n52 | VARCHAR | 0.0% | A |  |
+| grn4n52 | VARCHAR | 0.0% |  |  |
+| xgrn4g52 | VARCHAR | 0.0% | A |  |
+| grn4g52 | VARCHAR | 0.0% |  |  |
+| xgrn4t52 | VARCHAR | 0.0% | A |  |
+| grn4t52 | VARCHAR | 0.0% |  |  |
+| xgrn4a52 | VARCHAR | 0.0% | A |  |
+| grn4a52 | VARCHAR | 0.0% |  |  |
+| xgrn4n1 | VARCHAR | 0.0% | A |  |
+| grn4n1 | VARCHAR | 0.0% |  |  |
+| xgrn4on1 | VARCHAR | 0.0% | A |  |
+| grn4on1 | VARCHAR | 0.0% |  |  |
+| xgrn4wf1 | VARCHAR | 0.0% | A |  |
+| grn4wf1 | VARCHAR | 0.0% |  |  |
+| xgrn4of1 | VARCHAR | 0.0% | A |  |
+| grn4of1 | VARCHAR | 0.0% |  |  |
+| xgrn4un1 | VARCHAR | 0.0% | A |  |
+| grn4un1 | VARCHAR | 0.0% |  |  |
+| xgrn4g1 | VARCHAR | 0.0% | A |  |
+| grn4g1 | VARCHAR | 0.0% |  |  |
+| xgrn4t1 | VARCHAR | 0.0% | A |  |
+| grn4t1 | VARCHAR | 0.0% |  |  |
+| xgrn4a1 | VARCHAR | 0.0% | A |  |
+| grn4a1 | VARCHAR | 0.0% |  |  |
+| xgrn4n11 | VARCHAR | 0.0% | A |  |
+| grn4n11 | VARCHAR | 0.0% |  |  |
+| xgrn4g11 | VARCHAR | 0.0% | A |  |
+| grn4g11 | VARCHAR | 0.0% |  |  |
+| xgrn4t11 | VARCHAR | 0.0% | A |  |
+| grn4t11 | VARCHAR | 0.0% |  |  |
+| xgrn4a11 | VARCHAR | 0.0% | A |  |
+| grn4a11 | VARCHAR | 0.0% |  |  |
+| xgrn4n21 | VARCHAR | 0.0% | A |  |
+| grn4n21 | VARCHAR | 0.0% |  |  |
+| xgrn4g21 | VARCHAR | 0.0% | A |  |
+| grn4g21 | VARCHAR | 0.0% |  |  |
+| xgrn4t21 | VARCHAR | 0.0% | A |  |
+| grn4t21 | VARCHAR | 0.0% |  |  |
+| xgrn4a21 | VARCHAR | 0.0% | A |  |
+| grn4a21 | VARCHAR | 0.0% |  |  |
+| xgrn4n31 | VARCHAR | 0.0% | A |  |
+| grn4n31 | VARCHAR | 0.0% |  |  |
+| xgrn4g31 | VARCHAR | 0.0% | A |  |
+| grn4g31 | VARCHAR | 0.0% |  |  |
+| xgrn4t31 | VARCHAR | 0.0% | A |  |
+| grn4t31 | VARCHAR | 0.0% |  |  |
+| xgrn4a31 | VARCHAR | 0.0% | A |  |
+| grn4a31 | VARCHAR | 0.0% |  |  |
+| xgrn4n41 | VARCHAR | 0.0% | A |  |
+| grn4n41 | VARCHAR | 0.0% |  |  |
+| xgrn4g41 | VARCHAR | 0.0% | A |  |
+| grn4g41 | VARCHAR | 0.0% |  |  |
+| xgrn4t41 | VARCHAR | 0.0% | A |  |
+| grn4t41 | VARCHAR | 0.0% |  |  |
+| xgrn4a41 | VARCHAR | 0.0% | A |  |
+| grn4a41 | VARCHAR | 0.0% |  |  |
+| xgrn4n51 | VARCHAR | 0.0% | A |  |
+| grn4n51 | VARCHAR | 0.0% |  |  |
+| xgrn4g51 | VARCHAR | 0.0% | A |  |
+| grn4g51 | VARCHAR | 0.0% |  |  |
+| xgrn4t51 | VARCHAR | 0.0% | A |  |
+| grn4t51 | VARCHAR | 0.0% |  |  |
+| xgrn4a51 | VARCHAR | 0.0% | A |  |
+| grn4a51 | VARCHAR | 0.0% |  |  |
+| xgrn4n0 | VARCHAR | 0.0% | A |  |
+| grn4n0 | VARCHAR | 0.0% |  |  |
+| xgrn4on0 | VARCHAR | 0.0% | A |  |
+| grn4on0 | VARCHAR | 0.0% |  |  |
+| xgrn4wf0 | VARCHAR | 0.0% | A |  |
+| grn4wf0 | VARCHAR | 0.0% |  |  |
+| xgrn4of0 | VARCHAR | 0.0% | A |  |
+| grn4of0 | VARCHAR | 0.0% |  |  |
+| xgrn4un0 | VARCHAR | 0.0% | A |  |
+| grn4un0 | VARCHAR | 0.0% |  |  |
+| xgrn4g0 | VARCHAR | 0.0% | A |  |
+| grn4g0 | VARCHAR | 0.0% |  |  |
+| xgrn4t0 | VARCHAR | 0.0% | A |  |
+| grn4t0 | VARCHAR | 0.0% |  |  |
+| xgrn4a0 | VARCHAR | 0.0% | A |  |
+| grn4a0 | VARCHAR | 0.0% |  |  |
+| xgrn4n10 | VARCHAR | 0.0% | A |  |
+| grn4n10 | VARCHAR | 0.0% |  |  |
+| xgrn4g10 | VARCHAR | 0.0% | A |  |
+| grn4g10 | VARCHAR | 0.0% |  |  |
+| xgrn4t10 | VARCHAR | 0.0% | A |  |
+| grn4t10 | VARCHAR | 0.0% |  |  |
+| xgrn4a10 | VARCHAR | 0.0% | A |  |
+| grn4a10 | VARCHAR | 0.0% |  |  |
+| xgrn4n20 | VARCHAR | 0.0% | A |  |
+| grn4n20 | VARCHAR | 0.0% |  |  |
+| xgrn4g20 | VARCHAR | 0.0% | A |  |
+| grn4g20 | VARCHAR | 0.0% |  |  |
+| xgrn4t20 | VARCHAR | 0.0% | A |  |
+| grn4t20 | VARCHAR | 0.0% |  |  |
+| xgrn4a20 | VARCHAR | 0.0% | A |  |
+| grn4a20 | VARCHAR | 0.0% |  |  |
+| xgrn4n30 | VARCHAR | 0.0% | A |  |
+| grn4n30 | VARCHAR | 0.0% |  |  |
+| xgrn4g30 | VARCHAR | 0.0% | A |  |
+| grn4g30 | VARCHAR | 0.0% |  |  |
+| xgrn4t30 | VARCHAR | 0.0% | A |  |
+| grn4t30 | VARCHAR | 0.0% |  |  |
+| xgrn4a30 | VARCHAR | 0.0% | A |  |
+| grn4a30 | VARCHAR | 0.0% |  |  |
+| xgrn4n40 | VARCHAR | 0.0% | A |  |
+| grn4n40 | VARCHAR | 0.0% |  |  |
+| xgrn4g40 | VARCHAR | 0.0% | A |  |
+| grn4g40 | VARCHAR | 0.0% |  |  |
+| xgrn4t40 | VARCHAR | 0.0% | A |  |
+| grn4t40 | VARCHAR | 0.0% |  |  |
+| xgrn4a40 | VARCHAR | 0.0% | A |  |
+| grn4a40 | VARCHAR | 0.0% |  |  |
+| xgrn4n50 | VARCHAR | 0.0% | A |  |
+| grn4n50 | VARCHAR | 0.0% |  |  |
+| xgrn4g50 | VARCHAR | 0.0% | A |  |
+| grn4g50 | VARCHAR | 0.0% |  |  |
+| xgrn4t50 | VARCHAR | 0.0% | A |  |
+| grn4t50 | VARCHAR | 0.0% |  |  |
+| xgrn4a50 | VARCHAR | 0.0% | A |  |
+| grn4a50 | VARCHAR | 0.0% |  |  |
+| coags2 | VARCHAR | 0.0% |  |  |
+| coags1 | VARCHAR | 0.0% |  |  |
+| coags0 | VARCHAR | 0.0% |  |  |
+| xnpgrn2 | VARCHAR | 0.0% | A |  |
+| npgrn2 | VARCHAR | 0.0% |  |  |
+| xnpgrn1 | VARCHAR | 0.0% | A |  |
+| npgrn1 | VARCHAR | 0.0% |  |  |
+| xnpgrn0 | VARCHAR | 0.0% | A |  |
+| npgrn0 | VARCHAR | 0.0% |  |  |
+| coat42 | VARCHAR | 0.0% |  |  |
+| coat41 | VARCHAR | 0.0% |  |  |
+| coat40 | VARCHAR | 0.0% |  |  |
+| xnpt412 | VARCHAR | 0.0% | A |  |
+| npt412 | VARCHAR | 0.0% |  |  |
+| xnpt422 | VARCHAR | 0.0% | A |  |
+| npt422 | VARCHAR | 0.0% |  |  |
+| xnpt432 | VARCHAR | 0.0% | A |  |
+| npt432 | VARCHAR | 0.0% |  |  |
+| xnpt442 | VARCHAR | 0.0% | A |  |
+| npt442 | VARCHAR | 0.0% |  |  |
+| xnpt452 | VARCHAR | 0.0% | A |  |
+| npt452 | VARCHAR | 0.0% |  |  |
+| xnpt42 | VARCHAR | 0.0% | A |  |
+| npt42 | VARCHAR | 0.0% |  |  |
+| xnpt411 | VARCHAR | 0.0% | A |  |
+| npt411 | VARCHAR | 0.0% |  |  |
+| xnpt421 | VARCHAR | 0.0% | A |  |
+| npt421 | VARCHAR | 0.0% |  |  |
+| xnpt431 | VARCHAR | 0.0% | A |  |
+| npt431 | VARCHAR | 0.0% |  |  |
+| xnpt441 | VARCHAR | 0.0% | A |  |
+| npt441 | VARCHAR | 0.0% |  |  |
+| xnpt451 | VARCHAR | 0.0% | A |  |
+| npt451 | VARCHAR | 0.0% |  |  |
+| xnpt41 | VARCHAR | 0.0% | A |  |
+| npt41 | VARCHAR | 0.0% |  |  |
+| xnpt410 | VARCHAR | 0.0% | A |  |
+| npt410 | VARCHAR | 0.0% |  |  |
+| xnpt420 | VARCHAR | 0.0% | A |  |
+| npt420 | VARCHAR | 0.0% |  |  |
+| xnpt430 | VARCHAR | 0.0% | A |  |
+| npt430 | VARCHAR | 0.0% |  |  |
+| xnpt440 | VARCHAR | 0.0% | A |  |
+| npt440 | VARCHAR | 0.0% |  |  |
+| xnpt450 | VARCHAR | 0.0% | A |  |
+| npt450 | VARCHAR | 0.0% |  |  |
+| xnpt40 | VARCHAR | 0.0% | A |  |
+| npt40 | VARCHAR | 0.0% |  |  |
+| year | BIGINT | 0.0% | 2024 |  |
+
 ## eap
 
-Rows: 8,999,839
+Rows: 8,998,053
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
 | unitid | BIGINT | 0.0% | 100654 | Primary institution ID, joins across all IPEDS tables |
-| eapcat | BIGINT | 55.9% | 10000 |  |
-| occupcat | BIGINT | 55.9% | 100 |  |
-| facstat | BIGINT | 55.9% | 0 |  |
+| eapcat | BIGINT | 55.8% | 10000 |  |
+| occupcat | BIGINT | 55.8% | 100 |  |
+| facstat | BIGINT | 55.8% | 0 |  |
 | xeaptot | VARCHAR | 0.5% | R |  |
 | eaptot | BIGINT | 0.5% | 1099 |  |
 | xeaptyp | VARCHAR | 0.5% | R |  |
 | eaptyp | DOUBLE | 0.6% | 1099.0 |  |
 | xeapmed | VARCHAR | 0.5% | A |  |
-| eapmed | DOUBLE | 42.4% | 5569.0 |  |
-| xeapft | VARCHAR | 55.9% | R |  |
+| eapmed | DOUBLE | 42.5% | 5569.0 |  |
+| xeapft | VARCHAR | 55.8% | R |  |
 | eapft | DOUBLE | 56.5% | 820.0 |  |
-| xeapftty | VARCHAR | 55.9% | R |  |
+| xeapftty | VARCHAR | 55.8% | R |  |
 | eapfttyp | DOUBLE | 56.7% | 820.0 |  |
-| xeapftmd | VARCHAR | 55.9% | A |  |
+| xeapftmd | VARCHAR | 55.8% | A |  |
 | eapftmed | DOUBLE | 97.8% | 5055.0 |  |
-| xeappt | VARCHAR | 55.9% | R |  |
-| eappt | DOUBLE | 59.9% | 279.0 |  |
-| xeapptty | VARCHAR | 55.9% | R |  |
-| eappttyp | DOUBLE | 60.1% | 279.0 |  |
-| xeapptmd | VARCHAR | 55.9% | A |  |
+| xeappt | VARCHAR | 55.8% | R |  |
+| eappt | DOUBLE | 60.0% | 279.0 |  |
+| xeapptty | VARCHAR | 55.8% | R |  |
+| eappttyp | DOUBLE | 60.2% | 279.0 |  |
+| xeapptmd | VARCHAR | 55.8% | A |  |
 | eapptmed | DOUBLE | 97.9% | 514.0 |  |
 | year | BIGINT | 0.0% | 2024 | Appears in 26 tables, common join key |
-| eaprectp | BIGINT | 44.6% | 1245 |  |
-| ftpt | BIGINT | 44.6% | 1 |  |
-| functcd | BIGINT | 44.1% | 24 |  |
-| fstat | BIGINT | 44.6% | 5 |  |
+| eaprectp | BIGINT | 44.7% | 1245 |  |
+| ftpt | BIGINT | 44.7% | 1 |  |
+| functcd | BIGINT | 44.2% | 24 |  |
+| fstat | BIGINT | 44.7% | 5 |  |
 | typecd | BIGINT | 99.5% | 1 |  |
 | xfstat1 | VARCHAR | 99.5% | R |  |
 | fstat1 | BIGINT | 99.5% | 93 |  |
@@ -397,7 +1372,7 @@ Rows: 8,999,839
 
 ## ef_a
 
-Rows: 2,944,297
+Rows: 2,944,960
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -413,47 +1388,47 @@ Rows: 2,944,297
 | xeftotlw | VARCHAR | 25.9% | R |  |
 | eftotlw | BIGINT | 25.9% | 6 |  |
 | xefaiant | VARCHAR | 25.9% | R |  |
-| efaiant | DOUBLE | 31.7% | 0.0 |  |
+| efaiant | DOUBLE | 31.6% | 0.0 |  |
 | xefaianm | VARCHAR | 25.9% | R |  |
-| efaianm | DOUBLE | 31.7% | 0.0 |  |
+| efaianm | DOUBLE | 31.6% | 0.0 |  |
 | xefaianw | VARCHAR | 25.9% | R |  |
-| efaianw | DOUBLE | 31.7% | 0.0 |  |
+| efaianw | DOUBLE | 31.6% | 0.0 |  |
 | xefasiat | VARCHAR | 25.9% | R |  |
-| efasiat | DOUBLE | 31.7% | 0.0 |  |
+| efasiat | DOUBLE | 31.6% | 0.0 |  |
 | xefasiam | VARCHAR | 25.9% | R |  |
-| efasiam | DOUBLE | 31.7% | 0.0 |  |
+| efasiam | DOUBLE | 31.6% | 0.0 |  |
 | xefasiaw | VARCHAR | 25.9% | R |  |
-| efasiaw | DOUBLE | 31.7% | 0.0 |  |
+| efasiaw | DOUBLE | 31.6% | 0.0 |  |
 | xefbkaat | VARCHAR | 25.9% | R |  |
-| efbkaat | DOUBLE | 31.7% | 0.0 |  |
+| efbkaat | DOUBLE | 31.6% | 0.0 |  |
 | xefbkaam | VARCHAR | 25.9% | R |  |
-| efbkaam | DOUBLE | 31.7% | 0.0 |  |
+| efbkaam | DOUBLE | 31.6% | 0.0 |  |
 | xefbkaaw | VARCHAR | 25.9% | R |  |
-| efbkaaw | DOUBLE | 31.7% | 0.0 |  |
+| efbkaaw | DOUBLE | 31.6% | 0.0 |  |
 | xefhispt | VARCHAR | 25.9% | R |  |
-| efhispt | DOUBLE | 31.7% | 0.0 |  |
+| efhispt | DOUBLE | 31.6% | 0.0 |  |
 | xefhispm | VARCHAR | 25.9% | R |  |
-| efhispm | DOUBLE | 31.7% | 0.0 |  |
+| efhispm | DOUBLE | 31.6% | 0.0 |  |
 | xefhispw | VARCHAR | 25.9% | R |  |
-| efhispw | DOUBLE | 31.7% | 0.0 |  |
+| efhispw | DOUBLE | 31.6% | 0.0 |  |
 | xefnhpit | VARCHAR | 25.9% | R |  |
-| efnhpit | DOUBLE | 31.7% | 0.0 |  |
+| efnhpit | DOUBLE | 31.6% | 0.0 |  |
 | xefnhpim | VARCHAR | 25.9% | R |  |
-| efnhpim | DOUBLE | 31.7% | 0.0 |  |
+| efnhpim | DOUBLE | 31.6% | 0.0 |  |
 | xefnhpiw | VARCHAR | 25.9% | R |  |
-| efnhpiw | DOUBLE | 31.7% | 0.0 |  |
+| efnhpiw | DOUBLE | 31.6% | 0.0 |  |
 | xefwhitt | VARCHAR | 25.9% | R |  |
-| efwhitt | DOUBLE | 31.7% | 6.0 |  |
+| efwhitt | DOUBLE | 31.6% | 6.0 |  |
 | xefwhitm | VARCHAR | 25.9% | R |  |
-| efwhitm | DOUBLE | 31.7% | 0.0 |  |
+| efwhitm | DOUBLE | 31.6% | 0.0 |  |
 | xefwhitw | VARCHAR | 25.9% | R |  |
-| efwhitw | DOUBLE | 31.7% | 6.0 |  |
+| efwhitw | DOUBLE | 31.6% | 6.0 |  |
 | xef2mort | VARCHAR | 25.9% | R |  |
-| ef2mort | DOUBLE | 31.7% | 0.0 |  |
+| ef2mort | DOUBLE | 31.6% | 0.0 |  |
 | xef2morm | VARCHAR | 25.9% | R |  |
-| ef2morm | DOUBLE | 31.7% | 0.0 |  |
+| ef2morm | DOUBLE | 31.6% | 0.0 |  |
 | xef2morw | VARCHAR | 25.9% | R |  |
-| ef2morw | DOUBLE | 31.7% | 0.0 |  |
+| ef2morw | DOUBLE | 31.6% | 0.0 |  |
 | xefunknt | VARCHAR | 25.9% | R |  |
 | efunknt | BIGINT | 25.9% | 1 |  |
 | xefunknm | VARCHAR | 25.9% | R |  |
@@ -560,7 +1535,7 @@ Rows: 2,944,297
 
 ## ef_b
 
-Rows: 3,365,326
+Rows: 3,365,978
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -591,7 +1566,7 @@ Rows: 3,365,326
 
 ## ef_c
 
-Rows: 1,426,858
+Rows: 1,426,718
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -630,15 +1605,15 @@ Rows: 151,360
 | xret_pcf | VARCHAR | 8.1% | R |  |
 | ret_pcf | DOUBLE | 18.8% | 70.0 |  |
 | xrrptct | VARCHAR | 24.3% | R |  |
-| rrptct | DOUBLE | 46.0% | 14.0 |  |
+| rrptct | DOUBLE | 45.9% | 14.0 |  |
 | xrrptex | VARCHAR | 24.3% | R |  |
-| rrptex | DOUBLE | 46.0% | 0.0 |  |
+| rrptex | DOUBLE | 45.9% | 0.0 |  |
 | xrrptin | VARCHAR | 64.7% | R |  |
 | rrptin | DOUBLE | 77.4% | 0.0 |  |
 | xrrptcta | VARCHAR | 24.3% | R |  |
-| rrptcta | DOUBLE | 46.0% | 14.0 |  |
+| rrptcta | DOUBLE | 45.9% | 14.0 |  |
 | xret_nmp | VARCHAR | 24.3% | R |  |
-| ret_nmp | DOUBLE | 46.0% | 3.0 |  |
+| ret_nmp | DOUBLE | 45.9% | 3.0 |  |
 | xret_pcp | VARCHAR | 8.1% | R |  |
 | ret_pcp | DOUBLE | 50.4% | 21.0 |  |
 | xstufacr | VARCHAR | 32.4% | R |  |
@@ -660,7 +1635,7 @@ Rows: 151,360
 
 ## effy
 
-Rows: 954,918
+Rows: 954,993
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -818,7 +1793,7 @@ Rows: 954,918
 
 ## efia
 
-Rows: 160,588
+Rows: 160,590
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -844,7 +1819,7 @@ Rows: 160,588
 
 ## f1a
 
-Rows: 44,245
+Rows: 44,244
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -926,15 +1901,15 @@ Rows: 44,245
 | xf1b04 | VARCHAR | 0.0% | R |  |
 | f1b04 | BIGINT | 0.0% | 0 |  |
 | xf1b04a | VARCHAR | 24.3% | R |  |
-| f1b04a | DOUBLE | 30.4% | 0.0 |  |
+| f1b04a | DOUBLE | 30.3% | 0.0 |  |
 | xf1b04b | VARCHAR | 24.3% | R |  |
-| f1b04b | DOUBLE | 30.4% | 0.0 |  |
+| f1b04b | DOUBLE | 30.3% | 0.0 |  |
 | xf1b05 | VARCHAR | 0.0% | R |  |
 | f1b05 | DOUBLE | 10.0% | 37885576.0 |  |
 | xf1b06 | VARCHAR | 0.0% | R |  |
 | f1b06 | DOUBLE | 57.7% | 0.0 |  |
 | xf1b26 | VARCHAR | 24.3% | R |  |
-| f1b26 | DOUBLE | 30.4% | 1632297.0 |  |
+| f1b26 | DOUBLE | 30.3% | 1632297.0 |  |
 | xf1b07 | VARCHAR | 0.0% | R |  |
 | f1b07 | DOUBLE | 57.8% | 0.0 |  |
 | xf1b08 | VARCHAR | 0.0% | R |  |
@@ -970,7 +1945,7 @@ Rows: 44,245
 | xf1b22 | VARCHAR | 0.0% | R |  |
 | f1b22 | DOUBLE | 11.4% | 0.0 |  |
 | xf1b23 | VARCHAR | 0.0% | R |  |
-| f1b23 | DOUBLE | 4.4% | 0.0 |  |
+| f1b23 | DOUBLE | 2.9% | 0.0 |  |
 | xf1b24 | VARCHAR | 0.0% | R |  |
 | f1b24 | DOUBLE | 0.0% | 0.0 |  |
 | xf1b25 | VARCHAR | 0.0% | R |  |
@@ -1042,13 +2017,13 @@ Rows: 44,245
 | f1m04 | DOUBLE | 68.4% | 20778000.0 |  |
 | f1mhop | BIGINT | 78.2% | 1 |  |
 | xf1m05 | VARCHAR | 73.7% | R |  |
-| f1m05 | DOUBLE | 82.1% | 6154695.0 |  |
+| f1m05 | DOUBLE | 82.0% | 6154695.0 |  |
 | xf1m06 | VARCHAR | 73.7% | R |  |
-| f1m06 | DOUBLE | 82.1% | 10313493.0 |  |
+| f1m06 | DOUBLE | 82.0% | 10313493.0 |  |
 | xf1m07 | VARCHAR | 73.7% | R |  |
-| f1m07 | DOUBLE | 82.1% | 31219353.0 |  |
+| f1m07 | DOUBLE | 82.0% | 31219353.0 |  |
 | xf1m08 | VARCHAR | 73.7% | R |  |
-| f1m08 | DOUBLE | 82.1% | 10518759.0 |  |
+| f1m08 | DOUBLE | 82.0% | 10518759.0 |  |
 | xf1e01 | VARCHAR | 0.0% | R |  |
 | f1e01 | DOUBLE | 3.0% | 24113450.0 |  |
 | xf1e02 | VARCHAR | 0.0% | R |  |
@@ -1327,9 +2302,9 @@ Rows: 44,245
 | xf1a283 | VARCHAR | 66.8% | R |  |
 | f1a283 | DOUBLE | 72.5% | 0.0 |  |
 | xf1c091 | VARCHAR | 66.8% | R |  |
-| f1c091 | DOUBLE | 69.6% | 4920993.0 |  |
+| f1c091 | DOUBLE | 69.7% | 4920993.0 |  |
 | xf1c094 | VARCHAR | 66.8% | R |  |
-| f1c094 | DOUBLE | 69.6% | 4920993.0 |  |
+| f1c094 | DOUBLE | 69.7% | 4920993.0 |  |
 | xf1c102 | VARCHAR | 66.8% | A |  |
 | f1c102 | DOUBLE | 93.4% | 0.0 |  |
 | xf1c103 | VARCHAR | 66.8% | A |  |
@@ -1373,7 +2348,7 @@ Rows: 44,245
 
 ## f2
 
-Rows: 44,704
+Rows: 44,706
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -1622,9 +2597,9 @@ Rows: 44,704
 | f2d172 | DOUBLE | 34.9% | 0.0 |  |
 | xf2d173 | VARCHAR | 29.7% | R |  |
 | f2d173 | DOUBLE | 34.9% | 0.0 |  |
-| xf2d174 | VARCHAR | 33.8% | R |  |
+| xf2d174 | VARCHAR | 33.9% | R |  |
 | f2d174 | DOUBLE | 36.0% | 0.0 |  |
-| xf2d18 | VARCHAR | 33.8% | R |  |
+| xf2d18 | VARCHAR | 33.9% | R |  |
 | f2d18 | DOUBLE | 36.0% | 7840002.0 |  |
 | xf2d182 | VARCHAR | 29.7% | R |  |
 | f2d182 | DOUBLE | 34.9% | 7842193.0 |  |
@@ -1704,19 +2679,19 @@ Rows: 44,704
 | xf2h03d | VARCHAR | 80.0% | R |  |
 | f2h03d | DOUBLE | 85.1% | -45.0 |  |
 | xf2i01 | VARCHAR | 80.0% | R |  |
-| f2i01 | DOUBLE | 82.1% | 388873.0 |  |
+| f2i01 | DOUBLE | 82.2% | 388873.0 |  |
 | xf2i02 | VARCHAR | 80.0% | R |  |
-| f2i02 | DOUBLE | 82.1% | 7408702.0 |  |
+| f2i02 | DOUBLE | 82.2% | 7408702.0 |  |
 | xf2i03 | VARCHAR | 80.0% | R |  |
-| f2i03 | DOUBLE | 82.1% | 386682.0 |  |
+| f2i03 | DOUBLE | 82.2% | 386682.0 |  |
 | xf2i04 | VARCHAR | 80.0% | R |  |
-| f2i04 | DOUBLE | 82.1% | 15506978.0 |  |
+| f2i04 | DOUBLE | 82.2% | 15506978.0 |  |
 | xf2i05 | VARCHAR | 80.0% | R |  |
-| f2i05 | DOUBLE | 82.1% | 15893660.0 |  |
+| f2i05 | DOUBLE | 82.2% | 15893660.0 |  |
 | xf2i06 | VARCHAR | 80.0% | R |  |
-| f2i06 | DOUBLE | 82.1% | 0.0 |  |
+| f2i06 | DOUBLE | 82.2% | 0.0 |  |
 | xf2i07 | VARCHAR | 80.0% | R |  |
-| f2i07 | DOUBLE | 82.1% | 7453320.0 |  |
+| f2i07 | DOUBLE | 82.2% | 7453320.0 |  |
 | year | BIGINT | 0.0% | 2024 | Appears in 26 tables, common join key |
 | xf2e013 | VARCHAR | 40.9% | R |  |
 | f2e013 | DOUBLE | 40.9% | 290086.0 |  |
@@ -1858,7 +2833,7 @@ Rows: 44,704
 
 ## f3
 
-Rows: 61,533
+Rows: 61,537
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -1906,7 +2881,7 @@ Rows: 61,533
 | xf3b05 | VARCHAR | 0.0% | R |  |
 | f3b05 | DOUBLE | 52.2% | 425599.0 |  |
 | xf3b06 | VARCHAR | 0.0% | R |  |
-| f3b06 | DOUBLE | 51.6% | 2073404.0 |  |
+| f3b06 | DOUBLE | 51.5% | 2073404.0 |  |
 | xf3b07 | VARCHAR | 0.0% | R |  |
 | f3b07 | DOUBLE | 51.5% | 0.0 |  |
 | xf3b08 | VARCHAR | 0.0% | R |  |
@@ -2394,7 +3369,7 @@ Rows: 153,757
 
 ## gr
 
-Rows: 1,251,920
+Rows: 1,252,232
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -2411,47 +3386,47 @@ Rows: 1,251,920
 | xgrtotlw | VARCHAR | 30.7% | R |  |
 | grtotlw | DOUBLE | 36.6% | 831.0 |  |
 | xgraiant | VARCHAR | 30.7% | R |  |
-| graiant | DOUBLE | 43.7% | 3.0 |  |
+| graiant | DOUBLE | 43.6% | 3.0 |  |
 | xgraianm | VARCHAR | 30.7% | R |  |
-| graianm | DOUBLE | 43.7% | 2.0 |  |
+| graianm | DOUBLE | 43.6% | 2.0 |  |
 | xgraianw | VARCHAR | 30.7% | R |  |
-| graianw | DOUBLE | 43.7% | 1.0 |  |
+| graianw | DOUBLE | 43.6% | 1.0 |  |
 | xgrasiat | VARCHAR | 30.7% | R |  |
-| grasiat | DOUBLE | 43.7% | 2.0 |  |
+| grasiat | DOUBLE | 43.6% | 2.0 |  |
 | xgrasiam | VARCHAR | 30.7% | R |  |
-| grasiam | DOUBLE | 43.7% | 1.0 |  |
+| grasiam | DOUBLE | 43.6% | 1.0 |  |
 | xgrasiaw | VARCHAR | 30.7% | R |  |
-| grasiaw | DOUBLE | 43.7% | 1.0 |  |
+| grasiaw | DOUBLE | 43.6% | 1.0 |  |
 | xgrbkaat | VARCHAR | 30.7% | R |  |
-| grbkaat | DOUBLE | 43.7% | 1297.0 |  |
+| grbkaat | DOUBLE | 43.6% | 1297.0 |  |
 | xgrbkaam | VARCHAR | 30.7% | R |  |
-| grbkaam | DOUBLE | 43.7% | 522.0 |  |
+| grbkaam | DOUBLE | 43.6% | 522.0 |  |
 | xgrbkaaw | VARCHAR | 30.7% | R |  |
-| grbkaaw | DOUBLE | 43.7% | 775.0 |  |
+| grbkaaw | DOUBLE | 43.6% | 775.0 |  |
 | xgrhispt | VARCHAR | 30.7% | R |  |
-| grhispt | DOUBLE | 43.7% | 11.0 |  |
+| grhispt | DOUBLE | 43.6% | 11.0 |  |
 | xgrhispm | VARCHAR | 30.7% | R |  |
-| grhispm | DOUBLE | 43.7% | 6.0 |  |
+| grhispm | DOUBLE | 43.6% | 6.0 |  |
 | xgrhispw | VARCHAR | 30.7% | R |  |
-| grhispw | DOUBLE | 43.7% | 5.0 |  |
+| grhispw | DOUBLE | 43.6% | 5.0 |  |
 | xgrnhpit | VARCHAR | 30.7% | R |  |
-| grnhpit | DOUBLE | 43.7% | 1.0 |  |
+| grnhpit | DOUBLE | 43.6% | 1.0 |  |
 | xgrnhpim | VARCHAR | 30.7% | Z |  |
-| grnhpim | DOUBLE | 43.7% | 0.0 |  |
+| grnhpim | DOUBLE | 43.6% | 0.0 |  |
 | xgrnhpiw | VARCHAR | 30.7% | R |  |
-| grnhpiw | DOUBLE | 43.7% | 1.0 |  |
+| grnhpiw | DOUBLE | 43.6% | 1.0 |  |
 | xgrwhitt | VARCHAR | 30.7% | R |  |
-| grwhitt | DOUBLE | 43.7% | 17.0 |  |
+| grwhitt | DOUBLE | 43.6% | 17.0 |  |
 | xgrwhitm | VARCHAR | 30.7% | R |  |
-| grwhitm | DOUBLE | 43.7% | 12.0 |  |
+| grwhitm | DOUBLE | 43.6% | 12.0 |  |
 | xgrwhitw | VARCHAR | 30.7% | R |  |
-| grwhitw | DOUBLE | 43.7% | 5.0 |  |
+| grwhitw | DOUBLE | 43.6% | 5.0 |  |
 | xgr2mort | VARCHAR | 30.7% | R |  |
-| gr2mort | DOUBLE | 43.7% | 18.0 |  |
+| gr2mort | DOUBLE | 43.6% | 18.0 |  |
 | xgr2morm | VARCHAR | 30.7% | R |  |
-| gr2morm | DOUBLE | 43.7% | 2.0 |  |
+| gr2morm | DOUBLE | 43.6% | 2.0 |  |
 | xgr2morw | VARCHAR | 30.7% | R |  |
-| gr2morw | DOUBLE | 43.7% | 16.0 |  |
+| gr2morw | DOUBLE | 43.6% | 16.0 |  |
 | xgrunknt | VARCHAR | 30.7% | R |  |
 | grunknt | DOUBLE | 36.6% | 50.0 |  |
 | xgrunknm | VARCHAR | 30.7% | R |  |
@@ -2466,35 +3441,35 @@ Rows: 1,251,920
 | grnralw | DOUBLE | 36.6% | 2.0 |  |
 | year | BIGINT | 0.0% | 2024 | Appears in 26 tables, common join key |
 | xgrrac03 | VARCHAR | 59.6% | R |  |
-| grrace03 | DOUBLE | 61.8% | 576.0 |  |
+| grrace03 | DOUBLE | 61.9% | 576.0 |  |
 | xgrrac04 | VARCHAR | 59.6% | R |  |
-| grrace04 | DOUBLE | 61.8% | 595.0 |  |
+| grrace04 | DOUBLE | 61.9% | 595.0 |  |
 | xgrrac05 | VARCHAR | 59.6% | Z |  |
-| grrace05 | DOUBLE | 61.8% | 0.0 |  |
+| grrace05 | DOUBLE | 61.9% | 0.0 |  |
 | xgrrac06 | VARCHAR | 59.6% | R |  |
-| grrace06 | DOUBLE | 61.8% | 1.0 |  |
+| grrace06 | DOUBLE | 61.9% | 1.0 |  |
 | xgrrac07 | VARCHAR | 59.6% | Z |  |
-| grrace07 | DOUBLE | 61.8% | 0.0 |  |
+| grrace07 | DOUBLE | 61.9% | 0.0 |  |
 | xgrrac08 | VARCHAR | 59.6% | Z |  |
-| grrace08 | DOUBLE | 61.8% | 0.0 |  |
+| grrace08 | DOUBLE | 61.9% | 0.0 |  |
 | xgrrac09 | VARCHAR | 59.6% | R |  |
-| grrace09 | DOUBLE | 61.8% | 1.0 |  |
+| grrace09 | DOUBLE | 61.9% | 1.0 |  |
 | xgrrac10 | VARCHAR | 59.6% | R |  |
-| grrace10 | DOUBLE | 61.8% | 3.0 |  |
+| grrace10 | DOUBLE | 61.9% | 3.0 |  |
 | xgrrac11 | VARCHAR | 59.6% | R |  |
-| grrace11 | DOUBLE | 61.8% | 3.0 |  |
+| grrace11 | DOUBLE | 61.9% | 3.0 |  |
 | xgrrac12 | VARCHAR | 59.6% | R |  |
-| grrace12 | DOUBLE | 61.8% | 7.0 |  |
+| grrace12 | DOUBLE | 61.9% | 7.0 |  |
 | xgrrac18 | VARCHAR | 59.6% | R |  |
-| grrace18 | DOUBLE | 61.8% | 1171.0 |  |
+| grrace18 | DOUBLE | 61.9% | 1171.0 |  |
 | xgrrac19 | VARCHAR | 59.6% | R |  |
-| grrace19 | DOUBLE | 61.8% | 1.0 |  |
+| grrace19 | DOUBLE | 61.9% | 1.0 |  |
 | xgrrac20 | VARCHAR | 59.6% | Z |  |
-| grrace20 | DOUBLE | 61.8% | 0.0 |  |
+| grrace20 | DOUBLE | 61.9% | 0.0 |  |
 | xgrrac21 | VARCHAR | 59.6% | R |  |
-| grrace21 | DOUBLE | 61.8% | 4.0 |  |
+| grrace21 | DOUBLE | 61.9% | 4.0 |  |
 | xgrrac22 | VARCHAR | 59.6% | R |  |
-| grrace22 | DOUBLE | 61.8% | 10.0 |  |
+| grrace22 | DOUBLE | 61.9% | 10.0 |  |
 | xdvgrait | VARCHAR | 90.3% | R |  |
 | dvgrait | DOUBLE | 91.1% | 1.0 |  |
 | xdvgraim | VARCHAR | 90.3% | Z |  |
@@ -2546,7 +3521,7 @@ Rows: 1,251,920
 
 ## gr200
 
-Rows: 93,086
+Rows: 93,088
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -3391,32 +4366,32 @@ Rows: 61,317
 | ciptuit1 | VARCHAR | 31.5% | 14990.0 |  |
 | xcipsup1 | VARCHAR | 28.1% | A |  |
 | cipsupp1 | VARCHAR | 31.5% | 1350.0 |  |
-| xciplgt1 | DOUBLE | 24.7% | 1500.0 |  |
+| xciplgt1 | VARCHAR | 24.7% | R |  |
 | ciplgth1 | DOUBLE | 15.1% | 1500.0 |  |
 | prgmsr1 | VARCHAR | 28.1% | 1 |  |
-| xmthcmp1 | DOUBLE | 31.8% | 12.0 |  |
+| xmthcmp1 | VARCHAR | 31.8% | R |  |
 | mthcmp1 | VARCHAR | 28.1% | 12 |  |
-| xwkcmp1 | DOUBLE | 51.9% | 47.0 |  |
+| xwkcmp1 | VARCHAR | 51.8% | R |  |
 | wkcmp1 | VARCHAR | 47.4% | 47.0 |  |
-| xlnayhr1 | DOUBLE | 51.9% | 900.0 |  |
+| xlnayhr1 | VARCHAR | 51.8% | R |  |
 | lnayhr1 | VARCHAR | 47.4% | 900.0 |  |
-| xlnaywk1 | DOUBLE | 51.9% | 28.0 |  |
+| xlnaywk1 | VARCHAR | 51.8% | R |  |
 | lnaywk1 | VARCHAR | 47.4% | 28.0 |  |
-| xchg1py0 | DOUBLE | 45.7% | 11040.0 |  |
+| xchg1py0 | VARCHAR | 45.4% | R |  |
 | chg1py0 | VARCHAR | 39.4% | 12000.0 |  |
-| xchg1py1 | DOUBLE | 27.9% | 12000.0 |  |
+| xchg1py1 | VARCHAR | 27.7% | R |  |
 | chg1py1 | VARCHAR | 9.3% | 12150.0 |  |
-| xchg1py2 | DOUBLE | 26.7% | 12150.0 |  |
+| xchg1py2 | VARCHAR | 26.6% | R |  |
 | chg1py2 | VARCHAR | 8.8% | 15150.0 |  |
-| xchg1py3 | DOUBLE | 26.2% | 15150.0 |  |
+| xchg1py3 | VARCHAR | 26.1% | R |  |
 | chg1py3 | VARCHAR | 8.3% | 15150.0 |  |
-| xchg4py0 | DOUBLE | 48.3% | 2503.0 |  |
+| xchg4py0 | VARCHAR | 47.9% | R |  |
 | chg4py0 | VARCHAR | 39.6% | 2503.0 |  |
 | xchg4py1 | VARCHAR | 0.0% | R |  |
 | chg4py1 | VARCHAR | 10.5% | 2649.0 |  |
-| xchg4py2 | DOUBLE | 29.4% | 2649.0 |  |
+| xchg4py2 | VARCHAR | 29.2% | R |  |
 | chg4py2 | VARCHAR | 10.1% | 3040.0 |  |
-| xchg4py3 | DOUBLE | 28.8% | 3040.0 |  |
+| xchg4py3 | VARCHAR | 28.7% | R |  |
 | chg4py3 | VARCHAR | 9.3% | 3258.0 |  |
 | xchg5py0 | VARCHAR | 39.2% | A |  |
 | chg5py0 | VARCHAR | 42.7% | 10811.0 |  |
@@ -3434,29 +4409,29 @@ Rows: 61,317
 | chg6py2 | VARCHAR | 24.2% | 2375.0 |  |
 | xchg6py3 | VARCHAR | 0.0% | A |  |
 | chg6py3 | VARCHAR | 24.5% | 2375.0 |  |
-| xchg7py0 | DOUBLE | 45.8% | 11268.0 |  |
+| xchg7py0 | VARCHAR | 45.5% | R |  |
 | chg7py0 | VARCHAR | 39.4% | 11268.0 |  |
-| xchg7py1 | DOUBLE | 28.6% | 11268.0 |  |
+| xchg7py1 | VARCHAR | 28.4% | R |  |
 | chg7py1 | VARCHAR | 14.1% | 11268.0 |  |
-| xchg7py2 | DOUBLE | 27.0% | 11268.0 |  |
+| xchg7py2 | VARCHAR | 26.9% | R |  |
 | chg7py2 | VARCHAR | 13.5% | 14171.0 |  |
-| xchg7py3 | DOUBLE | 26.3% | 14171.0 |  |
+| xchg7py3 | VARCHAR | 26.2% | R |  |
 | chg7py3 | VARCHAR | 12.1% | 18483.0 |  |
-| xchg8py0 | DOUBLE | 45.9% | 7978.0 |  |
+| xchg8py0 | VARCHAR | 45.5% | R |  |
 | chg8py0 | VARCHAR | 39.4% | 7978.0 |  |
-| xchg8py1 | DOUBLE | 28.7% | 7978.0 |  |
+| xchg8py1 | VARCHAR | 28.4% | R |  |
 | chg8py1 | VARCHAR | 14.2% | 7978.0 |  |
-| xchg8py2 | DOUBLE | 27.0% | 7978.0 |  |
+| xchg8py2 | VARCHAR | 26.9% | R |  |
 | chg8py2 | VARCHAR | 13.6% | 6239.0 |  |
-| xchg8py3 | DOUBLE | 26.3% | 6239.0 |  |
+| xchg8py3 | VARCHAR | 26.2% | R |  |
 | chg8py3 | VARCHAR | 12.2% | 10963.0 |  |
-| xchg9py0 | DOUBLE | 45.9% | 7508.0 |  |
+| xchg9py0 | VARCHAR | 45.5% | R |  |
 | chg9py0 | VARCHAR | 39.4% | 7508.0 |  |
-| xchg9py1 | DOUBLE | 28.6% | 7508.0 |  |
+| xchg9py1 | VARCHAR | 28.4% | R |  |
 | chg9py1 | VARCHAR | 14.2% | 7508.0 |  |
-| xchg9py2 | DOUBLE | 27.0% | 7508.0 |  |
+| xchg9py2 | VARCHAR | 26.9% | R |  |
 | chg9py2 | VARCHAR | 13.5% | 8531.0 |  |
-| xchg9py3 | DOUBLE | 26.3% | 8531.0 |  |
+| xchg9py3 | VARCHAR | 26.2% | R |  |
 | chg9py3 | VARCHAR | 12.2% | 8531.0 |  |
 | cipcode2 | VARCHAR | 0.0% | 12.0409 |  |
 | xciptui2 | VARCHAR | 0.0% | R |  |
@@ -3464,50 +4439,50 @@ Rows: 61,317
 | xcipsup2 | VARCHAR | 0.0% | R |  |
 | cipsupp2 | VARCHAR | 11.8% | 1735.0 |  |
 | xciplgt2 | VARCHAR | 0.0% | R |  |
-| ciplgth2 | DOUBLE | 11.2% | 1000.0 |  |
+| ciplgth2 | DOUBLE | 12.2% | 1000.0 |  |
 | prgmsr2 | VARCHAR | 28.1% | 1 |  |
-| xmthcmp2 | DOUBLE | 45.7% | 12.0 |  |
-| mthcmp2 | DOUBLE | 28.7% | 10.0 |  |
+| xmthcmp2 | VARCHAR | 44.7% | R |  |
+| mthcmp2 | DOUBLE | 29.7% | 10.0 |  |
 | cipcode3 | VARCHAR | 0.0% | 12.0413 |  |
 | xciptui3 | VARCHAR | 0.0% | R |  |
 | ciptuit3 | VARCHAR | 13.7% | 2150.0 |  |
 | xcipsup3 | VARCHAR | 0.0% | R |  |
 | cipsupp3 | VARCHAR | 14.5% | 755.0 |  |
 | xciplgt3 | VARCHAR | 0.0% | R |  |
-| ciplgth3 | DOUBLE | 14.9% | 650.0 |  |
+| ciplgth3 | DOUBLE | 16.6% | 650.0 |  |
 | prgmsr3 | VARCHAR | 28.1% | 1 |  |
 | xmthcmp3 | VARCHAR | 28.1% | R |  |
-| mthcmp3 | DOUBLE | 29.3% | 5.0 |  |
+| mthcmp3 | DOUBLE | 31.0% | 5.0 |  |
 | cipcode4 | VARCHAR | 0.0% | -2.0 |  |
 | xciptui4 | VARCHAR | 0.0% | A |  |
 | ciptuit4 | VARCHAR | 16.5% | 4736.0 |  |
 | xcipsup4 | VARCHAR | 0.0% | A |  |
 | cipsupp4 | VARCHAR | 17.1% | 1809.0 |  |
 | xciplgt4 | VARCHAR | 0.0% | A |  |
-| ciplgth4 | DOUBLE | 18.8% | 1260.0 |  |
+| ciplgth4 | DOUBLE | 21.1% | 1260.0 |  |
 | prgmsr4 | VARCHAR | 28.1% | -2 |  |
 | xmthcmp4 | VARCHAR | 28.1% | A |  |
-| mthcmp4 | DOUBLE | 29.8% | 10.0 |  |
+| mthcmp4 | DOUBLE | 32.1% | 10.0 |  |
 | cipcode5 | VARCHAR | 0.0% | -2.0 |  |
 | xciptui5 | VARCHAR | 0.0% | A |  |
 | ciptuit5 | VARCHAR | 18.7% | 4736.0 |  |
 | xcipsup5 | VARCHAR | 0.0% | A |  |
 | cipsupp5 | VARCHAR | 19.2% | 4550.0 |  |
 | xciplgt5 | VARCHAR | 0.0% | A |  |
-| ciplgth5 | DOUBLE | 22.0% | 1340.0 |  |
+| ciplgth5 | DOUBLE | 24.9% | 1340.0 |  |
 | prgmsr5 | VARCHAR | 28.1% | -2 |  |
 | xmthcmp5 | VARCHAR | 28.1% | A |  |
-| mthcmp5 | DOUBLE | 30.3% | 10.0 |  |
+| mthcmp5 | DOUBLE | 33.1% | 10.0 |  |
 | cipcode6 | VARCHAR | 0.0% | -2.0 |  |
 | xciptui6 | VARCHAR | 0.0% | A |  |
 | ciptuit6 | VARCHAR | 20.2% | 4736.0 |  |
 | xcipsup6 | VARCHAR | 0.0% | A |  |
 | cipsupp6 | VARCHAR | 20.6% | 3850.0 |  |
 | xciplgt6 | VARCHAR | 0.0% | A |  |
-| ciplgth6 | DOUBLE | 31.1% | 1080.0 |  |
+| ciplgth6 | DOUBLE | 34.3% | 1080.0 |  |
 | prgmsr6 | VARCHAR | 28.1% | -2 |  |
 | xmthcmp6 | VARCHAR | 28.1% | A |  |
-| mthcmp6 | DOUBLE | 98.9% | 10.0 |  |
+| mthcmp6 | DOUBLE | 97.8% | 10.0 |  |
 | year | BIGINT | 0.0% | 2023 | Appears in 26 tables, common join key |
 | xcmp1py0 | VARCHAR | 83.0% | . |  |
 | cmp1py0 | VARCHAR | 83.0% | A |  |
@@ -3516,12 +4491,12 @@ Rows: 61,317
 | xcmp1py2 | VARCHAR | 68.5% | . |  |
 | cmp1py2 | VARCHAR | 68.5% | A |  |
 | xcmp1py3 | VARCHAR | 68.5% | . |  |
-| cmp1py3 | DOUBLE | 71.9% | -2.0 |  |
+| cmp1py3 | DOUBLE | 76.3% | -2.0 |  |
 | pg300 | BIGINT | 78.8% | 1 |  |
 
 ## om
 
-Rows: 415,178
+Rows: 415,183
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -3596,7 +4571,7 @@ Rows: 415,178
 
 ## sal_is
 
-Rows: 209,792
+Rows: 209,812
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -3689,9 +4664,9 @@ Rows: 209,792
 | xsa09mat | VARCHAR | 32.6% | R |  |
 | sa09mat | DOUBLE | 59.5% | 106743.0 |  |
 | xsa09mam | VARCHAR | 32.6% | R |  |
-| sa09mam | DOUBLE | 61.4% | 108466.0 |  |
+| sa09mam | DOUBLE | 61.5% | 108466.0 |  |
 | xsa09maw | VARCHAR | 32.6% | R |  |
-| sa09maw | DOUBLE | 60.9% | 100495.0 |  |
+| sa09maw | DOUBLE | 61.0% | 100495.0 |  |
 | xsa10mat | VARCHAR | 32.6% | A |  |
 | sa10mat | DOUBLE | 82.0% | 32000.0 |  |
 | xsa10mam | VARCHAR | 32.6% | A |  |
@@ -3701,7 +4676,7 @@ Rows: 209,792
 | xsa11mat | VARCHAR | 32.6% | A |  |
 | sa11mat | DOUBLE | 93.0% | 74248.0 |  |
 | xsa11mam | VARCHAR | 32.6% | A |  |
-| sa11mam | DOUBLE | 94.8% | 74248.0 |  |
+| sa11mam | DOUBLE | 94.9% | 74248.0 |  |
 | xsa11maw | VARCHAR | 32.6% | A |  |
 | sa11maw | DOUBLE | 94.4% | 69591.0 |  |
 | xsa12mat | VARCHAR | 32.6% | R |  |
@@ -3726,7 +4701,7 @@ Rows: 209,792
 
 ## sfa
 
-Rows: 138,503
+Rows: 138,505
 
 | Column | Type | Nulls | Example | Join |
 |--------|------|-------|---------|------|
@@ -3850,9 +4825,9 @@ Rows: 138,503
 | xagrnt_a | VARCHAR | 26.3% | R |  |
 | agrnt_a | DOUBLE | 30.3% | 12844.0 |  |
 | xfgrnt_n | VARCHAR | 0.0% | R |  |
-| fgrnt_n | DOUBLE | 3.3% | 1332.0 |  |
+| fgrnt_n | DOUBLE | 3.4% | 1332.0 |  |
 | xfgrnt_p | VARCHAR | 0.0% | R |  |
-| fgrnt_p | DOUBLE | 3.3% | 67.0 |  |
+| fgrnt_p | DOUBLE | 3.4% | 67.0 |  |
 | xfgrnt_t | VARCHAR | 31.0% | R |  |
 | fgrnt_t | DOUBLE | 34.1% | 9021849.0 |  |
 | xfgrnt_a | VARCHAR | 0.0% | R |  |
@@ -3872,27 +4847,27 @@ Rows: 138,503
 | xofgrt_t | VARCHAR | 31.0% | R |  |
 | ofgrt_t | DOUBLE | 34.1% | 265157.0 |  |
 | xofgrt_a | VARCHAR | 26.3% | R |  |
-| ofgrt_a | DOUBLE | 49.2% | 2156.0 |  |
+| ofgrt_a | DOUBLE | 49.3% | 2156.0 |  |
 | xsgrnt_n | VARCHAR | 0.0% | R |  |
-| sgrnt_n | DOUBLE | 3.3% | 66.0 |  |
+| sgrnt_n | DOUBLE | 3.4% | 66.0 |  |
 | xsgrnt_p | VARCHAR | 0.0% | R |  |
-| sgrnt_p | DOUBLE | 3.3% | 3.0 |  |
+| sgrnt_p | DOUBLE | 3.4% | 3.0 |  |
 | xsgrnt_t | VARCHAR | 31.0% | R |  |
 | sgrnt_t | DOUBLE | 34.1% | 112137.0 |  |
 | xsgrnt_a | VARCHAR | 0.0% | R |  |
 | sgrnt_a | DOUBLE | 33.4% | 1699.0 |  |
 | xigrnt_n | VARCHAR | 0.0% | R |  |
-| igrnt_n | DOUBLE | 3.3% | 1330.0 |  |
+| igrnt_n | DOUBLE | 3.4% | 1330.0 |  |
 | xigrnt_p | VARCHAR | 0.0% | R |  |
-| igrnt_p | DOUBLE | 3.3% | 67.0 |  |
+| igrnt_p | DOUBLE | 3.4% | 67.0 |  |
 | xigrnt_t | VARCHAR | 31.0% | R |  |
 | igrnt_t | DOUBLE | 34.1% | 12675178.0 |  |
 | xigrnt_a | VARCHAR | 0.0% | R |  |
 | igrnt_a | DOUBLE | 33.3% | 9530.0 |  |
 | xloan_n | VARCHAR | 0.0% | R |  |
-| loan_n | DOUBLE | 3.3% | 1503.0 |  |
+| loan_n | DOUBLE | 3.4% | 1503.0 |  |
 | xloan_p | VARCHAR | 0.0% | R |  |
-| loan_p | DOUBLE | 3.3% | 76.0 |  |
+| loan_p | DOUBLE | 3.4% | 76.0 |  |
 | xloan_t | VARCHAR | 31.0% | R |  |
 | loan_t | DOUBLE | 34.1% | 10345864.0 |  |
 | xloan_a | VARCHAR | 0.0% | R |  |
@@ -4161,11 +5136,11 @@ Rows: 138,503
 | xnpis421 | VARCHAR | 39.8% | R |  |
 | npis421 | DOUBLE | 83.5% | 14526.0 |  |
 | xnpis431 | VARCHAR | 39.8% | R |  |
-| npis431 | DOUBLE | 84.1% | 16532.0 |  |
+| npis431 | DOUBLE | 84.0% | 16532.0 |  |
 | xnpis441 | VARCHAR | 39.8% | R |  |
 | npis441 | DOUBLE | 85.8% | 20139.0 |  |
 | xnpis451 | VARCHAR | 39.8% | R |  |
-| npis451 | DOUBLE | 88.0% | 17539.0 |  |
+| npis451 | DOUBLE | 87.9% | 17539.0 |  |
 | xnpis410 | VARCHAR | 39.8% | R |  |
 | npis410 | DOUBLE | 82.6% | 12177.0 |  |
 | xnpis420 | VARCHAR | 39.8% | R |  |
@@ -4195,9 +5170,9 @@ Rows: 138,503
 | xgrnton1 | VARCHAR | 35.0% | A |  |
 | grnton1 | DOUBLE | 85.5% | 199.0 |  |
 | xgrntwf1 | VARCHAR | 35.0% | A |  |
-| grntwf1 | DOUBLE | 60.3% | 45.0 |  |
+| grntwf1 | DOUBLE | 60.4% | 45.0 |  |
 | xgrntof1 | VARCHAR | 35.0% | A |  |
-| grntof1 | DOUBLE | 60.3% | 0.0 |  |
+| grntof1 | DOUBLE | 60.4% | 0.0 |  |
 | xgrntun1 | VARCHAR | 35.0% | A |  |
 | grntun1 | DOUBLE | 60.2% | 0.0 |  |
 | xgrntt1 | VARCHAR | 35.0% | A |  |
@@ -4217,7 +5192,7 @@ Rows: 138,503
 | xgrntt0 | VARCHAR | 35.0% | A |  |
 | grntt0 | DOUBLE | 60.9% | 2684585.0 |  |
 | xgrnta0 | VARCHAR | 35.0% | A |  |
-| grnta0 | DOUBLE | 60.8% | 10781.0 |  |
+| grnta0 | DOUBLE | 60.9% | 10781.0 |  |
 | xgrn4n2 | VARCHAR | 35.0% | A |  |
 | grn4n2 | DOUBLE | 58.1% | 204.0 |  |
 | xgrn4on2 | VARCHAR | 35.0% | A |  |
@@ -4265,7 +5240,7 @@ Rows: 138,503
 | xgrn4t42 | VARCHAR | 35.0% | A |  |
 | grn4t42 | DOUBLE | 58.3% | 433748.0 |  |
 | xgrn4a42 | VARCHAR | 35.0% | A |  |
-| grn4a42 | DOUBLE | 75.0% | 15491.0 |  |
+| grn4a42 | DOUBLE | 75.1% | 15491.0 |  |
 | xgrn4n52 | VARCHAR | 35.0% | A |  |
 | grn4n52 | DOUBLE | 58.3% | 105.0 |  |
 | xgrn4g52 | VARCHAR | 39.8% | A |  |
@@ -4395,9 +5370,9 @@ Rows: 138,503
 | xnpt412 | VARCHAR | 35.0% | A |  |
 | npt412 | DOUBLE | 59.0% | 19562.0 |  |
 | xnpt422 | VARCHAR | 35.0% | A |  |
-| npt422 | DOUBLE | 65.9% | 20562.0 |  |
+| npt422 | DOUBLE | 66.0% | 20562.0 |  |
 | xnpt432 | VARCHAR | 35.0% | A |  |
-| npt432 | DOUBLE | 69.3% | 21634.0 |  |
+| npt432 | DOUBLE | 69.4% | 21634.0 |  |
 | xnpt442 | VARCHAR | 35.0% | A |  |
 | npt442 | DOUBLE | 75.1% | 22894.0 |  |
 | xnpt452 | VARCHAR | 35.0% | A |  |
@@ -4442,244 +5417,3 @@ Rows: 138,503
 | totgrnt | BIGINT | 95.3% | 17473759 |  |
 | xtstdpel | VARCHAR | 95.3% | R |  |
 | tstdpel | BIGINT | 95.3% | 1607 |  |
-
-## v_admission_rates
-
-| Column | Type | Nulls | Example | Join |
-|--------|------|-------|---------|------|
-| unitid | BIGINT | 0.0% | 101541 | Primary institution ID, joins across all IPEDS tables |
-| year | BIGINT | 0.0% | 2017 | Appears in 26 tables, common join key |
-| institution_name | VARCHAR | 0.0% | University of Mobile | Appears in 4 tables, common join key |
-| state | VARCHAR | 0.0% | AL | Appears in 4 tables, common join key |
-| applicants_total | BIGINT | 0.0% | 1009 |  |
-| admissions_total | DOUBLE | 1.0% | 7750.0 |  |
-| enrolled_total | DOUBLE | 1.3% | 1869.0 |  |
-| admit_rate_pct | DOUBLE | 1.0% | 58.4 |  |
-| yield_rate_pct | DOUBLE | 1.3% | 23.0 |  |
-
-## v_institutions
-
-| Column | Type | Nulls | Example | Join |
-|--------|------|-------|---------|------|
-| unitid | BIGINT | 0.0% | 101693 | Primary institution ID, joins across all IPEDS tables |
-| institution_name | VARCHAR | 0.0% | Capri College-Cedar Rapids | Appears in 4 tables, common join key |
-| ialias | VARCHAR | 46.1% | Sherman Kendall Academy |  |
-| addr | VARCHAR | 0.1% | 175 Fulton Ave |  |
-| city | VARCHAR | 0.0% | Mobile |  |
-| state | VARCHAR | 0.0% | IA | Appears in 4 tables, common join key |
-| zip_code | VARCHAR | 0.0% | 36613-2842 |  |
-| fips_state | BIGINT | 0.0% | 19 |  |
-| region | BIGINT | 0.0% | 5 |  |
-| chfnm | VARCHAR | 2.1% | Dr. Charles Smith |  |
-| chftitle | VARCHAR | 2.3% | President |  |
-| gentele | DOUBLE | 11.8% | 3193641541206.0 |  |
-| ein | DOUBLE | 0.9% | 630417508.0 |  |
-| ueis | VARCHAR | 49.3% | MEMJEJHP6KZ6 |  |
-| opeid | DOUBLE | 1.0% | 2090300.0 |  |
-| opeflag | BIGINT | 0.0% | 1 |  |
-| website | VARCHAR | 6.8% | www.capricollege.edu/ |  |
-| adminurl | VARCHAR | 21.6% | www.capricollege.edu/ |  |
-| faidurl | VARCHAR | 21.5% | https://umobile.edu/financial-aid/ |  |
-| applurl | VARCHAR | 25.5% |   |  |
-| npricurl | VARCHAR | 20.0% | https://umobile.edu/financial-aid/cost-calculator/ |  |
-| veturl | VARCHAR | 43.1% | https://umobile.edu/veterans-affairs/ |  |
-| athurl | VARCHAR | 61.8% |   |  |
-| disaurl | VARCHAR | 28.3% | umobile.edu/studentsuccesscenter/disability-support-services/ |  |
-| sector | BIGINT | 0.0% | 9 | Appears in 3 tables, common join key |
-| level | BIGINT | 0.0% | 1 |  |
-| control | BIGINT | 0.0% | 2 |  |
-| hloffer | BIGINT | 0.0% | 9 |  |
-| ugoffer | BIGINT | 0.0% | 1 |  |
-| groffer | BIGINT | 0.0% | 2 |  |
-| hdegofr1 | BIGINT | 14.2% | 0 |  |
-| degree_granting | BIGINT | 0.0% | 1 |  |
-| hbcu | BIGINT | 0.0% | 2 |  |
-| hospital | BIGINT | 0.0% | 2 |  |
-| medical | BIGINT | 0.0% | 2 |  |
-| tribal | BIGINT | 0.0% | 2 |  |
-| locale_code | BIGINT | 0.0% | 41 |  |
-| openpubl | BIGINT | 0.0% | 1 |  |
-| act | VARCHAR | 0.0% | A |  |
-| newid | DOUBLE | 0.1% | -2.0 |  |
-| deathyr | BIGINT | 0.0% | -2 |  |
-| close_date | DOUBLE | 19.8% | -2.0 |  |
-| currently_active | BIGINT | 0.0% | 1 |  |
-| postsec | BIGINT | 0.0% | 1 |  |
-| pseflag | BIGINT | 0.0% | 1 |  |
-| pset4flg | BIGINT | 0.0% | 2 |  |
-| rptmth | BIGINT | 8.4% | 1 |  |
-| instcat | BIGINT | 8.4% | 6 |  |
-| c00carnegie | BIGINT | 46.6% | -2 |  |
-| carnegie_basic | BIGINT | 0.0% | 20 |  |
-| carnegieic | BIGINT | 46.6% | 19 |  |
-| carnegiesaec | BIGINT | 46.6% | 2 |  |
-| carnegiersch | BIGINT | 46.6% | 0 |  |
-| carnegiesize | BIGINT | 46.6% | 2 |  |
-| carnegiealf | BIGINT | 46.6% | 4 |  |
-| carnegieapm | BIGINT | 46.6% | 2 |  |
-| carnegiegpm | BIGINT | 46.6% | -2 |  |
-| land_grant | BIGINT | 9.5% | 1 |  |
-| size_category | BIGINT | 9.5% | 1 |  |
-| f1systyp | BIGINT | 13.4% | 1 | Appears in 3 tables, common join key |
-| f1sysnam | VARCHAR | 45.4% | -2 | Appears in 3 tables, common join key |
-| f1syscod | BIGINT | 19.5% | -2 |  |
-| cbsa | BIGINT | 11.9% | 46140 |  |
-| cbsatype | BIGINT | 11.9% | 1 |  |
-| csa | BIGINT | 11.9% | 408 |  |
-| county_fips | BIGINT | 14.2% | 1097 |  |
-| county_name | VARCHAR | 15.0% | Mobile County |  |
-| cngdstcd | BIGINT | 14.2% | 102 |  |
-| longitude | DOUBLE | 15.0% | -73.633008 |  |
-| latitude | DOUBLE | 15.0% | 30.793247 |  |
-| year | BIGINT | 0.0% | 2025 | Appears in 26 tables, common join key |
-| dfrcgid | BIGINT | 64.8% | 18 |  |
-| dfrcuscg | BIGINT | 71.3% | 2 |  |
-| c21ipug | BIGINT | 95.6% | 13 |  |
-| c21ipgrd | BIGINT | 95.6% | -2 |  |
-| c21ugprf | BIGINT | 95.6% | 1 |  |
-| c21enprf | BIGINT | 95.6% | -2 |  |
-| c21szset | BIGINT | 95.6% | 1 |  |
-| c18basic | BIGINT | 95.6% | -2 |  |
-| c15basic | BIGINT | 87.9% | -2 |  |
-| ccbasic | BIGINT | 76.9% | -3 |  |
-| carnegie | BIGINT | 62.8% | -3 |  |
-| duns | DOUBLE | 85.5% | 78338999.0 |  |
-| necta | BIGINT | 68.3% | -2 |  |
-| c18ipug | BIGINT | 92.3% | 4 |  |
-| c18ipgrd | BIGINT | 92.3% | 8 |  |
-| c18ugprf | BIGINT | 92.3% | 5 |  |
-| c18enprf | BIGINT | 92.3% | 2 |  |
-| c18szset | BIGINT | 92.3% | 6 |  |
-| c15ipug | BIGINT | 89.0% | -2 |  |
-| c15ipgrd | BIGINT | 89.0% | -2 |  |
-| c15ugprf | BIGINT | 89.0% | 4 |  |
-| c15enprf | BIGINT | 89.0% | 3 |  |
-| c15szset | BIGINT | 89.0% | -2 |  |
-| ccipug | BIGINT | 85.9% | -3 |  |
-| ccipgrad | BIGINT | 85.9% | -3 |  |
-| ccugprof | BIGINT | 85.9% | -3 |  |
-| ccenrprf | BIGINT | 85.9% | -3 |  |
-| ccsizset | BIGINT | 85.9% | -3 |  |
-| faxtele | DOUBLE | 96.4% | 7087955826.0 |  |
-| tenursys | BIGINT | 90.2% | -2 | Appears in 3 tables, common join key |
-| fpoffer | BIGINT | 85.8% | 2 |  |
-| hdegoffr | BIGINT | 85.8% | 0 |  |
-| fintele | DOUBLE | 90.7% | 6163639853.0 |  |
-| admtele | DOUBLE | 90.0% | 3344606141.0 |  |
-| stat_fa | BIGINT | 91.6% | 5 |  |
-| stat_ic | BIGINT | 91.6% | -9 | Appears in 3 tables, common join key |
-| lock_ic | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| stat_c | BIGINT | 91.6% | -9 | Appears in 3 tables, common join key |
-| lock_c | BIGINT | 91.6% | 0 | Appears in 3 tables, common join key |
-| prch_c | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| idx_c | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| imp_c | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| stat_wi | BIGINT | 91.6% | 1 |  |
-| stat_ef | BIGINT | 91.6% | 5 | Appears in 3 tables, common join key |
-| lock_ef | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| prch_ef | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| idx_ef | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| imp_ef | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| pta99_ef | BIGINT | 91.6% | 1 | Appears in 3 tables, common join key |
-| ptb_ef | BIGINT | 91.6% | -9 | Appears in 3 tables, common join key |
-| ptc_ef | BIGINT | 91.6% | -9 | Appears in 3 tables, common join key |
-| ptd_ef | BIGINT | 91.6% | 5 | Appears in 3 tables, common join key |
-| pteeffy | BIGINT | 91.6% | 5 | Appears in 3 tables, common join key |
-| pteefia | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| fyrpyear | BIGINT | 91.6% | -2 | Appears in 4 tables, common join key |
-| stat_sa | BIGINT | 91.6% | -9 | Appears in 3 tables, common join key |
-| lock_sa | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| prch_sa | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| idx_sa | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| imp_sa | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| stat_s | BIGINT | 91.6% | -9 | Appears in 3 tables, common join key |
-| lock_s | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| prch_s | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| idx_s | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| imp_s | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| stat_eap | BIGINT | 91.6% | -9 | Appears in 3 tables, common join key |
-| lock_eap | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| prch_eap | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| idx_eap | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| imp_eap | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| ftemp15 | BIGINT | 91.6% | 2 | Appears in 3 tables, common join key |
-| sa_excl | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| stat_sp | BIGINT | 91.6% | -9 |  |
-| form_f | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| stat_f | BIGINT | 91.6% | 5 | Appears in 3 tables, common join key |
-| lock_f | BIGINT | 91.6% | 0 | Appears in 3 tables, common join key |
-| prch_f | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| idx_f | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| imp_f | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| fybeg | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| fyend | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| gpfs | BIGINT | 91.6% | -1 | Appears in 3 tables, common join key |
-| f1gasbcr | BIGINT | 91.6% | -2 |  |
-| f1gasbal | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| stat_sfa | BIGINT | 91.6% | 5 | Appears in 3 tables, common join key |
-| lock_sfa | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| prch_sfa | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| idx_sfa | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| imp_sfa | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| stat_gr | BIGINT | 91.6% | 5 | Appears in 3 tables, common join key |
-| lock_gr | BIGINT | 91.6% | 0 | Appears in 3 tables, common join key |
-| prch_gr | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| idx_gr | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| imp_gr | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| cohrtstu | BIGINT | 91.6% | -1 | Appears in 3 tables, common join key |
-| pyaid | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| cohrtaid | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| sport1 | BIGINT | 91.6% | -2 | Appears in 4 tables, common join key |
-| sport2 | BIGINT | 91.6% | -1 | Appears in 4 tables, common join key |
-| sport3 | BIGINT | 91.6% | -1 | Appears in 4 tables, common join key |
-| sport4 | BIGINT | 91.6% | 0 | Appears in 4 tables, common join key |
-| sport5 | BIGINT | 91.6% | -1 | Appears in 3 tables, common join key |
-| longpgm | BIGINT | 91.6% | -2 | Appears in 3 tables, common join key |
-| cohrtmt | BIGINT | 91.6% | -1 |  |
-| tpr | BIGINT | 91.6% | 1 |  |
-| hpr | BIGINT | 91.6% | -1 |  |
-| cufasb | BIGINT | 97.7% | -2 | Appears in 3 tables, common join key |
-| cugasb | BIGINT | 97.7% | -2 | Appears in 3 tables, common join key |
-| fte | DOUBLE | 99.8% | 452.0 |  |
-| ocrmsi | BIGINT | 91.6% | -2 |  |
-| ocrhsi | BIGINT | 91.6% | 0 |  |
-| twoyrcat | BIGINT | 97.7% | -4 |  |
-| rev_c | BIGINT | 97.7% | 0 | Appears in 3 tables, common join key |
-| rev_ef | BIGINT | 97.7% | 0 | Appears in 3 tables, common join key |
-| rev_sa | BIGINT | 97.7% | -2 | Appears in 3 tables, common join key |
-| rev_s | BIGINT | 97.7% | 0 | Appears in 3 tables, common join key |
-| rev_eap | BIGINT | 97.7% | 0 | Appears in 3 tables, common join key |
-| r_form_f | BIGINT | 97.7% | -2 |  |
-| rev_f | BIGINT | 97.7% | 0 | Appears in 3 tables, common join key |
-| rev_sfa | BIGINT | 97.7% | 0 | Appears in 3 tables, common join key |
-| rev_gr | BIGINT | 97.7% | 0 | Appears in 3 tables, common join key |
-| affil | BIGINT | 93.9% | -3 |  |
-| pctmin1 | BIGINT | 93.9% | -1 |  |
-| pctmin2 | BIGINT | 93.9% | -1 |  |
-| pctmin3 | BIGINT | 93.9% | -1 |  |
-| pctmin4 | BIGINT | 93.9% | -1 |  |
-| ptacipef | BIGINT | 93.9% | -2 | Appears in 3 tables, common join key |
-| transver | BIGINT | 93.9% | -2 |  |
-| cindon | DOUBLE | 100.0% |  | Appears in 3 tables, common join key |
-| cinson | DOUBLE | 100.0% |  | Appears in 3 tables, common join key |
-| cotson | DOUBLE | 100.0% |  | Appears in 3 tables, common join key |
-| cindoff | DOUBLE | 100.0% |  | Appears in 3 tables, common join key |
-| cinsoff | DOUBLE | 100.0% |  | Appears in 3 tables, common join key |
-| cotsoff | DOUBLE | 100.0% |  | Appears in 3 tables, common join key |
-| cindfam | DOUBLE | 100.0% |  | Appears in 3 tables, common join key |
-| cinsfam | DOUBLE | 100.0% |  | Appears in 3 tables, common join key |
-| cotsfam | DOUBLE | 100.0% |  | Appears in 3 tables, common join key |
-| rn | BIGINT | 0.0% | 1 |  |
-
-## v_tuition_trends
-
-| Column | Type | Nulls | Example | Join |
-|--------|------|-------|---------|------|
-| unitid | BIGINT | 0.0% | 229799 | Primary institution ID, joins across all IPEDS tables |
-| year | BIGINT | 0.0% | 2000 | Appears in 26 tables, common join key |
-| institution_name | VARCHAR | 0.1% | University of Mobile | Appears in 4 tables, common join key |
-| state | VARCHAR | 0.1% | AL | Appears in 4 tables, common join key |
-| sector | BIGINT | 0.1% | 9 | Appears in 3 tables, common join key |
-| tuition_in_state | DOUBLE | 0.0% | 3798.0 |  |
-| tuition_out_state | DOUBLE | 0.0% | 8160.0 |  |
-| tuition_in_district | DOUBLE | 0.0% | 8160.0 |  |

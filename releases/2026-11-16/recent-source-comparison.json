@@ -1,0 +1,61 @@
+[
+  {
+    "table": "hd",
+    "year": 2023,
+    "members_unchanged": true,
+    "old_members": {
+      "hd2023.csv": {
+        "bytes": 3732763,
+        "sha256": "2abdc272f96708e87a7c0a59b01d79855b1ef1ccdd155d861467b88505fa933d"
+      }
+    },
+    "new_members": {
+      "hd2023.csv": {
+        "bytes": 3732763,
+        "sha256": "2abdc272f96708e87a7c0a59b01d79855b1ef1ccdd155d861467b88505fa933d"
+      }
+    }
+  },
+  {
+    "table": "hd",
+    "year": 2024,
+    "members_unchanged": true,
+    "old_members": {
+      "hd2024.csv": {
+        "bytes": 3678264,
+        "sha256": "fc19d5f6e1d3d4de2b54db4965b18373358b08069c79c3b3942891662a709874"
+      }
+    },
+    "new_members": {
+      "hd2024.csv": {
+        "bytes": 3678264,
+        "sha256": "fc19d5f6e1d3d4de2b54db4965b18373358b08069c79c3b3942891662a709874"
+      }
+    }
+  },
+  {
+    "table": "ic",
+    "year": 2023,
+    "members_unchanged": true,
+    "old_members": {
+      "ic2023.csv": {
+        "bytes": 1853750,
+        "sha256": "7682474b0a53f65f3e7d04b38f124059ee6a1ebd1a07ab6039c1c830f2d4c8a8"
+      },
+      "ic2023_rv.csv": {
+        "bytes": 1853750,
+        "sha256": "5a14b302a346456321f7e1e4250c49adc23d18147fdf4ca306fcf5dcf8aa26b3"
+      }
+    },
+    "new_members": {
+      "ic2023.csv": {
+        "bytes": 1853750,
+        "sha256": "7682474b0a53f65f3e7d04b38f124059ee6a1ebd1a07ab6039c1c830f2d4c8a8"
+      },
+      "ic2023_rv.csv": {
+        "bytes": 1853750,
+        "sha256": "5a14b302a346456321f7e1e4250c49adc23d18147fdf4ca306fcf5dcf8aa26b3"
+      }
+    }
+  }
+]

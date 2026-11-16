@@ -1,0 +1,25 @@
+{
+  "source_checked": "2026-11-16",
+  "historical_partitions_checked": 496,
+  "cost_inputs_checked": 2,
+  "additional_revised_partitions": 308,
+  "rows": 27889094,
+  "tables": 25,
+  "artifact": {
+    "bytes": 2388144128,
+    "sha256": "30fe29df38121155417455b96b636b8e111ab7aa5a4a9ebca127649700be286f"
+  },
+  "baseline": {
+    "url": "https://huggingface.co/datasets/Nason/ipeds-database/resolve/9fd4840987da2e5496d7b98814678225f92b8514/ipeds.duckdb",
+    "revision": "9fd4840987da2e5496d7b98814678225f92b8514",
+    "bytes": 1416376320,
+    "sha256": "ab6fcd229dfc03d1e1a5b5259afe99cd115fce887aeca7e53737b50e0c2b09df"
+  },
+  "validation": "validation-2026-11-16.json",
+  "bundle": {
+    "file": "ipeds-source-replay-2026-11-16.zip",
+    "bytes": 755957168,
+    "sha256": "0a4b8044d631e6ac050e1da2e01f89b435fe61c3cc3fc3954032ae08b5712fc8"
+  },
+  "scope": "Existing 496 historical table/year partitions and both 2024 Cost sources; historical equality is after established harmonization and schema projection."
+}

@@ -21,6 +21,28 @@ ATTACH 'https://huggingface.co/datasets/Nason/ipeds-database/resolve/main/ipeds.
 SELECT year, COUNT(*) AS institutions FROM ipeds.hd GROUP BY 1 ORDER BY 1 DESC LIMIT 5;
 ```
 
+### Python with DuckDB
+
+Install once with `python -m pip install duckdb`.
+
+```python
+import duckdb
+con = duckdb.connect(config={"memory_limit": "128MiB", "threads": 1,
+                             "max_temp_directory_size": "0B"})
+try:
+    con.execute("INSTALL httpfs; LOAD httpfs;")
+    con.execute("ATTACH 'https://huggingface.co/datasets/Nason/ipeds-database/resolve/main/ipeds.duckdb' AS ipeds (READ_ONLY)")
+    print(con.execute("SELECT year, COUNT(*) AS institutions FROM ipeds.hd GROUP BY 1 ORDER BY 1 DESC LIMIT 5").fetchall())
+finally:
+    con.close()
+```
+
+These URLs follow the latest publication. For reproducible results, use the immutable
+`attach_url` in the [Datapond registry](https://github.com/datapond-db/registry/blob/main/registry.json)
+and record the revision. HTTP range queries execute locally and may transfer much of
+the database; `LIMIT` does not guarantee a small scan. The buffer limit is not a total
+process-memory cap; with spill disabled, larger queries may fail.
+
 ### R with DBI and duckdb
 
 Install the dependencies once with `install.packages(c("DBI", "duckdb"))`.
